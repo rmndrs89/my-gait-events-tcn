@@ -10,11 +10,11 @@ def resamp1d(X, fs_old, fs_new):
         # In case of (N,) array
         N = len(X)
 
-    t  = np.arange(N)/fs_old
-    ti = t[np.logical_not(np.any(np.isnan(X), axis=1))]
-    X = X[np.logical_not(np.any(np.isnan(X), axis=1)),:]
-    f = interp1d(t, X, kind="linear", axis=0, fill_value="extrapolate")
-    tq = np.arange(N/fs_old*fs_new)/fs_new
+    t  = np.arange(N)/fs_old                               # original time array
+    ti = t[np.logical_not(np.any(np.isnan(X), axis=1))]    # time array without NaN
+    Xi = X[np.logical_not(np.any(np.isnan(X), axis=1)),:]  # data array without NaN
+    f = interp1d(ti, Xi, kind="linear", axis=0, fill_value="extrapolate")  # fit data
+    tq = np.arange(N/fs_old*fs_new)/fs_new  # new time array
     return f(tq)
 
 

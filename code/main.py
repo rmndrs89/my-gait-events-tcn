@@ -1,12 +1,12 @@
 import numpy as np
 import pandas as pd
-import os
+import os, sys
 import matplotlib.pyplot as plt
 from utils import resamp1d  # plot_omc_vs_imu
 
 def main():
     # Set base directory
-    base_dir = "/home/robbin/Projects/annotate_gait_events/data/rawdata" # /sub-pp106/motion"
+    base_dir = "/home/robbin/Projects/annotate_gait_events/data/rawdata" if (sys.platform=="linux") else "E:\\Data"
 
     # Get list of subject ids
     sub_ids = [sub_id for sub_id in os.listdir(base_dir) if sub_id.startswith("sub-pp")]
@@ -53,6 +53,11 @@ def main():
 
                 # Overwrite IMU pandas DataFrame
                 df_imu = pd.DataFrame(data=Y, columns=df_imu.columns)
+                if len(df_imu) > len(df_omc):
+                    df_imu = df_imu.iloc[:len(df_omc)]
+                elif len(df_omc) > len(df_imu):
+                    df_omc = df_omc.iloc[:len(df_imu)]
+                del X, Y
 
             # Plot before
             fig, axs = plt.subplots(2, 1, sharex=True)
