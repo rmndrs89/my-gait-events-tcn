@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import os, sys
 import matplotlib.pyplot as plt
-from utils import resamp1d  # plot_omc_vs_imu
+from utils import resamp1d, plot_omc_vs_imu
 
 def main():
     # Set base directory
@@ -12,14 +12,14 @@ def main():
     sub_ids = [sub_id for sub_id in os.listdir(base_dir) if sub_id.startswith("sub-pp")]
 
     # Loop over the subjects ids
-    for (i_sub_id, sub_id) in enumerate(sub_ids[:1]):
+    for (i_sub_id, sub_id) in enumerate(sub_ids[:5]):
         print(f"{i_sub_id:4d} : {sub_id:s}")
 
         # Get a list of OMC filenames (stereophotogrammetry)
         omc_filenames = [filename for filename in os.listdir(os.path.join(base_dir, sub_id, "motion")) if filename.endswith("_tracksys-omc_motion.tsv")]
 
         # Loop over the OMC filenames
-        for (i_omc_filename, omc_filename) in enumerate(omc_filenames[:1]):
+        for (i_omc_filename, omc_filename) in enumerate(omc_filenames):
             print(f"{i_omc_filename:8d} : {omc_filename:s}")
 
             # Set the events filename (e.g. initial and final contacts)
@@ -60,10 +60,8 @@ def main():
                 del X, Y
 
             # Plot before
-            fig, axs = plt.subplots(2, 1, sharex=True)
-            axs[0].plot(np.arange(len(df_omc))/fs_omc, df_omc["l_heel_POS_z"], ls="-", c=(0.000, 0.314, 0.937))
-            axs[1].plot(np.arange(len(df_imu))/fs_omc, df_imu["left_ankle_ANGVEL_z"], ls="-", c=(0.000, 0.314, 0.937))
-            plt.show()
+            # plot_omc_vs_imu(df_omc, df_omc_channels, df_imu, df_imu_channels, df_events, fname=omc_filename.replace("_tracksys-omc_motion.tsv", ".pdf"))
+            plot_omc_vs_imu(df_omc, df_omc_channels, df_imu, df_imu_channels, df_events, fname=omc_filename.replace("_tracksys-omc_motion.tsv", ".png"))
     return
 
 if __name__ == "__main__":

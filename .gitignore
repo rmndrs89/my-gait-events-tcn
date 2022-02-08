@@ -1,2 +1,2 @@
 venv/
-code/*.ipynb
+code/__pycache__/
