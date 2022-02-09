@@ -1,7 +1,124 @@
+from tkinter.ttk import LabeledScale
 import numpy as np
 from scipy.interpolate import interp1d
 import matplotlib.pyplot as plt
-import os
+import os, glob
+import pandas as pd
+
+def split_groups(df_participants):
+    """Splits the subjects into a set for training, validation and testing.
+
+    Parameters
+    ----------
+    df_participants : pandas DataFrame
+        Participants demographics data, including `gender` and `participant_type` infos.
+
+    Returns
+    -------
+    (train_ids, val_ids, test_ids) : tuple
+        A tuple of list with the subjects ids for the corresponding sets.
+    """
+    
+    train_ids, val_ids, test_ids = [], [], []
+    grouped = df_participants.groupby(['participant_type', 'gender'])
+    for _, df_group in grouped:
+        # Determine number of samples for train and test set
+        num_train = len(df_group) // 3
+        num_test  = len(df_group) // 3
+        
+        # Get random indices
+        indx_shuffled = np.arange(len(df_group))
+        np.random.shuffle(indx_shuffled)
+        
+        # Add ids to corresponding sets
+        train_ids += df_group.iloc[indx_shuffled[:num_train]]["sub"].tolist()        
+        test_ids += df_group.iloc[indx_shuffled[num_train:num_train+num_test]]["sub"].tolist()
+        val_ids += df_group.iloc[indx_shuffled[num_train+num_test:]]["sub"].tolist()
+    
+    # Add prefix to subject ids
+    train_ids = ["sub-"+train_id for train_id in train_ids]
+    val_ids = ["sub-"+val_id for val_id in val_ids]
+    test_ids = ["sub-"+test_id for test_id in test_ids]
+    return (train_ids, val_ids, test_ids)
+
+def load_data(base_dir, df_participants):
+    # Split dataset into train, val, and test set.
+    # Stratify by `participant_type` and `gender`.
+    (sub_ids_train, sub_ids_val, sub_ids_test) = split_groups(df_participants)
+    
+    # Loop over the ids in the train set
+    for (i_sub_id, sub_id) in enumerate(sub_ids_train[:1]):
+        
+        # Loop over the files
+        imu_filenames = glob.glob(os.path.join(base_dir, sub_id, "motion", "*walk*_tracksys-imu_motion*.tsv"))
+        for (i_imu_filename, imu_filename) in enumerate(imu_filenames[:1]):
+            
+            # Split filename into directory and filename
+            dir_name, imu_filename = os.path.split(imu_filename)
+            
+            # Load data from files
+            df_imu = pd.read_csv(os.path.join(dir_name, imu_filename), sep="\t", header=0)
+            df_imu_channels = pd.read_csv(os.path.join(dir_name, imu_filename.replace("_motion", "_channels")), sep="\t", header=0)
+            df_omc = pd.read_csv(os.path.join(dir_name, imu_filename.replace("_tracksys-imu", "_tracksys-omc")), sep="\t", header=0)
+            df_omc_channels = pd.read_csv(os.path.join(dir_name, imu_filename.replace("_tracksys-imu_motion", "_tracksys-omc_channels")), sep="\t", header=0)
+            df_events = pd.read_csv(os.path.join(dir_name, imu_filename.replace("_tracksys-imu_motion", "_events")), sep="\t", header=0)
+            
+            # Match sampling frequencies
+            fs_omc = df_omc_channels["sampling_frequency"].iloc[0]
+            fs_imu = df_imu_channels["sampling_frequency"].iloc[0]
+            if fs_imu != fs_omc:
+                X = df_imu.to_numpy()
+                Y = resamp1d(X, fs_imu, fs_omc)
+                df_imu = pd.DataFrame(data=Y, columns=df_imu.columns)
+                if len(df_imu) < len(df_omc):
+                    df_omc = df_omc.iloc[:len(df_imu)]
+                elif len(df_omc) < len(df_imu):
+                    df_imu = df_imu.iloc[:len(df_omc)]
+                del X, Y
+            # plot_omc_vs_imu(df_omc, df_omc_channels, df_imu, df_imu_channels, df_events)
+            
+            # Get the start and stop index.
+            indx_start = df_events[df_events["event_type"]=="start"]["onset"].values[0]-1
+            indx_stop  = df_events[df_events["event_type"]=="stop"]["onset"].values[0]
+            
+            # Get annotated gait events
+            indx_events = {'ICL': get_annotated_events(df_events, event_type="initial_contact_left"), 
+                           'FCL': get_annotated_events(df_events, event_type="final_contact_left"),
+                           'ICR': get_annotated_events(df_events, event_type="initial_contact_right"),
+                           'FCR': get_annotated_events(df_events, event_type="final_contact_right")}
+            
+            # Get labels
+            labels = get_labels(df_imu, indx_events)
+            labels['L'] = labels['L'][indx_start:indx_stop]
+            labels['R'] = labels['R'][indx_start:indx_stop]
+            
+            # Get features
+            features = {'L': get_features(df_imu, df_imu_channels, tracked_points=["left_ankle"]).iloc[indx_start:indx_stop], 
+                        'R': get_features(df_imu, df_imu_channels, tracked_points=["right_ankle"]).iloc[indx_start:indx_stop]}
+    return features, labels
+    
+def get_labels(df_imu, indx_events):
+    labels = {'L': np.zeros((len(df_imu),1)), 'R': np.zeros((len(df_imu),1))}
+    if indx_events['FCL'][0] < indx_events['ICL'][0]:
+        arr = indx_events["ICL"] - indx_events["FCL"][:len(indx_events["ICL"])]
+        for i in range(len(arr)):
+            labels["L"][indx_events["FCL"][i]:indx_events["ICL"][i]] = 1.0
+    else:
+        arr = indx_events["ICL"][1:] - indx_events["FCL"][:len(indx_events["ICL"][1:])]
+        for i in range(len(arr)):
+            labels["L"][indx_events["FCL"][i]:indx_events["ICL"][i+1]] = 1.0
+        labels["L"][:indx_events["ICL"]] = 1.0
+        
+    if indx_events['FCR'][0] < indx_events['ICR'][0]:
+        arr = indx_events["ICR"] - indx_events["FCR"][:len(indx_events["ICR"])]
+        for i in range(len(arr)):
+            labels["R"][indx_events["FCR"][i]:indx_events["ICR"][i]] = 1.0
+    else:
+        arr = indx_events["ICR"][1:] - indx_events["FCR"][:len(indx_events["ICR"][1:])]
+        for i in range(len(arr)):
+            labels["R"][indx_events["FCR"][i]:indx_events["ICR"][i+1]] = 1.0
+        labels["R"][:indx_events["ICR"]] = 1.0
+    return labels
 
 def resamp1d(X, fs_old, fs_new):
     """Resample data to new sampling frequency.
@@ -179,7 +296,7 @@ def plot_omc_vs_imu(df_omc, df_omc_channels, df_imu, df_imu_channels, df_events,
     axs[1].spines['right'].set_color('none')
     axs[1].spines['top'].set_color('none')
     axs[1].set_ylim((features[['left_ankle_ANGVEL_z', 'right_ankle_ANGVEL_z']].min().min()-200, features[['left_ankle_ANGVEL_z', 'right_ankle_ANGVEL_z']].max().max()+200))
-    axs[1].set_xlim((indx_start-20, indx_stop+20)/fs_imu)
+    # axs[1].set_xlim((indx_start-20, indx_stop+20)/fs_imu)
     axs[1].set_xlabel('time / s', fontsize=16)
     axs[1].set_ylabel('angular velocity / deg/s', fontsize=16)
     axs[1].xaxis.set_minor_locator(plt.MultipleLocator(0.1))
@@ -218,5 +335,5 @@ def plot_omc_vs_imu(df_omc, df_omc_channels, df_imu, df_imu_channels, df_events,
             plt.savefig(os.path.join("/home/robbin/Desktop/fig", fname), dpi='figure', format='pdf')
         elif fname.endswith('.png'):
             plt.savefig(os.path.join("/home/robbin/Desktop/fig", fname), dpi=300, format='png')
-    # plt.show()
-    return plt.gcf()
+    plt.show()
+    return
