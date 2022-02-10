@@ -1,3 +1,4 @@
+from tkinter.tix import Tree
 from tkinter.ttk import LabeledScale
 import numpy as np
 from scipy.interpolate import interp1d
@@ -41,20 +42,49 @@ def split_groups(df_participants):
     test_ids = ["sub-"+test_id for test_id in test_ids]
     return (train_ids, val_ids, test_ids)
 
+def create_sequences(values, win_len, step_len):
+    """Creates sequences of equal length for batch input to the Keras model.
+    
+    Parameters
+    ----------
+    values : (N, D) array_like
+        The input data with N time steps across D channels.
+    win_len : int
+        The window length, or length of the sequence.
+    step_len : int
+        The step length, or number of samples that the windows slides forward.
+        
+    Returns
+    -------
+    output : (batch_size, win_len, num_channels) array_like
+        The output data with batches of data, each with shape (win_len, num_channels).
+    """
+    # Initialize output
+    output = []
+    
+    # Loop over data
+    for i in range(0, values.shape[0]-win_len+1, step_len):
+        output.append(values[i:(i+win_len),:])
+    return np.stack(output)
+
 def load_data(base_dir, df_participants):
     # Split dataset into train, val, and test set.
     # Stratify by `participant_type` and `gender`.
     (sub_ids_train, sub_ids_val, sub_ids_test) = split_groups(df_participants)
     
+    # Create train set
+    train_data, train_labels = [], []
+        
     # Loop over the ids in the train set
     for (i_sub_id, sub_id) in enumerate(sub_ids_train[:1]):
+        print(f"{i_sub_id:>3d}/{len(sub_ids_train):>3d}: {sub_id:s}")
         
         # Loop over the files
         imu_filenames = glob.glob(os.path.join(base_dir, sub_id, "motion", "*walk*_tracksys-imu_motion*.tsv"))
-        for (i_imu_filename, imu_filename) in enumerate(imu_filenames[:1]):
-            
+        for (i_imu_filename, imu_filename) in enumerate(imu_filenames):
             # Split filename into directory and filename
             dir_name, imu_filename = os.path.split(imu_filename)
+            print(f"{' '*12:s}{imu_filename:s}")
             
             # Load data from files
             df_imu = pd.read_csv(os.path.join(dir_name, imu_filename), sep="\t", header=0)
@@ -87,15 +117,38 @@ def load_data(base_dir, df_participants):
                            'ICR': get_annotated_events(df_events, event_type="initial_contact_right"),
                            'FCR': get_annotated_events(df_events, event_type="final_contact_right")}
             
-            # Get labels
+            # Get labels -- stance phase: 0, swing phase: 1
             labels = get_labels(df_imu, indx_events)
-            labels['L'] = labels['L'][indx_start:indx_stop]
-            labels['R'] = labels['R'][indx_start:indx_stop]
             
             # Get features
-            features = {'L': get_features(df_imu, df_imu_channels, tracked_points=["left_ankle"]).iloc[indx_start:indx_stop], 
-                        'R': get_features(df_imu, df_imu_channels, tracked_points=["right_ankle"]).iloc[indx_start:indx_stop]}
-    return features, labels
+            df_features_labels = get_features(df_imu, df_imu_channels, tracked_points=["left_ankle", "right_ankle"])
+            
+            # Combine features and labels
+            df_features_labels["left_swing_phase"] = labels["L"]
+            df_features_labels["right_swing_phase"] = labels["R"]
+            
+            # Crop dataframes from start to stop
+            df_features_labels = df_features_labels.iloc[indx_start:indx_stop]
+            
+            # Normalize 
+            df_normalized = df_features_labels[df_features_labels.columns.difference(["left_swing_phase", "right_swing_phase"])]
+            df_normalized = ( df_normalized - df_normalized.mean() ) / df_normalized.std()
+            df_normalized[["left_swing_phase", "right_swing_phase"]] = df_features_labels[["left_swing_phase", "right_swing_phase"]]
+            
+            # Create sequences
+            sequences = create_sequences(df_features_labels.values, win_len=400, step_len=200)
+            
+            
+            # Visualize
+            iplot = 1
+            if iplot == 1:
+                fig, axs = plt.subplots(2, 1, sharex=True)
+                axs[0].fill_between(np.arange(indx_start, indx_stop)/fs_imu, df_features_labels["left_swing_phase"]*df_features_labels["left_ankle_ANGVEL_z"].min(), color="b", alpha=0.05)
+                axs[0].plot(np.arange(indx_start, indx_stop)/fs_imu, df_features_labels["left_ankle_ANGVEL_z"], c="b", lw=1)
+                axs[1].fill_between(np.arange(indx_start, indx_stop)/fs_imu, df_features_labels["right_swing_phase"]*df_features_labels["right_ankle_ANGVEL_z"].max(), color="r", alpha=0.05)
+                axs[1].plot(np.arange(indx_start, indx_stop)/fs_imu, df_features_labels["right_ankle_ANGVEL_z"], c="r", lw=1)
+                plt.show()
+    return
     
 def get_labels(df_imu, indx_events):
     labels = {'L': np.zeros((len(df_imu),1)), 'R': np.zeros((len(df_imu),1))}
