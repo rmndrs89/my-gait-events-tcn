@@ -26,7 +26,7 @@ def split_groups(df_subjects):
     # For each groupby object ..
     # .. assign one-third to the validation set, one-third to the test set
     # .. and the remaining subject ids to the training set
-    for dmy, df_group in groups:
+    for _, df_group in groups:
         num_val_examples = len(df_group)//3
         num_test_examples = len(df_group)//3
         num_train_examples = len(df_group) - num_test_examples - num_val_examples
@@ -260,7 +260,14 @@ def get_dataset(path, sub_ids, tracked_points, incl_magn, normalize, classificat
         filenames = [fname for fname in os.listdir(os.path.join(path, sub_id, "motion")) if ("_task-walk" in fname) and ("_events.tsv" in fname)]
         
         # Loop over the filenames
-        for (i_filename, filename) in enumerate(filenames):   
+        for (i_filename, filename) in enumerate(filenames):
+            
+            # TODO: for sub-pp007_task-walkSlow_tracksys-imu_motion the right IMU has no signal.
+            # This results in NaN values, so that the TensorFlow model does not run.
+            # Here, remove this file from analysis by continuing to next file, if we encounter it.
+            # In future, come up with a better idea.
+            if filename == "sub-pp007_task-walkSlow_events.tsv":
+                continue            
                        
             # Check if data from the tracked points are available
             df_imu_channels = pd.read_csv(os.path.join(path, sub_id, "motion", filename.replace("_events", "_tracksys-imu_channels")), sep="\t", header=0)
