@@ -1,4 +1,4 @@
-from winreg import EnumValue
+from sklearn.utils import shuffle
 from datasets import keepcontrol
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,9 +7,41 @@ import os, sys
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 import tensorflow as tf
 from tensorflow import keras
-from utils.models import get_base_model
+from tcn import TCN, tcn_full_summary
+from utils.models import get_base_model, TCNHyperModel
+from utils.losses import MyWeightedBinaryCrossentropy
 from sklearn.utils.class_weight import compute_class_weight
+import keras_tuner as kt
 
+def tune(train_data, train_targets, validation_data, weights=None):
+    print(f"Start hyperparameter tuning ...")
+    # Define tuner    
+    tuner = kt.RandomSearch(
+        hypermodel=TCNHyperModel(
+            input_shape=train_data.shape[1:],
+            num_classes=len(train_targets),
+            weights=weights
+        ),
+        objective="val_loss",
+        max_trials=MAX_TRIALS,
+        executions_per_trial=EXECUTIONS_PER_TRIAL,
+        overwrite=True,
+        directory="/home/robbin/Desktop/tuning",
+        project_name="alpha"
+    )
+    
+    # Search hyperparameter space
+    tuner.search(
+        train_data,
+        train_targets,
+        epochs=EPOCHS,
+        validation_data=validation_data,
+        shuffle=True,
+        callbacks=[EARLY_STOPPING, REDUCE_LR],
+        verbose=0
+    )
+    return tuner
+    
 def main():
     # Load dataset
     ds_train, ds_val, ds_test = keepcontrol.load_data(path=PATH,
@@ -28,42 +60,44 @@ def main():
     print(f"Shape of train labels: {train_labels.shape}")
     print(f"Shape of val data: {val_data.shape}")
     print(f"Shape of val labels: {val_labels.shape}")
-
-    # Convert labels to sparse categorical arrays
-    if CLASSIFICATION_TASK == "events":    
-        train_targets = np.zeros((train_labels.shape[0], train_labels.shape[1], 1), dtype=int)
-        for m in range(train_labels.shape[-1]):
-            indx = np.argwhere(train_labels[:,:,m]==1)
-            for i in range(indx.shape[0]):
-                train_targets[indx[i][0]][indx[i][1],0] = m+1
-
-        val_targets = np.zeros((val_labels.shape[0], val_labels.shape[1], 1), dtype=int)
-        for m in range(val_labels.shape[-1]):
-            indx = np.argwhere(val_labels[:,:,m]==1)
-            for i in range(indx.shape[0]):
-                val_targets[indx[i][0]][indx[i][1],0] = m+1
     
-    # Convert labels to one-hot encoded categorical arrays
-    y_train = keras.utils.to_categorical(train_targets)
-    y_val = keras.utils.to_categorical(val_targets)
+    # Re-organize labels -> targets
+    train_targets, val_targets = {}, {}
+    for i in range(train_labels.shape[-1]):
+        train_targets[f"outputs_{i+1}"] = np.expand_dims(train_labels[:,:,i], axis=-1)
+        val_targets[f"outputs_{i+1}"] = np.expand_dims(val_labels[:,:,i], axis=-1)
+    
+    # Hyperparameter tuning
+    tuner = tune(
+        train_data=train_data,
+        train_targets=train_targets,
+        validation_data=(val_data, val_targets)
+    )
+    
+    # Get hyperparameters
+    best_hps = tuner.get_best_hyperparameters()[0]
+    print(f"Found best model architecture")
+    print(f"    # filters: {2**best_hps.get('nb_filters'):d}")
+    print(f"    kernel size: {best_hps.get('kernel_size'):d}")
+    print(f"    padding: {best_hps.get('padding'):s}")
+    print(f"    dilations: {[2**i for i in range(best_hps.get('dilations'))]}")
     
     # Build model
-    tcn_model = get_base_model(train_data.shape[1:])
-    tcn_model.summary()
-
-    class_weights = compute_class_weight("balanced", classes=np.unique(train_targets), y=np.ravel(train_targets))
-    class_weights = dict(enumerate(class_weights))
-    print(f"Class weights: {class_weights}")
-
-    # Fit model
-    history = tcn_model.fit(
-        x=train_data,
-        y=y_train,
-        epochs=5,
-        batch_size=32,
-        validation_data=(val_data, y_val),
-        shuffle=True,
-        class_weight=class_weights
+    optim_model = tuner.hypermodel.build(best_hps)
+    
+    # Concatenate training and validation data
+    train_val_data = np.concatenate((train_data, val_data), axis=0)
+    train_val_targets = {}
+    for k, v in train_targets.items():
+        train_val_targets[k] = np.concatenate((train_targets[k], val_targets[k]), axis=0)
+    
+    # Fit optimized model to combined training and validation data
+    history = optim_model.fit(
+        x=train_val_data,
+        y=train_val_targets,
+        batch_size=64, 
+        epochs=EPOCHS,
+        shuffle=True
     )
     return
 
@@ -74,6 +108,23 @@ if __name__ == "__main__":
     TRACKED_POINTS = ["left_ankle", "right_ankle"]
     CLASSIFICATION_TASK = "events"
     WIN_LEN = 400
+    
+    # Hyperparameter tuning
+    EPOCHS = 20
+    MAX_TRIALS = 15
+    EXECUTIONS_PER_TRIAL = 3
+    OUTPUT_DIR = "/home/robr/Desktop/tuning"
+    
+    # Training callbacks
+    EARLY_STOPPING = keras.callbacks.EarlyStopping(
+        patience=5,
+        monitor="val_loss"
+    )
+    REDUCE_LR = keras.callbacks.ReduceLROnPlateau(
+        patience=5,
+        monitor="val_loss",
+        factor=0.1
+    )
     
     # Call main function
     main()
