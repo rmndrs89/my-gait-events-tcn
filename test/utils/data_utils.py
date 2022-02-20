@@ -2,6 +2,7 @@ import os
 from matplotlib.pyplot import plot
 import pandas as pd
 import numpy as np
+from .preprocessing import resamp1d
 from .plot_utils import plot_targets
 
 def load_file(filename, tracked_points=[], visualize=False):
@@ -22,6 +23,12 @@ def load_file(filename, tracked_points=[], visualize=False):
     # Get data from markers and inertial measurement units
     df_omc = pd.read_csv(filename.replace("_events.tsv", "_tracksys-omc_motion.tsv"), sep="\t", header=0)
     df_imu = pd.read_csv(filename.replace("_events.tsv", "_tracksys-imu_motion.tsv"), sep="\t", header=0)
+    df_imu_channels = pd.read_csv(filename.replace("_events.tsv", "_tracksys-imu_channels.tsv"), sep="\t", header=0)
+    if df_imu_channels["sampling_frequency"].iloc[0] != 200:
+        X = df_imu.to_numpy()
+        X = resamp1d(X, df_imu_channels["sampling_frequency"].iloc[0], 200)
+        df_imu = pd.DataFrame(data=X, columns=df_imu.columns)
+        del X
     
     # Get annotated events
     df_events = pd.read_csv(filename, sep="\t", header=0)
