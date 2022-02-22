@@ -1,10 +1,43 @@
-import enum
 import os
 from matplotlib.pyplot import plot
 import pandas as pd
 import numpy as np
 from .preprocessing import resamp1d, normalize_data
 from .plot_utils import plot_targets
+
+def split_ids(path, by=["gender", "participant_type"]):
+    # Loop over the subject ids for which there is a data folder
+    sub_ids = [sub_id for sub_id in os.listdir(path) if sub_id.startswith("sub-pp")]
+    keep_ids = []
+    for sub_id in sub_ids:
+        fnames = [fname for fname in os.listdir(os.path.join(path, sub_id, "motion")) if (fname.endswith("_events.tsv")) and ("_task-walk" in fname)]
+        if len(fnames) > 0:
+            keep_ids.append(sub_id)
+    
+    # Get dataframe with demographics of all subjects
+    df_subjects = pd.read_csv(os.path.join(path, "participants.tsv"), sep="\t", header=0)
+    
+    # Select only subjects with annotated gait events
+    df_select = df_subjects.loc[df_subjects["sub"].isin([sub_id[-5:] for sub_id in keep_ids])]
+    
+    # Group subjects by gender and participant type (i.e., disease or diagnosis)
+    train_ids, val_ids, test_ids = [], [], []
+    groups = df_select.groupby(by=by)
+    for grp, df_group in groups:
+        num_val_examples = len(df_group)//3
+        num_test_examples = len(df_group)//3
+        num_train_examples = len(df_group) - num_val_examples - num_test_examples
+        ix_random = np.arange(len(df_group))
+        np.random.shuffle(ix_random)
+        train_ids += df_group.iloc[ix_random[:num_train_examples]]["sub"].tolist()
+        test_ids += df_group.iloc[ix_random[num_train_examples:num_train_examples+num_test_examples]]["sub"].tolist()
+        val_ids += df_group.iloc[ix_random[num_train_examples+num_test_examples:]]["sub"].tolist()
+    
+    # Add prefix
+    train_ids = ["sub-"+train_id for train_id in train_ids]
+    val_ids = ["sub-"+val_id for val_id in val_ids]
+    test_ids = ["sub-"+test_id for test_id in test_ids]
+    return train_ids, val_ids, test_ids
 
 def load_file(filename, tracked_points=[], normalize=True, visualize=False):
     # Fixed params
@@ -76,7 +109,21 @@ def load_file(filename, tracked_points=[], normalize=True, visualize=False):
         targets[k] = targets[k][ix_start:ix_end]
     return data, targets
 
-def load_dataset(path, sub_ids=[], tracked_points=[], normalize=True):
+def split_left_right(data, targets):
+    # TODO: for now we assume we analysis left and right ankle
+    # Otherwise, this function does not work...
+    # Split data in halfs
+    data_L, data_R = data[:,:data.shape[-1]//2], data[:,data.shape[-1]//2:]
+    targets_L, targets_R = {}, {}
+    for k, vals in targets.items():
+        if "_left" in k:
+            targets_L[k.replace("_left", "")] = vals
+        elif "_right" in k:
+            targets_R[k.replace("_right", "")] = vals
+    
+    return [{"left_or_right": "left", "data": data_L, "targets": targets_L}, {"left_or_right": "right", "data": data_R, "targets": targets_R}]
+
+def load_dataset(path, sub_ids=[], tracked_points=[], normalize=True, split_lr=True):
     if len(tracked_points)<1:
         print(f"No tracked points were specified. Abort program.")
         return
@@ -103,7 +150,12 @@ def load_dataset(path, sub_ids=[], tracked_points=[], normalize=True):
             if res is not None:
                 # If response is not of NoneType
                 (data, targets) = res
-                
-                # Append to list
-                ds.append({"filename_prefix": filename_prefix, "data": data, "targets": targets})
+                if split_lr:
+                    ds_init = split_left_right(data, targets)
+                    for i in range(len(ds_init)):
+                        ds_init[i]["filename_prefix"] = filename_prefix
+                    ds += ds_init
+                else:
+                    # Append to list
+                    ds.append({"filename_prefix": filename_prefix, "data": data, "targets": targets})
     return ds

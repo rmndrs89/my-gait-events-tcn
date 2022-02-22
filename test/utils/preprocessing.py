@@ -84,10 +84,14 @@ def create_sequences(values, win_len, step_len):
     return output # np.stack(output)
 
 def create_batch_sequences(ds, win_len, step_len):
-    map_class_to_chan = {"initial_contact_left": 0, "final_contact_left": 1, "initial_contact_right": 2, "final_contact_right": 3}
+    if len(ds[0]["targets"].keys()) == 2:
+        map_class_to_chan = {"initial_contact": 0, "final_contact": 1}
+    else:
+        map_class_to_chan = {"initial_contact_left": 0, "final_contact_left": 1, "initial_contact_right": 2, "final_contact_right": 3}
     map_chan_to_class = {val: k for (k, val) in map_class_to_chan.items()}
 
-    # For bookkeeping
+    # For each example, keep track of the filename (and side) it was derived from
+    list_examples = []
     list_filenames, list_filenames_examples = [], []
 
     # Initialize list to store sequences
@@ -107,8 +111,17 @@ def create_batch_sequences(ds, win_len, step_len):
         sequences = create_sequences(XY, win_len=win_len, step_len=step_len)
 
         # Add to existing lists
-        list_filenames += [ds[d]["filename_prefix"] for _ in range(len(sequences))]
-        list_filenames_examples += [_ for _ in range(len(sequences))]
+        for s in range(len(sequences)):
+            list_examples.append(
+                {
+                    "filename_prefix": ds[d]["filename_prefix"],
+                    "ix_start": s * step_len
+                }
+            )
+            if "left_or_right" in ds[d].keys():
+                list_examples[-1]["left_or_right"] = ds[d]["left_or_right"]
+        # list_filenames += [ds[d]["filename_prefix"] for _ in range(len(sequences))]
+        # list_filenames_examples += [_ for _ in range(len(sequences))]
         list_data += sequences
     
     # Stack list of sequences in numpy array
@@ -120,4 +133,4 @@ def create_batch_sequences(ds, win_len, step_len):
     for i, k in enumerate(ds[0]["targets"].keys()):
         targets[map_chan_to_class[i]] = np.expand_dims(arr_data[:,:,-len(ds[0]["targets"].keys())+i], axis=-1)
 
-    return data, targets, list_filenames, list_filenames_examples
+    return data, targets, list_examples # list_filenames, list_filenames_examples
