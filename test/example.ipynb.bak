@@ -1,0 +1,474 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os, sys\n",
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import matplotlib as mpl\n",
+    "import matplotlib.pyplot as plt\n",
+    "from utils.data_utils import load_dataset ,load_file\n",
+    "from utils.plot_utils import plot_targets\n",
+    "from utils.preprocessing import create_batch_sequences, create_sequences\n",
+    "from scipy.signal import find_peaks"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "For each valid trial, the relevant data and information are saved in **five** different data files:\n",
+    "- sub-\\<label\\>_task-\\<label\\>[_run-\\<label\\>]_events.tsv\n",
+    "- sub-\\<label\\>_task-\\<label\\>[_run-\\<label\\>]_tracksys-imu_channels.tsv\n",
+    "- sub-\\<label\\>_task-\\<label\\>[_run-\\<label\\>]_tracksys-imu_motion.tsv\n",
+    "- sub-\\<label\\>_task-\\<label\\>[_run-\\<label\\>]_tracksys-omc_channels.tsv\n",
+    "- sub-\\<label\\>_task-\\<label\\>[_run-\\<label\\>]_tracksys-omc_motion.tsv\n",
+    "\n",
+    "As we only consinder **walk** trials, we can look for any **_events.tsv** file that contains **_task-walk** in the filename."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['sub-pp166', 'sub-pp167', 'sub-pp168', 'sub-pp169', 'sub-pp170']\n"
+     ]
+    }
+   ],
+   "source": [
+    "root_dir = \"/mnt/neurogeriatrics_data/Keep Control/Data/lab dataset/rawdata\" if sys.platform == \"linux\" else \"Z:\\\\Keep Control\\\\Data\\\\lab dataset\\\\rawdata\"\n",
+    "sub_ids = [sub_id for sub_id in os.listdir(root_dir) if sub_id.startswith(\"sub-pp\")]\n",
+    "print(sub_ids[-5:])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ds = load_dataset(root_dir, sub_ids=sub_ids[-5:], tracked_points=[\"left_ankle\", \"right_ankle\"], normalize=False)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data, targets, list_filemaes, list_filenames_examples = create_batch_sequences(ds, win_len=400, step_len=200)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Shape of data: (58, 400, 4)\n",
+      "Shape of initial_contact_left: (58, 400, 1)\n",
+      "Shape of final_contact_left: (58, 400, 1)\n",
+      "Shape of initial_contact_right: (58, 400, 1)\n",
+      "Shape of final_contact_right: (58, 400, 1)\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\"Shape of data: {data.shape}\")\n",
+    "for k in targets.keys():\n",
+    "    print(f\"Shape of {k}: {targets[k].shape}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(646, 18)\n"
+     ]
+    }
+   ],
+   "source": [
+    "data, targets = load_file(os.path.join(root_dir, \"sub-pp002\", \"motion\", \"sub-pp002_task-walkFast_events.tsv\"), tracked_points=[\"left_ankle\", \"right_ankle\"])\n",
+    "print(data.shape)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(13, 3)\n",
+      "(17, 3)\n",
+      "(12, 3)\n"
+     ]
+    }
+   ],
+   "source": [
+    "X = [np.random.normal(size=(np.random.randint(10, 20),3)) for _ in range(3)]\n",
+    "for x in X:\n",
+    "    print(x.shape)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from tensorflow import keras"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(3, 17, 3)\n"
+     ]
+    }
+   ],
+   "source": [
+    "arr = keras.preprocessing.sequence.pad_sequences(X)\n",
+    "print(arr.shape)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[ 0,  0,  0],\n",
+       "       [ 0,  0,  0],\n",
+       "       [ 0,  0,  0],\n",
+       "       [ 0,  0,  0],\n",
+       "       [-1,  2, -1],\n",
+       "       [ 0,  0,  0],\n",
+       "       [ 2,  0,  0],\n",
+       "       [ 0,  2, -1],\n",
+       "       [ 0, -1,  1],\n",
+       "       [-1,  0,  0],\n",
+       "       [ 0,  0,  1],\n",
+       "       [ 0,  0,  0],\n",
+       "       [-2,  0,  0],\n",
+       "       [-1,  0,  0],\n",
+       "       [ 0, -1, -1],\n",
+       "       [-1,  0,  0],\n",
+       "       [ 0,  0, -1]])"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "arr[0][:,:]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "for i in range(len(ds)):"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Cell execution completed. You can go home now.\n"
+     ]
+    }
+   ],
+   "source": [
+    "df_out_events = {\"sub_id\": [], \"filename\": [], \"event_type\": [], \"ix_ref\": []}\n",
+    "df_out_params = {\"sub_id\": [], \"filename\": [], \"side\": [], \"gait_phase\": [], \"ix_onset\": [], \"duration\": []}\n",
+    "\n",
+    "# Loop over the subject ids\n",
+    "for (i_sub_id, sub_id) in enumerate(sub_ids):\n",
+    "    # print(f\"{i_sub_id:>4d}: {sub_id:s}\")\n",
+    "    \n",
+    "    # Get a list of event filenames (for the walk* trials only)\n",
+    "    event_filenames = [fname for fname in os.listdir(os.path.join(root_dir, sub_id, \"motion\")) if (fname.endswith(\"_events.tsv\")) and (\"_task-walk\" in fname)]\n",
+    "    for (i_filename, filename) in enumerate(event_filenames):\n",
+    "        # print(f\"{i_filename:>10d}: {filename:s}\")\n",
+    "        \n",
+    "        # Load the annotated gait events\n",
+    "        df_events = pd.read_csv(os.path.join(root_dir, sub_id, \"motion\", filename), sep=\"\\t\", header=0)\n",
+    "        ix_start  = df_events[df_events[\"event_type\"]==\"start\"][\"onset\"].values[0]\n",
+    "        ix_end    = df_events[df_events[\"event_type\"]==\"stop\"][\"onset\"].values[0]\n",
+    "        \n",
+    "        # Load the opto-electronic stereophotogrammetry data\n",
+    "        # df_omc = pd.read_csv(os.path.join(root_dir, sub_id, \"motion\", filename.replace(\"_events.tsv\", \"_tracksys-omc_motion.tsv\")), sep=\"\\t\", header=0)\n",
+    "        \n",
+    "        # Load the inertial measurement unit data\n",
+    "        # df_imu = pd.read_csv(os.path.join(root_dir, sub_id, \"motion\", filename.replace(\"_events.tsv\", \"_tracksys-imu_motion.tsv\")), sep=\"\\t\", header=0)\n",
+    "        \n",
+    "        # Get data and targets\n",
+    "        data, targets = load_file(os.path.join(root_dir, sub_id, \"motion\", filename), tracked_points=[\"left_ankle\", \"right_ankle\"], visualize=False)\n",
+    "        \n",
+    "        # ---------- Identify initial and final contacts ----------\n",
+    "        indx_ICL, _ = find_peaks(targets[\"initial_contact_left\"][:,0], height=0.5, distance=50)\n",
+    "        indx_FCL, _ = find_peaks(targets[\"final_contact_left\"][:,0], height=0.5, distance=50)\n",
+    "        indx_ICR, _ = find_peaks(targets[\"initial_contact_right\"][:,0], height=0.5, distance=50)\n",
+    "        indx_FCR, _ = find_peaks(targets[\"final_contact_right\"][:,0], height=0.5, distance=50)\n",
+    "        \n",
+    "        # Add to output dictionary\n",
+    "        df_out_events[\"sub_id\"] += [sub_id for _ in range(len(indx_ICL)+len(indx_FCL)+len(indx_ICR)+len(indx_FCR))]\n",
+    "        df_out_events[\"filename\"] += [filename for _ in range(len(indx_ICL)+len(indx_FCL)+len(indx_ICR)+len(indx_FCR))]\n",
+    "        df_out_events[\"event_type\"] += [\"ICL\" for _ in range(len(indx_ICL))]\n",
+    "        df_out_events[\"event_type\"] += [\"FCL\" for _ in range(len(indx_FCL))]\n",
+    "        df_out_events[\"event_type\"] += [\"ICR\" for _ in range(len(indx_ICR))]\n",
+    "        df_out_events[\"event_type\"] += [\"FCR\" for _ in range(len(indx_FCR))]\n",
+    "        df_out_events[\"ix_ref\"] += indx_ICL.tolist()\n",
+    "        df_out_events[\"ix_ref\"] += indx_FCL.tolist()\n",
+    "        df_out_events[\"ix_ref\"] += indx_ICR.tolist()\n",
+    "        df_out_events[\"ix_ref\"] += indx_FCR.tolist()\n",
+    "        \n",
+    "        # Extract left swings\n",
+    "        # print(f\"{'Num of left swings:':>20s} {len(indx_ICL)-1:>2d}\")\n",
+    "        for i in range(len(indx_ICL)-1):\n",
+    "            # print(f\"{i+1:>4d} {'stride':>8s}: {indx_ICL[i]:>4d} - {indx_ICL[i+1]:>4d}: {indx_ICL[i+1]-indx_ICL[i]:>4d} ({(indx_ICL[i+1]-indx_ICL[i])/200:>.2f})\")\n",
+    "            j = np.argwhere((indx_FCL > indx_ICL[i]) & (indx_FCL < indx_ICL[i+1]))[:,0]\n",
+    "            if(len(j)>1):\n",
+    "                print(f\"More than 1 final contact detected! Check the data file!\")\n",
+    "            elif(len(j)<1):\n",
+    "                print(f\"No final contact was detected. Check the data file!\")\n",
+    "            else:\n",
+    "                # print(f\"{4*' ':s} {'stance':>8s}: {indx_ICL[i]:>4d} - {indx_FCL[j[0]]:>4d}: {indx_FCL[j[0]]-indx_ICL[i]:>4d} ({(indx_FCL[j[0]]-indx_ICL[i])/200:>.2f})\")\n",
+    "                # print(f\"{4*' ':s} {'swing':>8s}: {indx_FCL[j[0]]:>4d} - {indx_ICL[i+1]:>4d}: {indx_ICL[i+1]-indx_FCL[j[0]]:>4d} ({(indx_ICL[i+1]-indx_FCL[j[0]])/200:>.2f})\")\n",
+    "                df_out_params[\"sub_id\"] += [sub_id for _ in range(3)]\n",
+    "                df_out_params[\"filename\"] += [filename for _ in range(3)]\n",
+    "                df_out_params[\"side\"] += [\"left\" for _ in range(3)]\n",
+    "                df_out_params[\"gait_phase\"] += [\"stride\", \"stance\", \"swing\"]\n",
+    "                df_out_params[\"ix_onset\"] += [indx_ICL[i], indx_ICL[i], indx_FCL[j[0]]]\n",
+    "                df_out_params[\"duration\"] += [indx_ICL[i+1]-indx_ICL[i], indx_FCL[j[0]]-indx_ICL[i], indx_ICL[i+1]-indx_FCL[j[0]]]\n",
+    "            \n",
+    "            \n",
+    "        # Extract right swings\n",
+    "        # print(f\"{'Num of right swings:':>20s} {len(indx_ICR)-1:>2d}\")\n",
+    "        for i in range(len(indx_ICR)-1):\n",
+    "            # print(f\"{i+1:>4d} {'stride':>8s}: {indx_ICR[i]:>4d} - {indx_ICR[i+1]:>4d}: {indx_ICR[i+1]-indx_ICR[i]:>4d} ({(indx_ICR[i+1]-indx_ICR[i])/200:>.2f})\")\n",
+    "            j = np.argwhere((indx_FCR > indx_ICR[i]) & (indx_FCR < indx_ICR[i+1]))[:,0]\n",
+    "            if(len(j)>1):\n",
+    "                print(f\"More than 1 final contact detected! Check the data file!\")\n",
+    "            elif(len(j)<1):\n",
+    "                print(f\"No final contact was detected. Check the data file!\")\n",
+    "            else:\n",
+    "                # print(f\"{4*' ':s} {'stance':>8s}: {indx_ICR[i]:>4d} - {indx_FCR[j[0]]:>4d}: {indx_FCR[j[0]]-indx_ICR[i]:>4d} ({(indx_FCR[j[0]]-indx_ICR[i])/200:>.2f})\")\n",
+    "                # print(f\"{4*' ':s} {'swing':>8s}: {indx_FCR[j[0]]:>4d} - {indx_ICR[i+1]:>4d}: {indx_ICR[i+1]-indx_FCR[j[0]]:>4d} ({(indx_ICR[i+1]-indx_FCR[j[0]])/200:>.2f})\")\n",
+    "                df_out_params[\"sub_id\"] += [sub_id for _ in range(3)]\n",
+    "                df_out_params[\"filename\"] += [filename for _ in range(3)]\n",
+    "                df_out_params[\"side\"] += [\"right\" for _ in range(3)]\n",
+    "                df_out_params[\"gait_phase\"] += [\"stride\", \"stance\", \"swing\"]\n",
+    "                df_out_params[\"ix_onset\"] += [indx_ICR[i], indx_ICR[i], indx_FCR[j[0]]]\n",
+    "                df_out_params[\"duration\"] += [indx_ICR[i+1]-indx_ICR[i], indx_FCR[j[0]]-indx_ICR[i], indx_ICR[i+1]-indx_FCR[j[0]]]\n",
+    "print(\"Cell execution completed. You can go home now.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>sub_id</th>\n",
+       "      <th>filename</th>\n",
+       "      <th>side</th>\n",
+       "      <th>gait_phase</th>\n",
+       "      <th>ix_onset</th>\n",
+       "      <th>duration</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>11383</th>\n",
+       "      <td>sub-pp170</td>\n",
+       "      <td>sub-pp170_task-walkSlow_events.tsv</td>\n",
+       "      <td>right</td>\n",
+       "      <td>stance</td>\n",
+       "      <td>966</td>\n",
+       "      <td>183</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>11384</th>\n",
+       "      <td>sub-pp170</td>\n",
+       "      <td>sub-pp170_task-walkSlow_events.tsv</td>\n",
+       "      <td>right</td>\n",
+       "      <td>swing</td>\n",
+       "      <td>1149</td>\n",
+       "      <td>85</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>11385</th>\n",
+       "      <td>sub-pp170</td>\n",
+       "      <td>sub-pp170_task-walkSlow_events.tsv</td>\n",
+       "      <td>right</td>\n",
+       "      <td>stride</td>\n",
+       "      <td>1234</td>\n",
+       "      <td>284</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>11386</th>\n",
+       "      <td>sub-pp170</td>\n",
+       "      <td>sub-pp170_task-walkSlow_events.tsv</td>\n",
+       "      <td>right</td>\n",
+       "      <td>stance</td>\n",
+       "      <td>1234</td>\n",
+       "      <td>183</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>11387</th>\n",
+       "      <td>sub-pp170</td>\n",
+       "      <td>sub-pp170_task-walkSlow_events.tsv</td>\n",
+       "      <td>right</td>\n",
+       "      <td>swing</td>\n",
+       "      <td>1417</td>\n",
+       "      <td>101</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "          sub_id                            filename   side gait_phase  \\\n",
+       "11383  sub-pp170  sub-pp170_task-walkSlow_events.tsv  right     stance   \n",
+       "11384  sub-pp170  sub-pp170_task-walkSlow_events.tsv  right      swing   \n",
+       "11385  sub-pp170  sub-pp170_task-walkSlow_events.tsv  right     stride   \n",
+       "11386  sub-pp170  sub-pp170_task-walkSlow_events.tsv  right     stance   \n",
+       "11387  sub-pp170  sub-pp170_task-walkSlow_events.tsv  right      swing   \n",
+       "\n",
+       "       ix_onset  duration  \n",
+       "11383       966       183  \n",
+       "11384      1149        85  \n",
+       "11385      1234       284  \n",
+       "11386      1234       183  \n",
+       "11387      1417       101  "
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "pd.DataFrame(df_out_params).tail()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "pd.DataFrame(df_out_params).to_csv(\"D:\\\\Desktop\\\\df_out_params.tsv\", sep=\"\\t\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "As per definition the gait cycle start with an initial contact and ends with the next initial contact of the same foot."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "interpreter": {
+   "hash": "a46f08e0b385f7b7576e4c544817319d1da98fa53d1492e7fa77b67b75acd524"
+  },
+  "kernelspec": {
+   "display_name": "Python 3.8.10 ('venv': venv)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.12"
+  },
+  "orig_nbformat": 4
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
