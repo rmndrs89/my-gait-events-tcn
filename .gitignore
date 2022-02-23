@@ -2,3 +2,4 @@ venv/
 code/__pycache__/
 datasets/__pycache__/
 utils/__pycache__/
+test/results.zip
