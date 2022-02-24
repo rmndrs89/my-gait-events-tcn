@@ -1,5 +1,4 @@
 venv/
-code/__pycache__/
-datasets/__pycache__/
+__pycache__/
 utils/__pycache__/
-test/results.zip
+models/__pycache__/
