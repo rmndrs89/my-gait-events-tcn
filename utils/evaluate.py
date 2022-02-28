@@ -1,6 +1,6 @@
 import numpy as np
 
-def compare_events(annotated, predicted, thr=50):
+def compare_events(annotated, predicted, thr=50, filename_prefix=None):
     """
     Compares the timings of the annotated (true) events and the predicted events.
     Parameters
@@ -18,7 +18,10 @@ def compare_events(annotated, predicted, thr=50):
         print("No gait events annotated, no gait events detected!")
         return np.array([]), np.array([]), np.array([])
     if len(annotated)!=0 and len(predicted)==0:
-        print(f"{len(annotated)} gait events annotated, but none were detected")
+        if filename_prefix is not None:
+            print(f"{len(annotated)} gait events annotated, but none were detected. Check `{filename_prefix:s}`")
+        else:
+            print(f"{len(annotated)} gait events annotated, but none were detected.")
         return np.array([-999 for _ in range(len(annotated))]), np.array([]), np.array([-999 for _ in range(len(annotated))])
     if len(annotated)==0 and len(predicted)!=0:
         print(f"No gait events annotated, but {len(predicted)} events were detected.")
