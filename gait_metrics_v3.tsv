@@ -1,0 +1,1407 @@
+	sub_id	gender	age	participant_type	task	run	tracked_point	ix_ref	ix_pred	stride_time_ref	stride_time_pred	stance_time_ref	stance_time_pred	swing_time_ref	swing_time_pred
+0	pp061	M	24	YA	Slow		right_ankle	174.0	179.0	1.55	1.52	0.98	1.005	0.57	0.515
+1	pp061	M	24	YA	Slow		right_ankle	484.0	483.0	1.495	1.5	0.975	0.99	0.52	0.51
+2	pp061	M	24	YA	Slow		right_ankle	783.0	783.0	1.515	1.515	0.995	1.01	0.52	0.505
+3	pp061	M	24	YA	Slow		right_ankle	1086.0	1086.0	1.65	1.635	1.045	1.03	0.605	0.605
+4	pp061	M	24	YA	Slow		left_shank	12.0	12.0	1.6	1.585	1.055	1.06	0.545	0.525
+5	pp061	M	24	YA	Slow		left_shank	332.0	329.0	1.515	1.51	0.99	0.99	0.525	0.52
+6	pp061	M	24	YA	Slow		left_shank	635.0	631.0	1.495	1.5	0.94	0.955	0.555	0.545
+7	pp061	M	24	YA	Slow		left_shank	934.0	931.0	1.54	1.54	0.99	1.005	0.55	0.535
+8	pp061	M	24	YA	Fast		left_ankle	37.0	39.0	0.99	0.99	0.595	0.585	0.395	0.405
+9	pp061	M	24	YA	Fast		left_ankle	235.0	237.0	1.0	1.0	0.61	0.585	0.39	0.415
+10	pp061	M	24	YA	Fast		right_ankle	135.0	136.0	1.005	1.0	0.6	0.59	0.405	0.41
+11	pp061	M	24	YA	Fast		right_ankle	336.0	336.0	1.01	1.01	0.595	0.6	0.415	0.41
+12	pp061	M	24	YA	Fast		left_shank	37.0	36.0	0.99	1.0	0.595	0.605	0.395	0.395
+13	pp061	M	24	YA	Fast		left_shank	235.0	236.0	1.0	0.995	0.61	0.605	0.39	0.39
+14	pp061	M	24	YA	Fast		right_shank	135.0	136.0	1.005	1.005	0.6	0.61	0.405	0.395
+15	pp061	M	24	YA	Fast		right_shank	336.0	337.0	1.01	1.015	0.595	0.605	0.415	0.41
+16	pp061	M	24	YA	Preferred		left_ankle	34.0	35.0	1.065	1.07	0.66	0.665	0.405	0.405
+17	pp061	M	24	YA	Preferred		left_ankle	247.0	249.0	1.08	1.085	0.685	0.66	0.395	0.425
+18	pp061	M	24	YA	Preferred		left_ankle	463.0	466.0	1.085	1.09	0.68	0.665	0.405	0.425
+19	pp061	M	24	YA	Preferred		right_ankle	133.0	141.0	1.095	1.08	0.705	0.68	0.39	0.4
+20	pp061	M	24	YA	Preferred		right_ankle	352.0	357.0	1.075	1.085	0.72	0.7	0.355	0.385
+21	pp061	M	24	YA	Preferred		right_ankle	567.0	574.0	1.145	1.125	0.715	0.685	0.43	0.44
+22	pp061	M	24	YA	Preferred		left_shank	34.0	34.0	1.065	1.065	0.66	0.67	0.405	0.395
+23	pp061	M	24	YA	Preferred		left_shank	247.0	247.0	1.08	1.095	0.685	0.695	0.395	0.4
+24	pp061	M	24	YA	Preferred		left_shank	463.0	466.0	1.085	1.08	0.68	0.675	0.405	0.405
+25	pp061	M	24	YA	Preferred		right_shank	133.0	137.0	1.095	1.115	0.705	0.695	0.39	0.42
+26	pp061	M	24	YA	Preferred		right_shank	352.0	360.0	1.075	1.095	0.72	0.68	0.355	0.415
+27	pp061	M	24	YA	Preferred		right_shank	567.0	579.0	1.145	1.085	0.715	0.66	0.43	0.425
+28	pp003	M	32	YA	Fast		left_ankle	159.0	156.0	1.035	1.035	0.6	0.615	0.435	0.42
+29	pp003	M	32	YA	Fast		right_ankle	52.0	50.0	1.05	1.045	0.62	0.64	0.43	0.405
+30	pp003	M	32	YA	Fast		right_ankle	262.0	259.0	1.07	1.08	0.61	0.63	0.46	0.45
+31	pp003	M	32	YA	Fast		left_shank	159.0	157.0	1.035	1.035	0.6	0.635	0.435	0.4
+32	pp003	M	32	YA	Fast		right_shank	52.0	50.0	1.05	1.05	0.62	0.65	0.43	0.4
+33	pp003	M	32	YA	Fast		right_shank	262.0	260.0	1.07	1.07	0.61	0.645	0.46	0.425
+34	pp003	M	32	YA	Preferred		left_ankle	180.0	177.0	1.23	1.23	0.765	0.755	0.465	0.475
+35	pp003	M	32	YA	Preferred		left_ankle	426.0	423.0	1.195	1.2	0.745	0.74	0.45	0.46
+36	pp003	M	32	YA	Preferred		right_ankle	52.0	50.0	1.255	1.27	0.795	0.805	0.46	0.465
+37	pp003	M	32	YA	Preferred		right_ankle	303.0	304.0	1.215	1.205	0.765	0.775	0.45	0.43
+38	pp003	M	32	YA	Preferred		right_ankle	546.0	545.0	1.205	1.2	0.74	0.75	0.465	0.45
+39	pp003	M	32	YA	Preferred		left_shank	180.0	179.0	1.23	1.23	0.765	0.79	0.465	0.44
+40	pp003	M	32	YA	Preferred		left_shank	426.0	425.0	1.195	1.2	0.745	0.79	0.45	0.41
+41	pp003	M	32	YA	Preferred		right_shank	52.0	50.0	1.255	1.255	0.795	0.81	0.46	0.445
+42	pp003	M	32	YA	Preferred		right_shank	303.0	301.0	1.215	1.21	0.765	0.78	0.45	0.43
+43	pp003	M	32	YA	Preferred		right_shank	546.0	543.0	1.205	1.195	0.74	0.77	0.465	0.425
+44	pp003	M	32	YA	Slow		left_ankle	211.0	206.0	1.865	1.87	1.21	1.22	0.655	0.65
+45	pp003	M	32	YA	Slow		left_ankle	584.0	580.0	1.905	1.9	1.32	1.325	0.585	0.575
+46	pp003	M	32	YA	Slow		left_ankle	965.0	960.0	1.91	1.915	1.245	1.255	0.665	0.66
+47	pp003	M	32	YA	Slow		left_ankle	1347.0	1343.0	1.79	1.795	1.235	1.24	0.555	0.555
+48	pp003	M	32	YA	Slow		left_ankle	1705.0	1702.0	1.89	1.89	1.335	1.345	0.555	0.545
+49	pp003	M	32	YA	Slow		right_ankle	35.0	35.0	1.72	1.71	1.2	1.205	0.52	0.505
+50	pp003	M	32	YA	Slow		right_ankle	379.0	377.0	1.96	1.96	1.4	1.415	0.56	0.545
+51	pp003	M	32	YA	Slow		right_ankle	771.0	769.0	1.885	1.89	1.35	1.365	0.535	0.525
+52	pp003	M	32	YA	Slow		right_ankle	1148.0	1147.0	1.88	1.875	1.345	1.355	0.535	0.52
+53	pp003	M	32	YA	Slow		right_ankle	1524.0	1522.0	1.875	1.905	1.215	1.23	0.66	0.675
+54	pp003	M	32	YA	Slow		right_ankle	1899.0	1903.0	1.95	1.945	1.295	1.29	0.655	0.655
+55	pp003	M	32	YA	Slow		right_shank	35.0	32.0	1.72	1.72	1.2	1.22	0.52	0.5
+56	pp003	M	32	YA	Slow		right_shank	379.0	376.0	1.96	1.96	1.4	1.395	0.56	0.565
+57	pp003	M	32	YA	Slow		right_shank	771.0	768.0	1.885	1.89	1.35	1.355	0.535	0.535
+58	pp003	M	32	YA	Slow		right_shank	1148.0	1146.0	1.88	1.875	1.345	1.35	0.535	0.525
+59	pp003	M	32	YA	Slow		right_shank	1524.0	1521.0	1.875	1.87	1.215	1.26	0.66	0.61
+60	pp003	M	32	YA	Slow		right_shank	1899.0	1895.0	1.95	1.955	1.295	1.345	0.655	0.61
+61	pp048	M	67	cLBP	Slow		right_shank	167.0	169.0	1.17	1.21	0.73	0.69	0.44	0.52
+62	pp048	M	67	cLBP	Slow		right_shank	401.0	411.0	1.24	1.19	0.785	0.685	0.455	0.505
+63	pp048	M	67	cLBP	Slow		right_shank	649.0	649.0	1.275	1.29	0.81	0.76	0.465	0.53
+64	pp048	M	67	cLBP	Slow		right_shank	904.0	907.0	1.49	1.46	0.9	0.84	0.59	0.62
+65	pp048	M	67	cLBP	Slow		left_ankle	31.0	29.0	1.235	1.25	0.865	0.88	0.37	0.37
+66	pp048	M	67	cLBP	Slow		left_ankle	278.0	279.0	1.205	1.2	0.825	0.83	0.38	0.37
+67	pp048	M	67	cLBP	Slow		left_ankle	519.0	519.0	1.26	1.26	0.85	0.85	0.41	0.41
+68	pp048	M	67	cLBP	Slow		left_ankle	771.0	771.0	1.32	1.325	0.905	0.91	0.415	0.415
+69	pp048	M	67	cLBP	Slow		left_shank	31.0	30.0	1.235	1.205	0.865	0.86	0.37	0.345
+70	pp048	M	67	cLBP	Slow		left_shank	278.0	271.0	1.205	1.26	0.825	0.845	0.38	0.415
+71	pp048	M	67	cLBP	Slow		left_shank	519.0	523.0	1.26	1.255	0.85	0.815	0.41	0.44
+72	pp048	M	67	cLBP	Slow		left_shank	771.0	774.0	1.32	1.305	0.905	0.88	0.415	0.425
+73	pp048	M	67	cLBP	Fast		left_ankle	25.0	23.0	1.08	1.095	0.7	0.7	0.38	0.395
+74	pp048	M	67	cLBP	Fast		left_ankle	241.0	242.0	1.03	1.025	0.66	0.65	0.37	0.375
+75	pp048	M	67	cLBP	Fast		left_ankle	447.0	447.0	1.175	1.175	0.725	0.72	0.45	0.455
+76	pp048	M	67	cLBP	Preferred		left_ankle	40.0	40.0	1.16	1.155	0.755	0.75	0.405	0.405
+77	pp048	M	67	cLBP	Preferred		left_ankle	272.0	271.0	1.18	1.18	0.77	0.77	0.41	0.41
+78	pp048	M	67	cLBP	Preferred		left_ankle	508.0	507.0	1.2	1.205	0.8	0.805	0.4	0.4
+79	pp048	M	67	cLBP	Preferred		left_ankle	748.0	748.0	1.275	1.26	0.845	0.845	0.43	0.415
+80	pp048	M	67	cLBP	Preferred		right_ankle	153.0	160.0	1.17	1.15	0.765	0.735	0.405	0.415
+81	pp048	M	67	cLBP	Preferred		right_ankle	387.0	390.0	1.205	1.195	0.775	0.75	0.43	0.445
+82	pp048	M	67	cLBP	Preferred		right_ankle	628.0	629.0	1.225	1.285	0.79	0.775	0.435	0.51
+83	pp048	M	67	cLBP	Preferred		left_shank	40.0	38.0	1.16	1.18	0.755	0.75	0.405	0.43
+84	pp048	M	67	cLBP	Preferred		left_shank	272.0	274.0	1.18	1.18	0.77	0.75	0.41	0.43
+85	pp048	M	67	cLBP	Preferred		left_shank	508.0	510.0	1.2	1.2	0.8	0.785	0.4	0.415
+86	pp048	M	67	cLBP	Preferred		left_shank	748.0	750.0	1.275	1.255	0.845	0.82	0.43	0.435
+87	pp012	M	76	other	Fast		right_ankle	138.0	131.0	1.075	1.1	0.66	0.695	0.415	0.405
+88	pp012	M	76	other	Fast		right_ankle	353.0	351.0	1.015	0.995	0.625	0.635	0.39	0.36
+89	pp012	M	76	other	Fast		right_ankle	556.0	550.0	1.04	1.055	0.655	0.69	0.385	0.365
+90	pp012	M	76	other	Fast		right_ankle	764.0	761.0	1.23	1.225	0.625	0.66	0.605	0.565
+91	pp012	M	76	other	Fast		right_shank	138.0	135.0	1.075	1.09	0.66	0.675	0.415	0.415
+92	pp012	M	76	other	Fast		right_shank	353.0	353.0	1.015	1.0	0.625	0.63	0.39	0.37
+93	pp012	M	76	other	Fast		right_shank	556.0	553.0	1.04	1.05	0.655	0.665	0.385	0.385
+94	pp012	M	76	other	Fast		right_shank	764.0	763.0	1.23	1.215	0.625	0.655	0.605	0.56
+95	pp012	M	76	other	Preferred		right_ankle	144.0	141.0	1.2	1.205	0.75	0.76	0.45	0.445
+96	pp012	M	76	other	Preferred		right_ankle	384.0	382.0	1.19	1.185	0.795	0.815	0.395	0.37
+97	pp012	M	76	other	Preferred		right_ankle	622.0	619.0	1.14	1.1	0.74	0.76	0.4	0.34
+98	pp012	M	76	other	Preferred		right_ankle	850.0	839.0	1.19	1.245	0.77	0.82	0.42	0.425
+99	pp012	M	76	other	Preferred		right_ankle	1088.0	1088.0	1.195	1.14	0.77	0.785	0.425	0.355
+100	pp012	M	76	other	Preferred		right_shank	144.0	145.0	1.2	1.18	0.75	0.73	0.45	0.45
+101	pp012	M	76	other	Preferred		right_shank	384.0	381.0	1.19	1.205	0.795	0.805	0.395	0.4
+102	pp012	M	76	other	Preferred		right_shank	622.0	622.0	1.14	1.105	0.74	0.745	0.4	0.36
+103	pp012	M	76	other	Preferred		right_shank	850.0	843.0	1.19	1.23	0.77	0.795	0.42	0.435
+104	pp012	M	76	other	Preferred		right_shank	1088.0	1089.0	1.195	1.18	0.77	0.78	0.425	0.4
+105	pp012	M	76	other	Slow		left_ankle	18.0	14.0	1.18	1.18	0.8	0.845	0.38	0.335
+106	pp012	M	76	other	Slow		left_ankle	254.0	250.0	1.14	1.18	0.815	0.86	0.325	0.32
+107	pp012	M	76	other	Slow		left_ankle	482.0	486.0	1.145	1.14	0.87	0.865	0.275	0.275
+108	pp012	M	76	other	Slow		left_ankle	711.0	714.0	1.165	1.155	0.835	0.825	0.33	0.33
+109	pp012	M	76	other	Slow		left_ankle	944.0	945.0	1.095	1.105	0.745	0.75	0.35	0.355
+110	pp012	M	76	other	Slow		left_ankle	1163.0	1166.0	1.115	1.125	0.83	0.825	0.285	0.3
+111	pp012	M	76	other	Slow		left_ankle	1386.0	1391.0	1.065	1.05	0.75	0.74	0.315	0.31
+112	pp012	M	76	other	Slow		left_ankle	1599.0	1601.0	1.075	1.105	0.81	0.815	0.265	0.29
+113	pp012	M	76	other	Slow		left_ankle	1814.0	1822.0	1.075	1.1	0.805	0.78	0.27	0.32
+114	pp012	M	76	other	Slow		left_ankle	2029.0	2042.0	1.155	1.1	0.865	0.82	0.29	0.28
+115	pp012	M	76	other	Slow		left_shank	18.0	14.0	1.18	1.175	0.8	0.845	0.38	0.33
+116	pp012	M	76	other	Slow		left_shank	254.0	249.0	1.14	1.175	0.815	0.865	0.325	0.31
+117	pp012	M	76	other	Slow		left_shank	482.0	484.0	1.145	1.13	0.87	0.86	0.275	0.27
+118	pp012	M	76	other	Slow		left_shank	711.0	710.0	1.165	1.17	0.835	0.85	0.33	0.32
+119	pp012	M	76	other	Slow		left_shank	944.0	944.0	1.095	1.12	0.745	0.755	0.35	0.365
+120	pp012	M	76	other	Slow		left_shank	1163.0	1168.0	1.115	1.1	0.83	0.84	0.285	0.26
+121	pp012	M	76	other	Slow		left_shank	1386.0	1388.0	1.065	1.065	0.75	0.755	0.315	0.31
+122	pp012	M	76	other	Slow		left_shank	1599.0	1601.0	1.075	1.105	0.81	0.8	0.265	0.305
+123	pp012	M	76	other	Slow		left_shank	1814.0	1822.0	1.075	1.085	0.805	0.775	0.27	0.31
+124	pp012	M	76	other	Slow		left_shank	2029.0	2039.0	1.155	1.09	0.865	0.83	0.29	0.26
+125	pp040	F	24	YA	Preferred		left_ankle	28.0	27.0	1.07	1.08	0.67	0.665	0.4	0.415
+126	pp040	F	24	YA	Preferred		left_ankle	242.0	243.0	1.075	1.065	0.67	0.675	0.405	0.39
+127	pp040	F	24	YA	Preferred		left_ankle	457.0	456.0	1.08	1.09	0.68	0.715	0.4	0.375
+128	pp040	F	24	YA	Preferred		left_ankle	673.0	674.0	1.145	1.115	0.715	0.725	0.43	0.39
+129	pp040	F	24	YA	Preferred		right_ankle	132.0	132.0	1.08	1.08	0.705	0.715	0.375	0.365
+130	pp040	F	24	YA	Preferred		right_ankle	348.0	348.0	1.07	1.07	0.695	0.715	0.375	0.355
+131	pp040	F	24	YA	Preferred		right_ankle	562.0	562.0	1.095	1.09	0.725	0.74	0.37	0.35
+132	pp040	F	24	YA	Preferred		left_shank	28.0	24.0	1.07	1.1	0.67	0.7	0.4	0.4
+133	pp040	F	24	YA	Preferred		left_shank	242.0	244.0	1.075	1.06	0.67	0.67	0.405	0.39
+134	pp040	F	24	YA	Preferred		left_shank	457.0	456.0	1.08	1.08	0.68	0.695	0.4	0.385
+135	pp040	F	24	YA	Preferred		left_shank	673.0	672.0	1.145	1.13	0.715	0.73	0.43	0.4
+136	pp040	F	24	YA	Preferred		right_shank	132.0	133.0	1.08	1.09	0.705	0.71	0.375	0.38
+137	pp040	F	24	YA	Preferred		right_shank	348.0	351.0	1.07	1.08	0.695	0.685	0.375	0.395
+138	pp040	F	24	YA	Preferred		right_shank	562.0	567.0	1.095	1.075	0.725	0.705	0.37	0.37
+139	pp013	F	30	YA	Fast		left_ankle	23.0	24.0	0.855	0.86	0.53	0.515	0.325	0.345
+140	pp013	F	30	YA	Fast		left_ankle	194.0	196.0	0.835	0.83	0.51	0.495	0.325	0.335
+141	pp013	F	30	YA	Fast		left_ankle	361.0	362.0	0.83	0.825	0.495	0.48	0.335	0.345
+142	pp013	F	30	YA	Fast		right_ankle	110.0	107.0	0.845	0.855	0.525	0.54	0.32	0.315
+143	pp013	F	30	YA	Fast		right_ankle	279.0	278.0	0.815	0.81	0.495	0.5	0.32	0.31
+144	pp013	F	30	YA	Fast		left_shank	23.0	23.0	0.855	0.86	0.53	0.515	0.325	0.345
+145	pp013	F	30	YA	Fast		left_shank	194.0	195.0	0.835	0.84	0.51	0.5	0.325	0.34
+146	pp013	F	30	YA	Fast		left_shank	361.0	363.0	0.83	0.815	0.495	0.47	0.335	0.345
+147	pp013	F	30	YA	Preferred		left_ankle	20.0	23.0	1.12	1.115	0.715	0.705	0.405	0.41
+148	pp013	F	30	YA	Preferred		left_ankle	244.0	246.0	1.115	1.105	0.705	0.7	0.41	0.405
+149	pp013	F	30	YA	Preferred		left_ankle	467.0	467.0	1.085	1.1	0.7	0.695	0.385	0.405
+150	pp013	F	30	YA	Preferred		left_ankle	684.0	687.0	1.125	1.11	0.72	0.705	0.405	0.405
+151	pp013	F	30	YA	Preferred		right_ankle	132.0	133.0	1.12	1.11	0.7	0.7	0.42	0.41
+152	pp013	F	30	YA	Preferred		right_ankle	356.0	355.0	1.09	1.1	0.72	0.725	0.37	0.375
+153	pp013	F	30	YA	Preferred		right_ankle	574.0	575.0	1.11	1.105	0.715	0.705	0.395	0.4
+154	pp013	F	30	YA	Preferred		left_shank	20.0	23.0	1.12	1.11	0.715	0.685	0.405	0.425
+155	pp013	F	30	YA	Preferred		left_shank	244.0	245.0	1.115	1.12	0.705	0.69	0.41	0.43
+156	pp013	F	30	YA	Preferred		left_shank	467.0	469.0	1.085	1.085	0.7	0.68	0.385	0.405
+157	pp013	F	30	YA	Preferred		left_shank	684.0	686.0	1.125	1.13	0.72	0.69	0.405	0.44
+158	pp013	F	30	YA	Slow		left_ankle	108.0	111.0	1.29	1.285	0.94	0.86	0.35	0.425
+159	pp013	F	30	YA	Slow		left_ankle	366.0	368.0	1.33	1.335	0.885	0.875	0.445	0.46
+160	pp013	F	30	YA	Slow		left_ankle	632.0	635.0	1.31	1.32	0.91	0.875	0.4	0.445
+161	pp013	F	30	YA	Slow		left_ankle	894.0	899.0	1.28	1.275	0.915	0.88	0.365	0.395
+162	pp013	F	30	YA	Slow		left_ankle	1150.0	1154.0	1.38	1.38	1.005	0.985	0.375	0.395
+163	pp013	F	30	YA	Slow		right_ankle	237.0	239.0	1.29	1.285	0.905	0.89	0.385	0.395
+164	pp013	F	30	YA	Slow		right_ankle	495.0	496.0	1.32	1.315	0.945	0.945	0.375	0.37
+165	pp013	F	30	YA	Slow		right_ankle	759.0	759.0	1.305	1.32	0.935	0.94	0.37	0.38
+166	pp013	F	30	YA	Slow		right_ankle	1020.0	1023.0	1.36	1.355	0.965	0.96	0.395	0.395
+167	pp013	F	30	YA	Slow		right_ankle	1292.0	1294.0	1.41	1.385	0.965	0.96	0.445	0.425
+168	pp013	F	30	YA	Slow		left_shank	108.0	114.0	1.29	1.285	0.94	0.885	0.35	0.4
+169	pp013	F	30	YA	Slow		left_shank	366.0	371.0	1.33	1.325	0.885	0.875	0.445	0.45
+170	pp013	F	30	YA	Slow		left_shank	632.0	636.0	1.31	1.315	0.91	0.915	0.4	0.4
+171	pp013	F	30	YA	Slow		left_shank	894.0	899.0	1.28	1.285	0.915	0.92	0.365	0.365
+172	pp013	F	30	YA	Slow		left_shank	1150.0	1156.0	1.38	1.385	1.005	0.965	0.375	0.42
+173	pp045	F	24	YA	Fast		right_ankle	169.0	167.0	0.705	0.71	0.4	0.41	0.305	0.3
+174	pp045	F	24	YA	Fast		right_ankle	310.0	309.0	0.715	0.74	0.39	0.41	0.325	0.33
+175	pp045	F	24	YA	Slow		left_ankle	167.0	169.0	1.5	1.49	1.045	1.04	0.455	0.45
+176	pp045	F	24	YA	Slow		left_ankle	467.0	467.0	1.495	1.485	1.065	1.065	0.43	0.42
+177	pp045	F	24	YA	Slow		left_ankle	766.0	764.0	1.465	1.475	1.02	1.03	0.445	0.445
+178	pp045	F	24	YA	Slow		left_ankle	1059.0	1059.0	1.45	1.465	1.035	1.025	0.415	0.44
+179	pp045	F	24	YA	Slow		right_ankle	17.0	15.0	1.49	1.52	1.08	1.09	0.41	0.43
+180	pp045	F	24	YA	Slow		right_ankle	315.0	319.0	1.54	1.52	1.07	1.065	0.47	0.455
+181	pp045	F	24	YA	Slow		right_ankle	623.0	623.0	1.445	1.435	1.02	1.035	0.425	0.4
+182	pp045	F	24	YA	Slow		right_ankle	912.0	910.0	1.485	1.495	1.015	1.04	0.47	0.455
+183	pp045	F	24	YA	Slow		right_ankle	1209.0	1209.0	1.46	1.47	1.055	1.075	0.405	0.395
+184	pp045	F	24	YA	Preferred		left_ankle	134.0	135.0	1.07	1.075	0.69	0.675	0.38	0.4
+185	pp045	F	24	YA	Preferred		left_ankle	348.0	350.0	1.07	1.065	0.685	0.68	0.385	0.385
+186	pp045	F	24	YA	Preferred		left_ankle	562.0	563.0	1.085	1.085	0.695	0.69	0.39	0.395
+187	pp045	F	24	YA	Preferred		left_shank	134.0	137.0	1.07	1.075	0.69	0.705	0.38	0.37
+188	pp045	F	24	YA	Preferred		left_shank	348.0	352.0	1.07	1.065	0.685	0.69	0.385	0.375
+189	pp045	F	24	YA	Preferred		left_shank	562.0	565.0	1.085	1.09	0.695	0.7	0.39	0.39
+190	pp045	F	24	YA	Preferred		right_shank	20.0	24.0	1.115	1.1	0.705	0.68	0.41	0.42
+191	pp045	F	24	YA	Preferred		right_shank	243.0	244.0	1.07	1.075	0.675	0.67	0.395	0.405
+192	pp045	F	24	YA	Preferred		right_shank	457.0	459.0	1.06	1.07	0.67	0.66	0.39	0.41
+193	pp066	F	34	YA	Fast		right_ankle	22.0	17.0	0.96	0.99	0.57	0.63	0.39	0.36
+194	pp066	F	34	YA	Fast		right_ankle	214.0	215.0	0.87	0.88	0.485	0.5	0.385	0.38
+195	pp066	F	34	YA	Fast		right_ankle	388.0	391.0	0.93	0.925	0.54	0.53	0.39	0.395
+196	pp066	F	34	YA	Fast		left_shank	125.0	128.0	0.855	0.845	0.505	0.5	0.35	0.345
+197	pp066	F	34	YA	Fast		left_shank	296.0	297.0	0.895	0.9	0.535	0.55	0.36	0.35
+198	pp066	F	34	YA	Fast		right_shank	22.0	21.0	0.96	0.965	0.57	0.59	0.39	0.375
+199	pp066	F	34	YA	Fast		right_shank	214.0	214.0	0.87	0.86	0.485	0.49	0.385	0.37
+200	pp066	F	34	YA	Fast		right_shank	388.0	386.0	0.93	0.94	0.54	0.545	0.39	0.395
+201	pp066	F	34	YA	Preferred		right_ankle	237.0	241.0	1.055	1.04	0.65	0.635	0.405	0.405
+202	pp066	F	34	YA	Preferred		right_ankle	448.0	449.0	1.035	1.035	0.635	0.635	0.4	0.4
+203	pp066	F	34	YA	Preferred		left_shank	126.0	123.0	1.085	1.11	0.685	0.705	0.4	0.405
+204	pp066	F	34	YA	Preferred		left_shank	343.0	345.0	1.03	1.045	0.64	0.64	0.39	0.405
+205	pp066	F	34	YA	Preferred		left_shank	549.0	554.0	1.065	1.055	0.665	0.645	0.4	0.41
+206	pp014	F	29	YA	Fast		left_ankle	126.0	124.0	0.845	0.855	0.495	0.51	0.35	0.345
+207	pp014	F	29	YA	Fast		left_ankle	295.0	295.0	0.855	0.865	0.48	0.49	0.375	0.375
+208	pp014	F	29	YA	Fast		right_ankle	23.0	23.0	0.96	0.96	0.59	0.605	0.37	0.355
+209	pp014	F	29	YA	Fast		right_ankle	215.0	215.0	0.83	0.815	0.47	0.505	0.36	0.31
+210	pp014	F	29	YA	Fast		left_shank	126.0	131.0	0.845	0.825	0.495	0.48	0.35	0.345
+211	pp014	F	29	YA	Fast		left_shank	295.0	296.0	0.855	0.84	0.48	0.49	0.375	0.35
+212	pp014	F	29	YA	Preferred		left_ankle	155.0	155.0	1.015	1.025	0.63	0.63	0.385	0.395
+213	pp014	F	29	YA	Preferred		left_ankle	358.0	360.0	1.01	1.01	0.63	0.625	0.38	0.385
+214	pp014	F	29	YA	Preferred		left_shank	155.0	159.0	1.015	1.015	0.63	0.61	0.385	0.405
+215	pp014	F	29	YA	Preferred		left_shank	358.0	362.0	1.01	1.015	0.63	0.61	0.38	0.405
+216	pp014	F	29	YA	Slow		left_ankle	32.0	31.0	1.525	1.525	1.02	1.03	0.505	0.495
+217	pp014	F	29	YA	Slow		left_ankle	337.0	336.0	1.44	1.45	0.96	0.965	0.48	0.485
+218	pp014	F	29	YA	Slow		left_ankle	625.0	626.0	1.41	1.405	0.935	0.925	0.475	0.48
+219	pp014	F	29	YA	Slow		left_ankle	907.0	907.0	1.37	1.37	0.91	0.91	0.46	0.46
+220	pp014	F	29	YA	Slow		right_ankle	188.0	189.0	1.46	1.46	1.0	1.01	0.46	0.45
+221	pp014	F	29	YA	Slow		right_ankle	480.0	481.0	1.45	1.45	0.945	0.96	0.505	0.49
+222	pp014	F	29	YA	Slow		right_ankle	770.0	771.0	1.375	1.385	0.895	0.895	0.48	0.49
+223	pp014	F	29	YA	Slow		right_ankle	1045.0	1048.0	1.39	1.38	0.89	0.89	0.5	0.49
+224	pp014	F	29	YA	Slow		right_shank	188.0	192.0	1.46	1.44	1.0	0.985	0.46	0.455
+225	pp014	F	29	YA	Slow		right_shank	480.0	480.0	1.45	1.45	0.945	0.96	0.505	0.49
+226	pp014	F	29	YA	Slow		right_shank	770.0	770.0	1.375	1.39	0.895	0.91	0.48	0.48
+227	pp014	F	29	YA	Slow		right_shank	1045.0	1048.0	1.39	1.375	0.89	0.885	0.5	0.49
+228	pp069	M	44	PD	Fast	off	left_ankle	142.0	141.0	0.98	0.98	0.58	0.595	0.4	0.385
+229	pp069	M	44	PD	Fast	off	left_ankle	338.0	337.0	0.995	0.995	0.605	0.595	0.39	0.4
+230	pp069	M	44	PD	Fast	off	left_shank	142.0	141.0	0.98	0.99	0.58	0.595	0.4	0.395
+231	pp069	M	44	PD	Fast	off	left_shank	338.0	339.0	0.995	0.995	0.605	0.605	0.39	0.39
+232	pp069	M	44	PD	Preferred	off	left_ankle	35.0	36.0	1.12	1.125	0.705	0.695	0.415	0.43
+233	pp069	M	44	PD	Preferred	off	left_ankle	259.0	261.0	1.06	1.045	0.65	0.63	0.41	0.415
+234	pp069	M	44	PD	Preferred	off	left_ankle	471.0	470.0	1.07	1.09	0.66	0.66	0.41	0.43
+235	pp069	M	44	PD	Preferred	off	right_ankle	151.0	148.0	1.075	1.075	0.675	0.7	0.4	0.375
+236	pp069	M	44	PD	Preferred	off	right_ankle	366.0	363.0	1.06	1.085	0.665	0.69	0.395	0.395
+237	pp069	M	44	PD	Preferred	off	right_ankle	578.0	580.0	1.15	1.135	0.7	0.685	0.45	0.45
+238	pp069	M	44	PD	Preferred	off	left_shank	35.0	36.0	1.12	1.135	0.705	0.71	0.415	0.425
+239	pp069	M	44	PD	Preferred	off	left_shank	259.0	263.0	1.06	1.05	0.65	0.635	0.41	0.415
+240	pp069	M	44	PD	Preferred	off	left_shank	471.0	473.0	1.07	1.075	0.66	0.66	0.41	0.415
+241	pp069	M	44	PD	Preferred	off	right_shank	151.0	154.0	1.075	1.065	0.675	0.665	0.4	0.4
+242	pp069	M	44	PD	Preferred	off	right_shank	366.0	367.0	1.06	1.065	0.665	0.66	0.395	0.405
+243	pp069	M	44	PD	Preferred	off	right_shank	578.0	580.0	1.15	1.15	0.7	0.7	0.45	0.45
+244	pp022	M	52	PD	Fast	off	left_ankle	43.0	40.0	1.05	1.055	0.645	0.655	0.405	0.4
+245	pp022	M	52	PD	Fast	off	left_ankle	253.0	251.0	1.005	1.015	0.6	0.625	0.405	0.39
+246	pp022	M	52	PD	Fast	off	left_ankle	454.0	454.0	1.06	1.05	0.655	0.665	0.405	0.385
+247	pp022	M	52	PD	Fast	off	right_shank	147.0	148.0	1.025	1.025	0.63	0.6	0.395	0.425
+248	pp022	M	52	PD	Fast	off	right_shank	352.0	353.0	1.04	1.05	0.635	0.645	0.405	0.405
+249	pp022	M	52	PD	Fast	on	left_ankle	139.0	134.0	1.03	1.045	0.605	0.645	0.425	0.4
+250	pp022	M	52	PD	Fast	on	left_ankle	345.0	343.0	1.06	1.05	0.635	0.65	0.425	0.4
+251	pp022	M	52	PD	Fast	on	right_ankle	30.0	28.0	1.06	1.05	0.635	0.665	0.425	0.385
+252	pp022	M	52	PD	Fast	on	right_ankle	242.0	238.0	1.03	1.04	0.605	0.615	0.425	0.425
+253	pp022	M	52	PD	Fast	on	right_ankle	448.0	446.0	1.115	1.115	0.65	0.65	0.465	0.465
+254	pp022	M	52	PD	Fast	on	left_shank	139.0	137.0	1.03	1.035	0.605	0.63	0.425	0.405
+255	pp022	M	52	PD	Fast	on	left_shank	345.0	344.0	1.06	1.055	0.635	0.645	0.425	0.41
+256	pp022	M	52	PD	Fast	on	right_shank	30.0	27.0	1.06	1.07	0.635	0.66	0.425	0.41
+257	pp022	M	52	PD	Fast	on	right_shank	242.0	241.0	1.03	1.035	0.605	0.61	0.425	0.425
+258	pp022	M	52	PD	Fast	on	right_shank	448.0	448.0	1.115	1.105	0.65	0.665	0.465	0.44
+259	pp022	M	52	PD	Preferred	off	left_ankle	48.0	46.0	1.205	1.215	0.765	0.785	0.44	0.43
+260	pp022	M	52	PD	Preferred	off	left_ankle	289.0	289.0	1.13	1.13	0.695	0.71	0.435	0.42
+261	pp022	M	52	PD	Preferred	off	left_ankle	515.0	515.0	1.165	1.155	0.73	0.74	0.435	0.415
+262	pp022	M	52	PD	Preferred	off	right_ankle	166.0	168.0	1.165	1.16	0.74	0.74	0.425	0.42
+263	pp022	M	52	PD	Preferred	off	right_ankle	399.0	400.0	1.14	1.155	0.735	0.74	0.405	0.415
+264	pp022	M	52	PD	Preferred	off	left_shank	48.0	47.0	1.205	1.215	0.765	0.785	0.44	0.43
+265	pp022	M	52	PD	Preferred	off	left_shank	289.0	290.0	1.13	1.145	0.695	0.705	0.435	0.44
+266	pp022	M	52	PD	Preferred	off	left_shank	515.0	519.0	1.165	1.14	0.73	0.69	0.435	0.45
+267	pp022	M	52	PD	Preferred	off	right_shank	166.0	165.0	1.165	1.2	0.74	0.715	0.425	0.485
+268	pp022	M	52	PD	Preferred	off	right_shank	399.0	405.0	1.14	1.14	0.735	0.675	0.405	0.465
+269	pp022	M	52	PD	Preferred	on	right_shank	37.0	33.0	1.305	1.32	0.86	0.885	0.445	0.435
+270	pp022	M	52	PD	Preferred	on	right_shank	298.0	297.0	1.16	1.17	0.71	0.725	0.45	0.445
+271	pp022	M	52	PD	Preferred	on	right_shank	530.0	531.0	1.185	1.18	0.735	0.735	0.45	0.445
+272	pp022	M	52	PD	Slow	on	right_ankle	54.0	53.0	1.39	1.395	0.925	0.93	0.465	0.465
+273	pp022	M	52	PD	Slow	on	right_ankle	332.0	332.0	1.325	1.32	0.835	0.845	0.49	0.475
+274	pp022	M	52	PD	Slow	on	right_ankle	597.0	596.0	1.305	1.3	0.815	0.83	0.49	0.47
+275	pp022	M	52	PD	Slow	on	right_ankle	858.0	856.0	1.44	1.425	0.855	0.87	0.585	0.555
+276	pp022	M	52	PD	Slow	on	right_shank	54.0	52.0	1.39	1.405	0.925	0.92	0.465	0.485
+277	pp022	M	52	PD	Slow	on	right_shank	332.0	333.0	1.325	1.32	0.835	0.835	0.49	0.485
+278	pp022	M	52	PD	Slow	on	right_shank	597.0	597.0	1.305	1.295	0.815	0.81	0.49	0.485
+279	pp022	M	52	PD	Slow	on	right_shank	858.0	856.0	1.44	1.445	0.855	0.865	0.585	0.58
+280	pp112	M	80	stroke	Preferred		right_ankle	151.0	154.0	1.145	1.155	0.73	0.72	0.415	0.435
+281	pp112	M	80	stroke	Preferred		right_ankle	380.0	385.0	1.14	1.115	0.73	0.705	0.41	0.41
+282	pp112	M	80	stroke	Preferred		right_ankle	608.0	608.0	1.13	1.135	0.735	0.735	0.395	0.4
+283	pp112	M	80	stroke	Preferred		right_ankle	834.0	835.0	1.135	1.155	0.725	0.71	0.41	0.445
+284	pp112	M	80	stroke	Preferred		left_shank	12.0	8.0	1.27	1.285	0.875	0.885	0.395	0.4
+285	pp112	M	80	stroke	Preferred		left_shank	266.0	265.0	1.15	1.145	0.74	0.735	0.41	0.41
+286	pp112	M	80	stroke	Preferred		left_shank	496.0	494.0	1.13	1.13	0.735	0.735	0.395	0.395
+287	pp112	M	80	stroke	Preferred		left_shank	722.0	720.0	1.115	1.095	0.74	0.74	0.375	0.355
+288	pp112	M	80	stroke	Preferred		left_shank	945.0	939.0	1.23	1.185	0.78	0.8	0.45	0.385
+289	pp112	M	80	stroke	Preferred		right_shank	151.0	148.0	1.145	1.16	0.73	0.76	0.415	0.4
+290	pp112	M	80	stroke	Preferred		right_shank	380.0	380.0	1.14	1.145	0.73	0.74	0.41	0.405
+291	pp112	M	80	stroke	Preferred		right_shank	608.0	609.0	1.13	1.13	0.735	0.735	0.395	0.395
+292	pp112	M	80	stroke	Preferred		right_shank	834.0	835.0	1.135	1.125	0.725	0.73	0.41	0.395
+293	pp025	M	49	stroke	Fast		left_ankle	100.0	99.0	0.775	0.775	0.44	0.45	0.335	0.325
+294	pp025	M	49	stroke	Fast		left_ankle	255.0	254.0	0.79	0.785	0.455	0.46	0.335	0.325
+295	pp025	M	49	stroke	Fast		right_ankle	23.0	21.0	0.77	0.765	0.455	0.46	0.315	0.305
+296	pp025	M	49	stroke	Fast		right_ankle	177.0	174.0	0.79	0.79	0.465	0.475	0.325	0.315
+297	pp025	M	49	stroke	Fast		right_ankle	335.0	332.0	0.82	0.83	0.47	0.485	0.35	0.345
+298	pp025	M	49	stroke	Fast		left_shank	100.0	98.0	0.775	0.785	0.44	0.445	0.335	0.34
+299	pp025	M	49	stroke	Fast		left_shank	255.0	255.0	0.79	0.795	0.455	0.445	0.335	0.35
+300	pp025	M	49	stroke	Fast		right_shank	23.0	22.0	0.77	0.765	0.455	0.455	0.315	0.31
+301	pp025	M	49	stroke	Fast		right_shank	177.0	175.0	0.79	0.795	0.465	0.47	0.325	0.325
+302	pp025	M	49	stroke	Fast		right_shank	335.0	334.0	0.82	0.815	0.47	0.46	0.35	0.355
+303	pp025	M	49	stroke	Preferred		left_ankle	130.0	129.0	1.12	1.12	0.715	0.705	0.405	0.415
+304	pp025	M	49	stroke	Preferred		left_ankle	354.0	353.0	1.16	1.165	0.725	0.725	0.435	0.44
+305	pp025	M	49	stroke	Preferred		left_ankle	586.0	586.0	1.115	1.12	0.72	0.715	0.395	0.405
+306	pp025	M	49	stroke	Preferred		right_ankle	14.0	13.0	1.15	1.15	0.735	0.73	0.415	0.42
+307	pp025	M	49	stroke	Preferred		right_ankle	244.0	243.0	1.13	1.13	0.705	0.73	0.425	0.4
+308	pp025	M	49	stroke	Preferred		right_ankle	470.0	469.0	1.155	1.155	0.735	0.725	0.42	0.43
+309	pp025	M	49	stroke	Preferred		right_ankle	701.0	700.0	1.145	1.145	0.72	0.72	0.425	0.425
+310	pp025	M	49	stroke	Preferred		left_shank	130.0	128.0	1.12	1.135	0.715	0.73	0.405	0.405
+311	pp025	M	49	stroke	Preferred		left_shank	354.0	355.0	1.16	1.15	0.725	0.73	0.435	0.42
+312	pp025	M	49	stroke	Preferred		left_shank	586.0	585.0	1.115	1.12	0.72	0.73	0.395	0.39
+313	pp025	M	49	stroke	Preferred		right_shank	14.0	14.0	1.15	1.15	0.735	0.745	0.415	0.405
+314	pp025	M	49	stroke	Preferred		right_shank	244.0	244.0	1.13	1.13	0.705	0.72	0.425	0.41
+315	pp025	M	49	stroke	Preferred		right_shank	470.0	470.0	1.155	1.155	0.735	0.74	0.42	0.415
+316	pp025	M	49	stroke	Preferred		right_shank	701.0	701.0	1.145	1.145	0.72	0.73	0.425	0.415
+317	pp025	M	49	stroke	Slow		left_ankle	201.0	202.0	1.86	1.85	1.245	1.225	0.615	0.625
+318	pp025	M	49	stroke	Slow		left_ankle	573.0	572.0	1.84	1.845	1.245	1.245	0.595	0.6
+319	pp025	M	49	stroke	Slow		left_ankle	941.0	941.0	1.9	1.9	1.39	1.38	0.51	0.52
+320	pp025	M	49	stroke	Slow		left_ankle	1321.0	1321.0	1.8	1.8	1.35	1.34	0.45	0.46
+321	pp025	M	49	stroke	Slow		left_ankle	1681.0	1681.0	1.885	1.87	1.295	1.28	0.59	0.59
+322	pp025	M	49	stroke	Slow		left_ankle	2058.0	2055.0	1.83	1.84	1.265	1.27	0.565	0.57
+323	pp025	M	49	stroke	Slow		left_ankle	2424.0	2423.0	1.85	1.84	1.385	1.38	0.465	0.46
+324	pp025	M	49	stroke	Slow		right_shank	35.0	35.0	1.74	1.74	1.205	1.215	0.535	0.525
+325	pp025	M	49	stroke	Slow		right_shank	383.0	383.0	1.855	1.84	1.34	1.355	0.515	0.485
+326	pp025	M	49	stroke	Slow		right_shank	754.0	751.0	1.925	1.93	1.405	1.42	0.52	0.51
+327	pp025	M	49	stroke	Slow		right_shank	1139.0	1137.0	1.885	1.89	1.365	1.375	0.52	0.515
+328	pp025	M	49	stroke	Slow		right_shank	1516.0	1515.0	1.75	1.76	1.24	1.245	0.51	0.515
+329	pp025	M	49	stroke	Slow		right_shank	1866.0	1867.0	1.89	1.88	1.37	1.37	0.52	0.51
+330	pp025	M	49	stroke	Slow		right_shank	2244.0	2243.0	1.895	1.915	1.355	1.365	0.54	0.55
+331	pp025	M	49	stroke	Slow		right_shank	2623.0	2626.0	1.81	1.785	1.315	1.3	0.495	0.485
+332	pp079	M	81	OA	Slow		right_shank	172.0	180.0	1.235	1.275	0.78	0.79	0.455	0.485
+333	pp079	M	81	OA	Slow		right_shank	419.0	435.0	1.295	1.3	0.86	0.82	0.435	0.48
+334	pp079	M	81	OA	Slow		right_shank	678.0	695.0	1.325	1.325	0.88	0.845	0.445	0.48
+335	pp079	M	81	OA	Slow		left_ankle	40.0	50.0	1.295	1.28	0.795	0.81	0.5	0.47
+336	pp079	M	81	OA	Slow		left_ankle	299.0	306.0	1.3	1.305	0.775	0.805	0.525	0.5
+337	pp079	M	81	OA	Slow		left_ankle	559.0	567.0	1.225	1.285	0.79	0.815	0.435	0.47
+338	pp079	M	81	OA	Slow		left_ankle	804.0	824.0	1.49	1.4	0.925	0.875	0.565	0.525
+339	pp079	M	81	OA	Slow		right_ankle	172.0	180.0	1.235	1.275	0.78	0.785	0.455	0.49
+340	pp079	M	81	OA	Slow		right_ankle	419.0	435.0	1.295	1.29	0.86	0.82	0.435	0.47
+341	pp079	M	81	OA	Slow		right_ankle	678.0	693.0	1.325	1.345	0.88	0.85	0.445	0.495
+342	pp079	M	81	OA	Slow		left_shank	40.0	46.0	1.295	1.31	0.795	0.825	0.5	0.485
+343	pp079	M	81	OA	Slow		left_shank	299.0	308.0	1.3	1.29	0.775	0.79	0.525	0.5
+344	pp079	M	81	OA	Slow		left_shank	559.0	566.0	1.225	1.3	0.79	0.815	0.435	0.485
+345	pp079	M	81	OA	Slow		left_shank	804.0	826.0	1.49	1.4	0.925	0.87	0.565	0.53
+346	pp079	M	81	OA	Fast		left_ankle	21.0	21.0	1.01	1.01	0.585	0.605	0.425	0.405
+347	pp079	M	81	OA	Fast		left_ankle	223.0	223.0	0.975	0.965	0.56	0.58	0.415	0.385
+348	pp079	M	81	OA	Fast		left_ankle	418.0	416.0	1.07	1.075	0.585	0.615	0.485	0.46
+349	pp079	M	81	OA	Fast		right_ankle	124.0	123.0	0.98	0.97	0.58	0.59	0.4	0.38
+350	pp079	M	81	OA	Fast		right_ankle	320.0	317.0	0.985	1.005	0.59	0.6	0.395	0.405
+351	pp079	M	81	OA	Fast		left_shank	21.0	25.0	1.01	1.0	0.585	0.585	0.425	0.415
+352	pp079	M	81	OA	Fast		left_shank	223.0	225.0	0.975	0.975	0.56	0.57	0.415	0.405
+353	pp079	M	81	OA	Fast		left_shank	418.0	420.0	1.07	1.06	0.585	0.595	0.485	0.465
+354	pp079	M	81	OA	Fast		right_shank	124.0	125.0	0.98	0.985	0.58	0.585	0.4	0.4
+355	pp079	M	81	OA	Fast		right_shank	320.0	322.0	0.985	0.97	0.59	0.595	0.395	0.375
+356	pp079	M	81	OA	Preferred		left_ankle	43.0	43.0	1.135	1.135	0.68	0.7	0.455	0.435
+357	pp079	M	81	OA	Preferred		left_ankle	270.0	270.0	1.12	1.115	0.67	0.69	0.45	0.425
+358	pp079	M	81	OA	Preferred		left_ankle	494.0	493.0	1.19	1.175	0.705	0.72	0.485	0.455
+359	pp079	M	81	OA	Preferred		right_ankle	151.0	157.0	1.13	1.125	0.72	0.68	0.41	0.445
+360	pp079	M	81	OA	Preferred		right_ankle	377.0	382.0	1.13	1.135	0.72	0.7	0.41	0.435
+361	pp079	M	81	OA	Preferred		right_shank	151.0	157.0	1.13	1.12	0.72	0.695	0.41	0.425
+362	pp079	M	81	OA	Preferred		right_shank	377.0	381.0	1.13	1.14	0.72	0.705	0.41	0.435
+363	pp028	M	73	OA	Preferred		left_ankle	142.0	143.0	1.075	1.07	0.67	0.68	0.405	0.39
+364	pp028	M	73	OA	Preferred		left_ankle	357.0	357.0	1.065	1.065	0.665	0.685	0.4	0.38
+365	pp028	M	73	OA	Preferred		left_ankle	570.0	570.0	1.165	1.17	0.7	0.7	0.465	0.47
+366	pp028	M	73	OA	Preferred		right_ankle	31.0	31.0	1.09	1.095	0.7	0.71	0.39	0.385
+367	pp028	M	73	OA	Preferred		right_ankle	249.0	250.0	1.07	1.07	0.68	0.68	0.39	0.39
+368	pp028	M	73	OA	Preferred		right_ankle	463.0	464.0	1.085	1.075	0.675	0.67	0.41	0.405
+369	pp028	M	73	OA	Preferred		left_shank	142.0	143.0	1.075	1.075	0.67	0.68	0.405	0.395
+370	pp028	M	73	OA	Preferred		left_shank	357.0	358.0	1.065	1.07	0.665	0.675	0.4	0.395
+371	pp028	M	73	OA	Preferred		left_shank	570.0	572.0	1.165	1.145	0.7	0.705	0.465	0.44
+372	pp028	M	73	OA	Preferred		right_shank	31.0	30.0	1.09	1.095	0.7	0.715	0.39	0.38
+373	pp028	M	73	OA	Preferred		right_shank	249.0	249.0	1.07	1.075	0.68	0.675	0.39	0.4
+374	pp028	M	73	OA	Preferred		right_shank	463.0	464.0	1.085	1.085	0.675	0.66	0.41	0.425
+375	pp028	M	73	OA	Slow		left_ankle	56.0	56.0	1.36	1.355	0.87	0.875	0.49	0.48
+376	pp028	M	73	OA	Slow		left_ankle	328.0	327.0	1.36	1.365	0.845	0.84	0.515	0.525
+377	pp028	M	73	OA	Slow		left_ankle	600.0	600.0	1.315	1.325	0.835	0.825	0.48	0.5
+378	pp028	M	73	OA	Slow		left_ankle	863.0	865.0	1.48	1.5	0.935	0.92	0.545	0.58
+379	pp028	M	73	OA	Slow		right_ankle	190.0	190.0	1.355	1.35	0.865	0.89	0.49	0.46
+380	pp028	M	73	OA	Slow		right_ankle	461.0	460.0	1.325	1.335	0.88	0.905	0.445	0.43
+381	pp028	M	73	OA	Slow		right_ankle	726.0	727.0	1.41	1.4	0.905	0.92	0.505	0.48
+382	pp028	M	73	OA	Slow		left_shank	56.0	55.0	1.36	1.36	0.87	0.89	0.49	0.47
+383	pp028	M	73	OA	Slow		left_shank	328.0	327.0	1.36	1.365	0.845	0.865	0.515	0.5
+384	pp028	M	73	OA	Slow		left_shank	600.0	600.0	1.315	1.305	0.835	0.845	0.48	0.46
+385	pp028	M	73	OA	Slow		left_shank	863.0	861.0	1.48	1.525	0.935	0.96	0.545	0.565
+386	pp028	M	73	OA	Slow		right_shank	190.0	191.0	1.355	1.34	0.865	0.86	0.49	0.48
+387	pp028	M	73	OA	Slow		right_shank	461.0	459.0	1.325	1.33	0.88	0.88	0.445	0.45
+388	pp028	M	73	OA	Slow		right_shank	726.0	725.0	1.41	1.415	0.905	0.905	0.505	0.51
+389	pp123	F	74	stroke	Slow		left_ankle	200.0	198.0	1.455	1.465	0.98	0.99	0.475	0.475
+390	pp123	F	74	stroke	Slow		left_ankle	491.0	491.0	1.42	1.42	0.965	0.96	0.455	0.46
+391	pp123	F	74	stroke	Slow		left_ankle	775.0	775.0	1.485	1.495	1.035	1.03	0.45	0.465
+392	pp123	F	74	stroke	Slow		left_ankle	1072.0	1074.0	1.5	1.49	1.025	1.01	0.475	0.48
+393	pp123	F	74	stroke	Slow		right_ankle	31.0	33.0	1.5	1.515	1.045	1.04	0.455	0.475
+394	pp123	F	74	stroke	Slow		right_ankle	331.0	336.0	1.485	1.475	1.0	0.98	0.485	0.495
+395	pp123	F	74	stroke	Slow		right_ankle	628.0	631.0	1.43	1.47	0.98	0.97	0.45	0.5
+396	pp123	F	74	stroke	Slow		right_ankle	914.0	925.0	1.47	1.43	1.035	0.985	0.435	0.445
+397	pp123	F	74	stroke	Slow		right_ankle	1208.0	1211.0	1.515	1.51	1.08	1.065	0.435	0.445
+398	pp123	F	74	stroke	Slow		left_shank	200.0	200.0	1.455	1.455	0.98	0.99	0.475	0.465
+399	pp123	F	74	stroke	Slow		left_shank	491.0	491.0	1.42	1.425	0.965	0.965	0.455	0.46
+400	pp123	F	74	stroke	Slow		left_shank	775.0	776.0	1.485	1.49	1.035	1.04	0.45	0.45
+401	pp123	F	74	stroke	Slow		left_shank	1072.0	1074.0	1.5	1.49	1.025	1.02	0.475	0.47
+402	pp123	F	74	stroke	Fast		left_ankle	133.0	134.0	0.935	0.95	0.6	0.6	0.335	0.35
+403	pp123	F	74	stroke	Fast		left_ankle	320.0	324.0	0.955	0.955	0.605	0.6	0.35	0.355
+404	pp123	F	74	stroke	Fast		left_ankle	511.0	515.0	0.985	0.98	0.625	0.615	0.36	0.365
+405	pp123	F	74	stroke	Fast		right_ankle	19.0	22.0	1.03	1.025	0.67	0.66	0.36	0.365
+406	pp123	F	74	stroke	Fast		right_ankle	225.0	227.0	0.94	0.95	0.585	0.59	0.355	0.36
+407	pp123	F	74	stroke	Fast		right_ankle	413.0	417.0	0.95	0.955	0.61	0.595	0.34	0.36
+408	pp123	F	74	stroke	Fast		right_ankle	603.0	608.0	1.03	1.035	0.67	0.645	0.36	0.39
+409	pp123	F	74	stroke	Fast		left_shank	133.0	135.0	0.935	0.95	0.6	0.605	0.335	0.345
+410	pp123	F	74	stroke	Fast		left_shank	320.0	325.0	0.955	0.95	0.605	0.6	0.35	0.35
+411	pp123	F	74	stroke	Fast		left_shank	511.0	515.0	0.985	0.98	0.625	0.63	0.36	0.35
+412	pp123	F	74	stroke	Preferred		left_ankle	127.0	129.0	1.04	1.045	0.675	0.675	0.365	0.37
+413	pp123	F	74	stroke	Preferred		left_ankle	335.0	338.0	1.04	1.035	0.665	0.655	0.375	0.38
+414	pp123	F	74	stroke	Preferred		left_ankle	543.0	545.0	1.08	1.08	0.695	0.7	0.385	0.38
+415	pp123	F	74	stroke	Preferred		left_ankle	759.0	761.0	1.18	1.205	0.795	0.79	0.385	0.415
+416	pp123	F	74	stroke	Preferred		left_shank	127.0	130.0	1.04	1.04	0.675	0.675	0.365	0.365
+417	pp123	F	74	stroke	Preferred		left_shank	335.0	338.0	1.04	1.04	0.665	0.665	0.375	0.375
+418	pp123	F	74	stroke	Preferred		left_shank	543.0	546.0	1.08	1.085	0.695	0.695	0.385	0.39
+419	pp123	F	74	stroke	Preferred		left_shank	759.0	763.0	1.18	1.225	0.795	0.79	0.385	0.435
+420	pp029	M	66	MS	Fast		left_ankle	40.0	40.0	1.175	1.195	0.76	0.75	0.415	0.445
+421	pp029	M	66	MS	Fast		left_ankle	275.0	279.0	1.14	1.145	0.72	0.69	0.42	0.455
+422	pp029	M	66	MS	Fast		left_ankle	503.0	508.0	1.16	1.145	0.78	0.745	0.38	0.4
+423	pp029	M	66	MS	Fast		right_ankle	161.0	160.0	1.135	1.135	0.69	0.71	0.445	0.425
+424	pp029	M	66	MS	Fast		right_ankle	388.0	387.0	1.17	1.17	0.705	0.72	0.465	0.45
+425	pp029	M	66	MS	Fast		right_ankle	622.0	621.0	1.145	1.155	0.715	0.735	0.43	0.42
+426	pp029	M	66	MS	Fast		left_shank	40.0	40.0	1.175	1.18	0.76	0.77	0.415	0.41
+427	pp029	M	66	MS	Fast		left_shank	275.0	276.0	1.14	1.14	0.72	0.735	0.42	0.405
+428	pp029	M	66	MS	Fast		left_shank	503.0	504.0	1.16	1.165	0.78	0.785	0.38	0.38
+429	pp029	M	66	MS	Fast		right_shank	161.0	159.0	1.135	1.14	0.69	0.7	0.445	0.44
+430	pp029	M	66	MS	Fast		right_shank	388.0	387.0	1.17	1.175	0.705	0.71	0.465	0.465
+431	pp029	M	66	MS	Fast		right_shank	622.0	622.0	1.145	1.155	0.715	0.72	0.43	0.435
+432	pp029	M	66	MS	Preferred		right_ankle	157.0	159.0	1.33	1.315	0.84	0.845	0.49	0.47
+433	pp029	M	66	MS	Preferred		right_ankle	423.0	422.0	1.335	1.335	0.845	0.855	0.49	0.48
+434	pp029	M	66	MS	Preferred		right_ankle	690.0	689.0	1.36	1.4	0.92	0.94	0.44	0.46
+435	pp029	M	66	MS	Preferred		right_ankle	962.0	969.0	1.445	1.415	0.97	0.945	0.475	0.47
+436	pp029	M	66	MS	Preferred		left_shank	18.0	21.0	1.37	1.35	0.99	0.98	0.38	0.37
+437	pp029	M	66	MS	Preferred		left_shank	292.0	291.0	1.32	1.325	0.89	0.855	0.43	0.47
+438	pp029	M	66	MS	Preferred		left_shank	556.0	556.0	1.385	1.385	0.93	0.935	0.455	0.45
+439	pp029	M	66	MS	Preferred		left_shank	833.0	833.0	1.395	1.4	0.965	0.965	0.43	0.435
+440	pp029	M	66	MS	Preferred		right_shank	157.0	158.0	1.33	1.315	0.84	0.835	0.49	0.48
+441	pp029	M	66	MS	Preferred		right_shank	423.0	421.0	1.335	1.335	0.845	0.86	0.49	0.475
+442	pp029	M	66	MS	Preferred		right_shank	690.0	688.0	1.36	1.38	0.92	0.945	0.44	0.435
+443	pp029	M	66	MS	Preferred		right_shank	962.0	964.0	1.445	1.425	0.97	0.97	0.475	0.455
+444	pp029	M	66	MS	Slow		right_ankle	53.0	52.0	1.8	1.8	1.23	1.25	0.57	0.55
+445	pp029	M	66	MS	Slow		right_ankle	413.0	412.0	1.74	1.77	1.17	1.21	0.57	0.56
+446	pp029	M	66	MS	Slow		right_ankle	761.0	766.0	1.745	1.73	1.18	1.16	0.565	0.57
+447	pp029	M	66	MS	Slow		right_ankle	1110.0	1112.0	1.81	1.8	1.245	1.255	0.565	0.545
+448	pp029	M	66	MS	Slow		right_ankle	1472.0	1472.0	1.795	1.8	1.235	1.24	0.56	0.56
+449	pp029	M	66	MS	Slow		right_ankle	1831.0	1832.0	1.82	1.815	1.275	1.275	0.545	0.54
+450	pp029	M	66	MS	Slow		left_shank	246.0	239.0	1.72	1.765	1.26	1.29	0.46	0.475
+451	pp029	M	66	MS	Slow		left_shank	590.0	592.0	1.75	1.745	1.27	1.255	0.48	0.49
+452	pp029	M	66	MS	Slow		left_shank	940.0	941.0	1.77	1.775	1.29	1.285	0.48	0.49
+453	pp029	M	66	MS	Slow		left_shank	1294.0	1296.0	1.83	1.82	1.335	1.325	0.495	0.495
+454	pp029	M	66	MS	Slow		left_shank	1660.0	1660.0	1.845	1.815	1.265	1.265	0.58	0.55
+455	pp029	M	66	MS	Slow		left_shank	2029.0	2023.0	1.915	1.92	1.27	1.29	0.645	0.63
+456	pp029	M	66	MS	Slow		right_shank	53.0	53.0	1.8	1.785	1.23	1.23	0.57	0.555
+457	pp029	M	66	MS	Slow		right_shank	413.0	410.0	1.74	1.77	1.17	1.195	0.57	0.575
+458	pp029	M	66	MS	Slow		right_shank	761.0	764.0	1.745	1.73	1.18	1.18	0.565	0.55
+459	pp029	M	66	MS	Slow		right_shank	1110.0	1110.0	1.81	1.815	1.245	1.255	0.565	0.56
+460	pp029	M	66	MS	Slow		right_shank	1472.0	1473.0	1.795	1.8	1.235	1.225	0.56	0.575
+461	pp029	M	66	MS	Slow		right_shank	1831.0	1833.0	1.82	1.84	1.275	1.26	0.545	0.58
+462	pp031	F	43	YA	Fast		left_ankle	111.0	114.0	0.895	0.895	0.535	0.515	0.36	0.38
+463	pp031	F	43	YA	Fast		left_ankle	290.0	293.0	0.89	0.885	0.545	0.53	0.345	0.355
+464	pp031	F	43	YA	Fast		right_ankle	22.0	22.0	0.895	0.895	0.55	0.56	0.345	0.335
+465	pp031	F	43	YA	Fast		right_ankle	201.0	201.0	0.895	0.9	0.55	0.555	0.345	0.345
+466	pp031	F	43	YA	Fast		right_ankle	380.0	381.0	0.91	0.915	0.55	0.54	0.36	0.375
+467	pp031	F	43	YA	Fast		left_shank	111.0	112.0	0.895	0.905	0.535	0.53	0.36	0.375
+468	pp031	F	43	YA	Fast		left_shank	290.0	293.0	0.89	0.86	0.545	0.525	0.345	0.335
+469	pp031	F	43	YA	Fast		right_shank	22.0	25.0	0.895	0.895	0.55	0.535	0.345	0.36
+470	pp031	F	43	YA	Fast		right_shank	201.0	204.0	0.895	0.895	0.55	0.535	0.345	0.36
+471	pp031	F	43	YA	Fast		right_shank	380.0	383.0	0.91	0.89	0.55	0.545	0.36	0.345
+472	pp031	F	43	YA	Preferred		left_ankle	29.0	32.0	1.125	1.11	0.69	0.675	0.435	0.435
+473	pp031	F	43	YA	Preferred		left_ankle	254.0	254.0	1.105	1.11	0.69	0.69	0.415	0.42
+474	pp031	F	43	YA	Preferred		left_ankle	475.0	476.0	1.115	1.12	0.7	0.685	0.415	0.435
+475	pp031	F	43	YA	Preferred		right_ankle	140.0	144.0	1.12	1.115	0.71	0.695	0.41	0.42
+476	pp031	F	43	YA	Preferred		right_ankle	364.0	367.0	1.1	1.11	0.71	0.7	0.39	0.41
+477	pp031	F	43	YA	Preferred		right_ankle	584.0	589.0	1.17	1.145	0.74	0.715	0.43	0.43
+478	pp031	F	43	YA	Preferred		left_shank	29.0	33.0	1.125	1.105	0.69	0.675	0.435	0.43
+479	pp031	F	43	YA	Preferred		left_shank	254.0	254.0	1.105	1.115	0.69	0.69	0.415	0.425
+480	pp031	F	43	YA	Preferred		left_shank	475.0	477.0	1.115	1.115	0.7	0.69	0.415	0.425
+481	pp031	F	43	YA	Preferred		right_shank	140.0	145.0	1.12	1.11	0.71	0.685	0.41	0.425
+482	pp031	F	43	YA	Preferred		right_shank	364.0	367.0	1.1	1.11	0.71	0.69	0.39	0.42
+483	pp031	F	43	YA	Preferred		right_shank	584.0	589.0	1.17	1.155	0.74	0.71	0.43	0.445
+484	pp031	F	43	YA	Slow		right_ankle	212.0	215.0	1.515	1.495	1.005	1.01	0.51	0.485
+485	pp031	F	43	YA	Slow		right_ankle	515.0	514.0	1.56	1.55	1.035	1.045	0.525	0.505
+486	pp031	F	43	YA	Slow		right_ankle	827.0	824.0	1.575	1.58	1.04	1.05	0.535	0.53
+487	pp031	F	43	YA	Slow		right_shank	212.0	213.0	1.515	1.515	1.005	1.0	0.51	0.515
+488	pp031	F	43	YA	Slow		right_shank	515.0	516.0	1.56	1.575	1.035	1.035	0.525	0.54
+489	pp031	F	43	YA	Slow		right_shank	827.0	831.0	1.575	1.565	1.04	1.025	0.535	0.54
+490	pp033	M	60	stroke	Fast		left_ankle	118.0	121.0	0.9	0.88	0.54	0.525	0.36	0.355
+491	pp033	M	60	stroke	Fast		left_ankle	298.0	297.0	0.89	0.895	0.51	0.5	0.38	0.395
+492	pp033	M	60	stroke	Fast		right_ankle	23.0	23.0	0.925	0.95	0.58	0.595	0.345	0.355
+493	pp033	M	60	stroke	Fast		right_ankle	208.0	213.0	0.865	0.865	0.515	0.5	0.35	0.365
+494	pp033	M	60	stroke	Fast		right_ankle	381.0	386.0	1.05	0.915	0.56	0.545	0.49	0.37
+495	pp033	M	60	stroke	Fast		left_shank	118.0	120.0	0.9	0.895	0.54	0.525	0.36	0.37
+496	pp033	M	60	stroke	Fast		left_shank	298.0	299.0	0.89	0.89	0.51	0.5	0.38	0.39
+497	pp033	M	60	stroke	Preferred		right_ankle	221.0	223.0	1.07	1.065	0.645	0.645	0.425	0.42
+498	pp033	M	60	stroke	Preferred		right_ankle	435.0	436.0	1.095	1.1	0.665	0.65	0.43	0.45
+499	pp033	M	60	stroke	Preferred		left_shank	112.0	113.0	1.08	1.085	0.665	0.655	0.415	0.43
+500	pp033	M	60	stroke	Preferred		left_shank	328.0	330.0	1.08	1.075	0.645	0.625	0.435	0.45
+501	pp033	M	60	stroke	Preferred		left_shank	544.0	545.0	1.17	1.175	0.705	0.685	0.465	0.49
+502	pp033	M	60	stroke	Preferred		right_shank	221.0	222.0	1.07	1.07	0.645	0.63	0.425	0.44
+503	pp033	M	60	stroke	Preferred		right_shank	435.0	436.0	1.095	1.1	0.665	0.65	0.43	0.45
+504	pp033	M	60	stroke	Slow		left_ankle	46.0	51.0	1.67	1.665	1.19	1.155	0.48	0.51
+505	pp033	M	60	stroke	Slow		left_ankle	380.0	384.0	1.65	1.64	1.14	1.115	0.51	0.525
+506	pp033	M	60	stroke	Slow		left_ankle	710.0	712.0	1.675	1.7	1.115	1.095	0.56	0.605
+507	pp033	M	60	stroke	Slow		left_ankle	1045.0	1052.0	1.725	1.715	1.22	1.185	0.505	0.53
+508	pp033	M	60	stroke	Slow		left_ankle	1390.0	1395.0	1.72	1.725	1.225	1.2	0.495	0.525
+509	pp033	M	60	stroke	Slow		left_ankle	1734.0	1740.0	1.74	1.71	1.185	1.15	0.555	0.56
+510	pp033	M	60	stroke	Slow		right_ankle	219.0	226.0	1.605	1.605	1.105	1.06	0.5	0.545
+511	pp033	M	60	stroke	Slow		right_ankle	540.0	547.0	1.655	1.645	1.14	1.11	0.515	0.535
+512	pp033	M	60	stroke	Slow		right_ankle	871.0	876.0	1.765	1.775	1.21	1.19	0.555	0.585
+513	pp033	M	60	stroke	Slow		right_ankle	1224.0	1231.0	1.695	1.7	1.13	1.085	0.565	0.615
+514	pp033	M	60	stroke	Slow		right_ankle	1563.0	1571.0	1.71	1.695	1.205	1.155	0.505	0.54
+515	pp089	F	29	YA	Slow		right_shank	187.0	189.0	1.375	1.37	0.905	0.9	0.47	0.47
+516	pp089	F	29	YA	Slow		right_shank	462.0	463.0	1.35	1.35	0.875	0.88	0.475	0.47
+517	pp089	F	29	YA	Slow		right_shank	732.0	733.0	1.395	1.39	0.905	0.92	0.49	0.47
+518	pp089	F	29	YA	Slow		right_shank	1011.0	1011.0	1.465	1.47	0.95	0.965	0.515	0.505
+519	pp089	F	29	YA	Slow		left_shank	53.0	39.0	1.365	1.445	0.88	0.965	0.485	0.48
+520	pp089	F	29	YA	Slow		left_shank	326.0	328.0	1.345	1.335	0.86	0.905	0.485	0.43
+521	pp089	F	29	YA	Slow		left_shank	595.0	595.0	1.37	1.36	0.865	0.865	0.505	0.495
+522	pp089	F	29	YA	Slow		left_shank	869.0	867.0	1.42	1.43	0.925	0.94	0.495	0.49
+523	pp089	F	29	YA	Slow		left_shank	1153.0	1153.0	1.505	1.46	0.995	1.01	0.51	0.45
+524	pp089	F	29	YA	Fast		left_ankle	29.0	26.0	0.9	0.9	0.545	0.565	0.355	0.335
+525	pp089	F	29	YA	Fast		left_ankle	209.0	206.0	0.88	0.88	0.54	0.545	0.34	0.335
+526	pp089	F	29	YA	Fast		left_ankle	385.0	382.0	0.915	0.89	0.535	0.55	0.38	0.34
+527	pp089	F	29	YA	Fast		right_ankle	121.0	121.0	0.885	0.865	0.525	0.535	0.36	0.33
+528	pp089	F	29	YA	Fast		right_ankle	298.0	294.0	0.875	0.89	0.525	0.555	0.35	0.335
+529	pp089	F	29	YA	Fast		left_shank	29.0	28.0	0.9	0.905	0.545	0.555	0.355	0.35
+530	pp089	F	29	YA	Fast		left_shank	209.0	209.0	0.88	0.87	0.54	0.525	0.34	0.345
+531	pp089	F	29	YA	Fast		left_shank	385.0	383.0	0.915	0.885	0.535	0.545	0.38	0.34
+532	pp089	F	29	YA	Fast		right_shank	121.0	120.0	0.885	0.885	0.525	0.54	0.36	0.345
+533	pp089	F	29	YA	Fast		right_shank	298.0	297.0	0.875	0.875	0.525	0.54	0.35	0.335
+534	pp089	F	29	YA	Preferred		left_ankle	126.0	122.0	1.01	1.005	0.625	0.65	0.385	0.355
+535	pp089	F	29	YA	Preferred		left_ankle	328.0	323.0	0.975	0.97	0.61	0.635	0.365	0.335
+536	pp089	F	29	YA	Preferred		left_ankle	523.0	517.0	0.985	0.975	0.595	0.625	0.39	0.35
+537	pp089	F	29	YA	Preferred		left_shank	126.0	123.0	1.01	1.015	0.625	0.635	0.385	0.38
+538	pp089	F	29	YA	Preferred		left_shank	328.0	326.0	0.975	0.965	0.61	0.61	0.365	0.355
+539	pp089	F	29	YA	Preferred		left_shank	523.0	519.0	0.985	0.955	0.595	0.61	0.39	0.345
+540	pp089	F	29	YA	Preferred		right_shank	16.0	16.0	1.06	1.06	0.67	0.67	0.39	0.39
+541	pp089	F	29	YA	Preferred		right_shank	228.0	228.0	1.0	1.0	0.615	0.61	0.385	0.39
+542	pp089	F	29	YA	Preferred		right_shank	428.0	428.0	0.945	0.945	0.59	0.58	0.355	0.365
+543	pp044	F	60	other	Fast		left_ankle	134.0	133.0	0.955	0.955	0.62	0.615	0.335	0.34
+544	pp044	F	60	other	Fast		left_ankle	325.0	324.0	1.0	1.01	0.635	0.64	0.365	0.37
+545	pp044	F	60	other	Fast		left_ankle	525.0	526.0	0.995	0.995	0.655	0.65	0.34	0.345
+546	pp044	F	60	other	Fast		right_ankle	21.0	21.0	1.04	1.04	0.69	0.685	0.35	0.355
+547	pp044	F	60	other	Fast		right_ankle	229.0	229.0	0.99	0.98	0.65	0.645	0.34	0.335
+548	pp044	F	60	other	Fast		right_ankle	427.0	425.0	0.985	1.01	0.645	0.65	0.34	0.36
+549	pp044	F	60	other	Fast		right_ankle	624.0	627.0	1.04	1.02	0.675	0.655	0.365	0.365
+550	pp044	F	60	other	Fast		left_shank	134.0	136.0	0.955	0.95	0.62	0.605	0.335	0.345
+551	pp044	F	60	other	Fast		left_shank	325.0	326.0	1.0	1.015	0.635	0.615	0.365	0.4
+552	pp044	F	60	other	Fast		left_shank	525.0	529.0	0.995	0.965	0.655	0.63	0.34	0.335
+553	pp044	F	60	other	Fast		right_shank	21.0	20.0	1.04	1.045	0.69	0.68	0.35	0.365
+554	pp044	F	60	other	Fast		right_shank	229.0	229.0	0.99	0.99	0.65	0.66	0.34	0.33
+555	pp044	F	60	other	Fast		right_shank	427.0	427.0	0.985	0.995	0.645	0.635	0.34	0.36
+556	pp044	F	60	other	Fast		right_shank	624.0	626.0	1.04	1.04	0.675	0.65	0.365	0.39
+557	pp044	F	60	other	Preferred		left_shank	132.0	130.0	1.26	1.305	0.84	0.84	0.42	0.465
+558	pp044	F	60	other	Preferred		left_shank	384.0	391.0	1.255	1.205	0.865	0.825	0.39	0.38
+559	pp044	F	60	other	Preferred		left_shank	635.0	632.0	1.395	1.435	0.895	0.865	0.5	0.57
+560	pp044	F	60	other	Preferred		left_shank	914.0	919.0	1.285	1.26	0.865	0.835	0.42	0.425
+561	pp044	F	60	other	Preferred		right_shank	7.0	12.0	1.225	1.21	0.87	0.85	0.355	0.36
+562	pp044	F	60	other	Preferred		right_shank	252.0	254.0	1.255	1.24	0.88	0.85	0.375	0.39
+563	pp044	F	60	other	Preferred		right_shank	503.0	502.0	1.32	1.33	0.895	0.895	0.425	0.435
+564	pp044	F	60	other	Preferred		right_shank	767.0	768.0	1.34	1.355	0.95	0.92	0.39	0.435
+565	pp044	F	60	other	Preferred		right_shank	1035.0	1039.0	1.465	1.47	0.95	0.93	0.515	0.54
+566	pp075	M	59	PD	Slow	on	right_shank	23.0	29.0	1.175	1.15	0.77	0.74	0.405	0.41
+567	pp075	M	59	PD	Slow	on	right_shank	258.0	259.0	1.13	1.135	0.73	0.725	0.4	0.41
+568	pp075	M	59	PD	Slow	on	right_shank	484.0	486.0	1.085	1.085	0.715	0.71	0.37	0.375
+569	pp075	M	59	PD	Slow	on	right_shank	701.0	703.0	1.12	1.115	0.725	0.71	0.395	0.405
+570	pp075	M	59	PD	Slow	on	right_shank	925.0	926.0	1.135	1.16	0.765	0.76	0.37	0.4
+571	pp075	M	59	PD	Slow	on	left_ankle	142.0	140.0	1.14	1.15	0.75	0.76	0.39	0.39
+572	pp075	M	59	PD	Slow	on	left_ankle	370.0	370.0	1.12	1.1	0.715	0.715	0.405	0.385
+573	pp075	M	59	PD	Slow	on	left_ankle	594.0	590.0	1.065	1.085	0.705	0.725	0.36	0.36
+574	pp075	M	59	PD	Slow	on	left_ankle	807.0	807.0	1.14	1.135	0.745	0.75	0.395	0.385
+575	pp075	M	59	PD	Slow	on	right_ankle	23.0	28.0	1.175	1.155	0.77	0.755	0.405	0.4
+576	pp075	M	59	PD	Slow	on	right_ankle	258.0	259.0	1.13	1.125	0.73	0.735	0.4	0.39
+577	pp075	M	59	PD	Slow	on	right_ankle	484.0	484.0	1.085	1.095	0.715	0.73	0.37	0.365
+578	pp075	M	59	PD	Slow	on	right_ankle	701.0	703.0	1.12	1.11	0.725	0.71	0.395	0.4
+579	pp075	M	59	PD	Slow	on	right_ankle	925.0	925.0	1.135	1.145	0.765	0.765	0.37	0.38
+580	pp075	M	59	PD	Slow	on	left_shank	142.0	139.0	1.14	1.155	0.75	0.765	0.39	0.39
+581	pp075	M	59	PD	Slow	on	left_shank	370.0	370.0	1.12	1.115	0.715	0.715	0.405	0.4
+582	pp075	M	59	PD	Slow	on	left_shank	594.0	593.0	1.065	1.055	0.705	0.72	0.36	0.335
+583	pp075	M	59	PD	Slow	on	left_shank	807.0	804.0	1.14	1.17	0.745	0.765	0.395	0.405
+584	pp075	M	59	PD	Slow	off	left_ankle	33.0	33.0	1.105	1.11	0.74	0.74	0.365	0.37
+585	pp075	M	59	PD	Slow	off	left_ankle	254.0	255.0	1.095	1.095	0.745	0.74	0.35	0.355
+586	pp075	M	59	PD	Slow	off	left_ankle	473.0	474.0	1.075	1.07	0.725	0.725	0.35	0.345
+587	pp075	M	59	PD	Slow	off	left_ankle	688.0	688.0	1.06	1.06	0.72	0.72	0.34	0.34
+588	pp075	M	59	PD	Slow	off	left_ankle	900.0	900.0	1.1	1.085	0.73	0.735	0.37	0.35
+589	pp075	M	59	PD	Slow	off	right_ankle	147.0	148.0	1.12	1.115	0.725	0.73	0.395	0.385
+590	pp075	M	59	PD	Slow	off	right_ankle	371.0	371.0	1.065	1.08	0.69	0.705	0.375	0.375
+591	pp075	M	59	PD	Slow	off	right_ankle	584.0	587.0	1.07	1.065	0.71	0.7	0.36	0.365
+592	pp075	M	59	PD	Slow	off	right_ankle	798.0	800.0	1.065	1.05	0.695	0.69	0.37	0.36
+593	pp075	M	59	PD	Slow	off	left_shank	33.0	34.0	1.105	1.095	0.74	0.73	0.365	0.365
+594	pp075	M	59	PD	Slow	off	left_shank	254.0	253.0	1.095	1.095	0.745	0.745	0.35	0.35
+595	pp075	M	59	PD	Slow	off	left_shank	473.0	472.0	1.075	1.075	0.725	0.73	0.35	0.345
+596	pp075	M	59	PD	Slow	off	left_shank	688.0	687.0	1.06	1.055	0.72	0.725	0.34	0.33
+597	pp075	M	59	PD	Slow	off	left_shank	900.0	898.0	1.1	1.1	0.73	0.74	0.37	0.36
+598	pp075	M	59	PD	Slow	off	right_shank	147.0	150.0	1.12	1.125	0.725	0.715	0.395	0.41
+599	pp075	M	59	PD	Slow	off	right_shank	371.0	375.0	1.065	1.07	0.69	0.675	0.375	0.395
+600	pp075	M	59	PD	Slow	off	right_shank	584.0	589.0	1.07	1.065	0.71	0.68	0.36	0.385
+601	pp075	M	59	PD	Slow	off	right_shank	798.0	802.0	1.065	1.065	0.695	0.68	0.37	0.385
+602	pp075	M	59	PD	Fast	off	left_ankle	111.0	111.0	0.835	0.82	0.515	0.515	0.32	0.305
+603	pp075	M	59	PD	Fast	off	left_ankle	278.0	275.0	0.82	0.825	0.51	0.525	0.31	0.3
+604	pp075	M	59	PD	Fast	off	left_ankle	442.0	440.0	0.83	0.815	0.51	0.525	0.32	0.29
+605	pp075	M	59	PD	Fast	off	right_ankle	28.0	28.0	0.84	0.84	0.49	0.515	0.35	0.325
+606	pp075	M	59	PD	Fast	off	right_ankle	196.0	196.0	0.83	0.815	0.495	0.515	0.335	0.3
+607	pp075	M	59	PD	Fast	off	right_ankle	362.0	359.0	0.805	0.815	0.495	0.53	0.31	0.285
+608	pp075	M	59	PD	Fast	off	left_shank	111.0	108.0	0.835	0.84	0.515	0.53	0.32	0.31
+609	pp075	M	59	PD	Fast	off	left_shank	278.0	276.0	0.82	0.825	0.51	0.52	0.31	0.305
+610	pp075	M	59	PD	Fast	off	left_shank	442.0	441.0	0.83	0.81	0.51	0.52	0.32	0.29
+611	pp075	M	59	PD	Fast	off	right_shank	28.0	31.0	0.84	0.835	0.49	0.495	0.35	0.34
+612	pp075	M	59	PD	Fast	off	right_shank	196.0	198.0	0.83	0.82	0.495	0.505	0.335	0.315
+613	pp075	M	59	PD	Fast	off	right_shank	362.0	362.0	0.805	0.825	0.495	0.51	0.31	0.315
+614	pp075	M	59	PD	Fast	on	left_ankle	112.0	111.0	0.86	0.86	0.525	0.53	0.335	0.33
+615	pp075	M	59	PD	Fast	on	left_ankle	284.0	283.0	0.84	0.845	0.515	0.525	0.325	0.32
+616	pp075	M	59	PD	Fast	on	right_ankle	27.0	27.0	0.87	0.85	0.52	0.535	0.35	0.315
+617	pp075	M	59	PD	Fast	on	right_ankle	201.0	197.0	0.82	0.84	0.495	0.525	0.325	0.315
+618	pp075	M	59	PD	Fast	on	right_ankle	365.0	365.0	0.86	0.865	0.54	0.55	0.32	0.315
+619	pp075	M	59	PD	Fast	on	left_shank	112.0	118.0	0.86	0.825	0.525	0.5	0.335	0.325
+620	pp075	M	59	PD	Fast	on	left_shank	284.0	283.0	0.84	0.835	0.515	0.525	0.325	0.31
+621	pp075	M	59	PD	Fast	on	right_shank	27.0	29.0	0.87	0.84	0.52	0.52	0.35	0.32
+622	pp075	M	59	PD	Fast	on	right_shank	201.0	197.0	0.82	0.845	0.495	0.525	0.325	0.32
+623	pp075	M	59	PD	Fast	on	right_shank	365.0	366.0	0.86	0.865	0.54	0.54	0.32	0.325
+624	pp075	M	59	PD	Preferred	off	left_ankle	108.0	108.0	0.915	0.915	0.585	0.585	0.33	0.33
+625	pp075	M	59	PD	Preferred	off	left_ankle	291.0	291.0	0.905	0.91	0.58	0.58	0.325	0.33
+626	pp075	M	59	PD	Preferred	off	left_ankle	472.0	473.0	0.895	0.89	0.575	0.57	0.32	0.32
+627	pp075	M	59	PD	Preferred	off	left_ankle	651.0	651.0	0.955	0.945	0.595	0.6	0.36	0.345
+628	pp075	M	59	PD	Preferred	off	right_ankle	9.0	12.0	0.955	0.945	0.615	0.615	0.34	0.33
+629	pp075	M	59	PD	Preferred	off	right_ankle	200.0	201.0	0.905	0.895	0.58	0.59	0.325	0.305
+630	pp075	M	59	PD	Preferred	off	right_ankle	381.0	380.0	0.905	0.915	0.575	0.605	0.33	0.31
+631	pp075	M	59	PD	Preferred	off	right_ankle	562.0	563.0	0.905	0.905	0.575	0.585	0.33	0.32
+632	pp075	M	59	PD	Preferred	off	left_shank	108.0	109.0	0.915	0.91	0.585	0.585	0.33	0.325
+633	pp075	M	59	PD	Preferred	off	left_shank	291.0	291.0	0.905	0.89	0.58	0.595	0.325	0.295
+634	pp075	M	59	PD	Preferred	off	left_shank	472.0	469.0	0.895	0.9	0.575	0.6	0.32	0.3
+635	pp075	M	59	PD	Preferred	off	left_shank	651.0	649.0	0.955	0.965	0.595	0.61	0.36	0.355
+636	pp075	M	59	PD	Preferred	off	right_shank	9.0	15.0	0.955	0.95	0.615	0.59	0.34	0.36
+637	pp075	M	59	PD	Preferred	off	right_shank	200.0	205.0	0.905	0.89	0.58	0.565	0.325	0.325
+638	pp075	M	59	PD	Preferred	off	right_shank	381.0	383.0	0.905	0.91	0.575	0.575	0.33	0.335
+639	pp075	M	59	PD	Preferred	off	right_shank	562.0	565.0	0.905	0.92	0.575	0.565	0.33	0.355
+640	pp075	M	59	PD	Preferred	on	left_ankle	127.0	128.0	0.94	0.935	0.6	0.59	0.34	0.345
+641	pp075	M	59	PD	Preferred	on	left_ankle	315.0	315.0	1.02	1.01	0.65	0.645	0.37	0.365
+642	pp075	M	59	PD	Preferred	on	left_ankle	519.0	517.0	0.945	0.965	0.63	0.64	0.315	0.325
+643	pp075	M	59	PD	Preferred	on	right_ankle	33.0	33.0	0.95	0.95	0.595	0.605	0.355	0.345
+644	pp075	M	59	PD	Preferred	on	right_ankle	223.0	223.0	0.97	0.975	0.61	0.615	0.36	0.36
+645	pp075	M	59	PD	Preferred	on	right_ankle	417.0	418.0	0.98	0.98	0.645	0.65	0.335	0.33
+646	pp075	M	59	PD	Preferred	on	right_ankle	613.0	614.0	1.0	1.0	0.65	0.645	0.35	0.355
+647	pp075	M	59	PD	Preferred	on	left_shank	127.0	127.0	0.94	0.935	0.6	0.6	0.34	0.335
+648	pp075	M	59	PD	Preferred	on	left_shank	315.0	314.0	1.02	1.015	0.65	0.655	0.37	0.36
+649	pp075	M	59	PD	Preferred	on	left_shank	519.0	517.0	0.945	0.97	0.63	0.64	0.315	0.33
+650	pp075	M	59	PD	Preferred	on	right_shank	33.0	35.0	0.95	0.945	0.595	0.58	0.355	0.365
+651	pp075	M	59	PD	Preferred	on	right_shank	223.0	224.0	0.97	0.97	0.61	0.595	0.36	0.375
+652	pp075	M	59	PD	Preferred	on	right_shank	417.0	418.0	0.98	0.99	0.645	0.635	0.335	0.355
+653	pp075	M	59	PD	Preferred	on	right_shank	613.0	616.0	1.0	0.995	0.65	0.635	0.35	0.36
+654	pp046	M	61	PD	Fast	off	left_ankle	33.0	33.0	0.82	0.835	0.535	0.525	0.285	0.31
+655	pp046	M	61	PD	Fast	off	left_ankle	197.0	200.0	0.84	0.84	0.54	0.535	0.3	0.305
+656	pp046	M	61	PD	Fast	off	left_ankle	365.0	368.0	0.86	0.855	0.56	0.53	0.3	0.325
+657	pp046	M	61	PD	Fast	off	left_ankle	537.0	539.0	0.845	0.89	0.565	0.545	0.28	0.345
+658	pp046	M	61	PD	Fast	off	left_ankle	706.0	717.0	0.94	0.9	0.655	0.605	0.285	0.295
+659	pp046	M	61	PD	Fast	off	left_shank	33.0	31.0	0.82	0.845	0.535	0.535	0.285	0.31
+660	pp046	M	61	PD	Fast	off	left_shank	197.0	200.0	0.84	0.83	0.54	0.515	0.3	0.315
+661	pp046	M	61	PD	Fast	off	left_shank	365.0	366.0	0.86	0.895	0.56	0.545	0.3	0.35
+662	pp046	M	61	PD	Fast	off	left_shank	537.0	545.0	0.845	0.865	0.565	0.515	0.28	0.35
+663	pp046	M	61	PD	Fast	off	left_shank	706.0	718.0	0.94	0.92	0.655	0.575	0.285	0.345
+664	pp046	M	61	PD	Fast	off	right_shank	107.0	113.0	0.855	0.85	0.555	0.485	0.3	0.365
+665	pp046	M	61	PD	Fast	off	right_shank	278.0	283.0	0.885	0.855	0.535	0.48	0.35	0.375
+666	pp046	M	61	PD	Fast	off	right_shank	455.0	454.0	0.84	0.875	0.54	0.525	0.3	0.35
+667	pp046	M	61	PD	Fast	off	right_shank	623.0	629.0	0.935	0.895	0.58	0.52	0.355	0.375
+668	pp046	M	61	PD	Fast	on	right_ankle	10.0	14.0	0.63	0.605	0.375	0.35	0.255	0.255
+669	pp046	M	61	PD	Fast	on	right_ankle	136.0	135.0	0.615	0.63	0.34	0.34	0.275	0.29
+670	pp046	M	61	PD	Fast	on	right_ankle	259.0	261.0	0.6	0.58	0.315	0.295	0.285	0.285
+671	pp046	M	61	PD	Fast	on	right_ankle	379.0	377.0	0.585	0.58	0.33	0.33	0.255	0.25
+672	pp046	M	61	PD	Fast	on	right_ankle	496.0	493.0	0.635	0.65	0.335	0.355	0.3	0.295
+673	pp046	M	61	PD	Preferred	off	left_ankle	9.0	1.0	0.98	1.0	0.67	0.725	0.31	0.275
+674	pp046	M	61	PD	Preferred	off	left_ankle	205.0	201.0	0.99	0.99	0.68	0.71	0.31	0.28
+675	pp046	M	61	PD	Preferred	off	left_ankle	403.0	399.0	0.985	1.015	0.7	0.71	0.285	0.305
+676	pp046	M	61	PD	Preferred	off	left_ankle	600.0	602.0	1.025	0.96	0.675	0.66	0.35	0.3
+677	pp046	M	61	PD	Preferred	off	left_ankle	805.0	794.0	0.935	0.995	0.665	0.71	0.27	0.285
+678	pp046	M	61	PD	Preferred	off	left_ankle	992.0	993.0	1.04	1.11	0.75	0.755	0.29	0.355
+679	pp046	M	61	PD	Preferred	off	left_shank	9.0	20.0	0.98	0.97	0.67	0.615	0.31	0.355
+680	pp046	M	61	PD	Preferred	off	left_shank	205.0	214.0	0.99	0.97	0.68	0.625	0.31	0.345
+681	pp046	M	61	PD	Preferred	off	left_shank	403.0	408.0	0.985	1.015	0.7	0.67	0.285	0.345
+682	pp046	M	61	PD	Preferred	off	left_shank	600.0	611.0	1.025	0.99	0.675	0.61	0.35	0.38
+683	pp046	M	61	PD	Preferred	off	left_shank	805.0	809.0	0.935	0.96	0.665	0.635	0.27	0.325
+684	pp046	M	61	PD	Preferred	off	left_shank	992.0	1001.0	1.04	1.055	0.75	0.69	0.29	0.365
+685	pp046	M	61	PD	Preferred	off	right_shank	100.0	107.0	1.0	0.98	0.705	0.645	0.295	0.335
+686	pp046	M	61	PD	Preferred	off	right_shank	300.0	303.0	1.01	1.03	0.705	0.66	0.305	0.37
+687	pp046	M	61	PD	Preferred	off	right_shank	502.0	509.0	0.99	0.95	0.665	0.61	0.325	0.34
+688	pp046	M	61	PD	Preferred	off	right_shank	700.0	699.0	0.995	1.0	0.68	0.66	0.315	0.34
+689	pp046	M	61	PD	Preferred	off	right_shank	899.0	899.0	0.95	0.985	0.665	0.645	0.285	0.34
+690	pp046	M	61	PD	Preferred	on	right_ankle	131.0	130.0	0.965	0.965	0.595	0.575	0.37	0.39
+691	pp046	M	61	PD	Preferred	on	right_ankle	324.0	323.0	0.965	0.955	0.615	0.59	0.35	0.365
+692	pp046	M	61	PD	Preferred	on	right_ankle	517.0	514.0	1.005	1.01	0.63	0.62	0.375	0.39
+693	pp046	M	61	PD	Preferred	on	right_ankle	718.0	716.0	0.965	0.98	0.615	0.6	0.35	0.38
+694	pp046	M	61	PD	Preferred	on	right_shank	131.0	130.0	0.965	0.955	0.595	0.57	0.37	0.385
+695	pp046	M	61	PD	Preferred	on	right_shank	324.0	321.0	0.965	0.965	0.615	0.6	0.35	0.365
+696	pp046	M	61	PD	Preferred	on	right_shank	517.0	514.0	1.005	1.0	0.63	0.63	0.375	0.37
+697	pp046	M	61	PD	Preferred	on	right_shank	718.0	714.0	0.965	0.975	0.615	0.61	0.35	0.365
+698	pp046	M	61	PD	Slow	off	right_ankle	320.0	332.0	1.38	1.32	0.935	0.86	0.445	0.46
+699	pp046	M	61	PD	Slow	off	right_ankle	596.0	596.0	1.38	1.375	0.94	0.915	0.44	0.46
+700	pp046	M	61	PD	Slow	off	right_ankle	872.0	871.0	1.44	1.455	0.93	0.93	0.51	0.525
+701	pp046	M	61	PD	Slow	off	right_ankle	1160.0	1162.0	1.41	1.455	1.04	1.015	0.37	0.44
+702	pp046	M	61	PD	Slow	off	right_ankle	1442.0	1453.0	1.485	1.53	1.085	1.01	0.4	0.52
+703	pp046	M	61	PD	Slow	off	right_ankle	1739.0	1759.0	1.685	1.605	1.19	1.06	0.495	0.545
+704	pp046	M	61	PD	Slow	on	left_ankle	165.0	168.0	1.34	1.335	0.89	0.865	0.45	0.47
+705	pp046	M	61	PD	Slow	on	left_ankle	433.0	435.0	1.375	1.37	0.94	0.925	0.435	0.445
+706	pp046	M	61	PD	Slow	on	left_ankle	708.0	709.0	1.255	1.25	0.81	0.82	0.445	0.43
+707	pp046	M	61	PD	Slow	on	left_ankle	959.0	959.0	1.285	1.275	0.835	0.84	0.45	0.435
+708	pp046	M	61	PD	Slow	on	left_ankle	1216.0	1214.0	1.41	1.4	0.94	0.96	0.47	0.44
+709	pp046	M	61	PD	Slow	on	right_ankle	32.0	30.0	1.375	1.375	0.885	0.875	0.49	0.5
+710	pp046	M	61	PD	Slow	on	right_ankle	307.0	305.0	1.355	1.38	0.86	0.825	0.495	0.555
+711	pp046	M	61	PD	Slow	on	right_ankle	578.0	581.0	1.25	1.23	0.835	0.795	0.415	0.435
+712	pp046	M	61	PD	Slow	on	right_ankle	828.0	827.0	1.29	1.27	0.835	0.82	0.455	0.45
+713	pp046	M	61	PD	Slow	on	right_ankle	1086.0	1081.0	1.36	1.405	0.86	0.85	0.5	0.555
+714	pp046	M	61	PD	Slow	on	left_shank	165.0	168.0	1.34	1.335	0.89	0.86	0.45	0.475
+715	pp046	M	61	PD	Slow	on	left_shank	433.0	435.0	1.375	1.365	0.94	0.9	0.435	0.465
+716	pp046	M	61	PD	Slow	on	left_shank	708.0	708.0	1.255	1.27	0.81	0.795	0.445	0.475
+717	pp046	M	61	PD	Slow	on	left_shank	959.0	962.0	1.285	1.275	0.835	0.81	0.45	0.465
+718	pp046	M	61	PD	Slow	on	left_shank	1216.0	1217.0	1.41	1.39	0.94	0.92	0.47	0.47
+719	pp046	M	61	PD	Slow	on	right_shank	32.0	32.0	1.375	1.355	0.885	0.85	0.49	0.505
+720	pp046	M	61	PD	Slow	on	right_shank	307.0	303.0	1.355	1.37	0.86	0.835	0.495	0.535
+721	pp046	M	61	PD	Slow	on	right_shank	578.0	577.0	1.25	1.25	0.835	0.815	0.415	0.435
+722	pp046	M	61	PD	Slow	on	right_shank	828.0	827.0	1.29	1.28	0.835	0.82	0.455	0.46
+723	pp046	M	61	PD	Slow	on	right_shank	1086.0	1083.0	1.36	1.37	0.86	0.845	0.5	0.525
+724	pp070	M	68	cLBP	Slow		left_ankle	212.0	212.0	1.71	1.73	1.195	1.185	0.515	0.545
+725	pp070	M	68	cLBP	Slow		left_ankle	554.0	558.0	1.725	1.69	1.245	1.23	0.48	0.46
+726	pp070	M	68	cLBP	Slow		left_ankle	899.0	896.0	1.785	1.8	1.325	1.33	0.46	0.47
+727	pp070	M	68	cLBP	Slow		left_ankle	1256.0	1256.0	1.765	1.77	1.24	1.23	0.525	0.54
+728	pp070	M	68	cLBP	Slow		left_ankle	1609.0	1610.0	1.86	1.82	1.285	1.265	0.575	0.555
+729	pp070	M	68	cLBP	Slow		right_ankle	42.0	45.0	1.71	1.66	1.16	1.145	0.55	0.515
+730	pp070	M	68	cLBP	Slow		right_ankle	384.0	377.0	1.74	1.765	1.24	1.275	0.5	0.49
+731	pp070	M	68	cLBP	Slow		right_ankle	732.0	730.0	1.785	1.785	1.21	1.225	0.575	0.56
+732	pp070	M	68	cLBP	Slow		right_ankle	1089.0	1087.0	1.72	1.725	1.2	1.21	0.52	0.515
+733	pp070	M	68	cLBP	Slow		right_ankle	1433.0	1432.0	1.815	1.77	1.27	1.27	0.545	0.5
+734	pp070	M	68	cLBP	Slow		left_shank	212.0	218.0	1.71	1.7	1.195	1.155	0.515	0.545
+735	pp070	M	68	cLBP	Slow		left_shank	554.0	558.0	1.725	1.745	1.245	1.22	0.48	0.525
+736	pp070	M	68	cLBP	Slow		left_shank	899.0	907.0	1.785	1.765	1.325	1.28	0.46	0.485
+737	pp070	M	68	cLBP	Slow		left_shank	1256.0	1260.0	1.765	1.78	1.24	1.205	0.525	0.575
+738	pp070	M	68	cLBP	Slow		left_shank	1609.0	1616.0	1.86	1.795	1.285	1.245	0.575	0.55
+739	pp070	M	68	cLBP	Fast		left_ankle	15.0	15.0	1.13	1.135	0.74	0.74	0.39	0.395
+740	pp070	M	68	cLBP	Fast		left_ankle	241.0	242.0	1.045	1.035	0.675	0.655	0.37	0.38
+741	pp070	M	68	cLBP	Fast		left_ankle	450.0	449.0	1.1	1.095	0.71	0.715	0.39	0.38
+742	pp070	M	68	cLBP	Fast		left_ankle	670.0	668.0	1.1	1.115	0.715	0.715	0.385	0.4
+743	pp070	M	68	cLBP	Fast		right_ankle	135.0	134.0	1.07	1.075	0.675	0.675	0.395	0.4
+744	pp070	M	68	cLBP	Fast		right_ankle	349.0	349.0	1.055	1.06	0.68	0.665	0.375	0.395
+745	pp070	M	68	cLBP	Fast		right_ankle	560.0	561.0	1.09	1.085	0.71	0.715	0.38	0.37
+746	pp070	M	68	cLBP	Fast		right_ankle	778.0	778.0	1.12	1.13	0.77	0.76	0.35	0.37
+747	pp070	M	68	cLBP	Fast		right_shank	135.0	138.0	1.07	1.045	0.675	0.65	0.395	0.395
+748	pp070	M	68	cLBP	Fast		right_shank	349.0	347.0	1.055	1.06	0.68	0.66	0.375	0.4
+749	pp070	M	68	cLBP	Fast		right_shank	560.0	559.0	1.09	1.09	0.71	0.71	0.38	0.38
+750	pp070	M	68	cLBP	Fast		right_shank	778.0	777.0	1.12	1.125	0.77	0.765	0.35	0.36
+751	pp070	M	68	cLBP	Preferred		left_ankle	41.0	40.0	1.26	1.275	0.84	0.835	0.42	0.44
+752	pp070	M	68	cLBP	Preferred		left_ankle	293.0	295.0	1.28	1.27	0.83	0.81	0.45	0.46
+753	pp070	M	68	cLBP	Preferred		left_ankle	549.0	549.0	1.23	1.24	0.815	0.81	0.415	0.43
+754	pp070	M	68	cLBP	Preferred		left_ankle	795.0	797.0	1.39	1.3	0.885	0.865	0.505	0.435
+755	pp070	M	68	cLBP	Preferred		right_ankle	172.0	171.0	1.24	1.245	0.81	0.82	0.43	0.425
+756	pp070	M	68	cLBP	Preferred		right_ankle	420.0	420.0	1.265	1.265	0.825	0.83	0.44	0.435
+757	pp070	M	68	cLBP	Preferred		right_ankle	673.0	673.0	1.27	1.275	0.83	0.83	0.44	0.445
+758	pp070	M	68	cLBP	Preferred		left_shank	41.0	43.0	1.26	1.26	0.84	0.845	0.42	0.415
+759	pp070	M	68	cLBP	Preferred		left_shank	293.0	295.0	1.28	1.29	0.83	0.82	0.45	0.47
+760	pp070	M	68	cLBP	Preferred		left_shank	549.0	553.0	1.23	1.245	0.815	0.8	0.415	0.445
+761	pp070	M	68	cLBP	Preferred		left_shank	795.0	802.0	1.39	1.3	0.885	0.85	0.505	0.45
+762	pp070	M	68	cLBP	Preferred		right_shank	172.0	172.0	1.24	1.24	0.81	0.78	0.43	0.46
+763	pp070	M	68	cLBP	Preferred		right_shank	420.0	420.0	1.265	1.265	0.825	0.82	0.44	0.445
+764	pp070	M	68	cLBP	Preferred		right_shank	673.0	673.0	1.27	1.28	0.83	0.8	0.44	0.48
+765	pp050	F	58	cLBP	Fast		left_ankle	11.0	14.0	0.83	0.815	0.515	0.505	0.315	0.31
+766	pp050	F	58	cLBP	Fast		left_ankle	177.0	177.0	0.77	0.77	0.475	0.48	0.295	0.29
+767	pp050	F	58	cLBP	Fast		left_ankle	331.0	331.0	0.76	0.775	0.485	0.495	0.275	0.28
+768	pp050	F	58	cLBP	Fast		right_ankle	96.0	98.0	0.79	0.79	0.475	0.475	0.315	0.315
+769	pp050	F	58	cLBP	Fast		right_ankle	254.0	256.0	0.785	0.78	0.465	0.465	0.32	0.315
+770	pp050	F	58	cLBP	Fast		right_ankle	411.0	412.0	0.735	0.75	0.45	0.455	0.285	0.295
+771	pp050	F	58	cLBP	Preferred		right_ankle	126.0	128.0	0.975	0.98	0.615	0.595	0.36	0.385
+772	pp050	F	58	cLBP	Preferred		right_ankle	321.0	324.0	0.97	0.96	0.63	0.61	0.34	0.35
+773	pp050	F	58	cLBP	Preferred		right_ankle	515.0	516.0	1.0	0.995	0.64	0.65	0.36	0.345
+774	pp050	F	58	cLBP	Preferred		right_shank	126.0	128.0	0.975	0.97	0.615	0.63	0.36	0.34
+775	pp050	F	58	cLBP	Preferred		right_shank	321.0	322.0	0.97	0.965	0.63	0.645	0.34	0.32
+776	pp050	F	58	cLBP	Preferred		right_shank	515.0	515.0	1.0	1.01	0.64	0.66	0.36	0.35
+777	pp050	F	58	cLBP	Slow		left_ankle	27.0	29.0	1.11	1.115	0.735	0.72	0.375	0.395
+778	pp050	F	58	cLBP	Slow		left_ankle	249.0	252.0	1.15	1.135	0.77	0.745	0.38	0.39
+779	pp050	F	58	cLBP	Slow		left_ankle	479.0	479.0	1.085	1.12	0.74	0.74	0.345	0.38
+780	pp050	F	58	cLBP	Slow		left_ankle	696.0	703.0	1.22	1.18	0.805	0.755	0.415	0.425
+781	pp050	F	58	cLBP	Slow		right_ankle	136.0	140.0	1.15	1.145	0.735	0.735	0.415	0.41
+782	pp050	F	58	cLBP	Slow		right_ankle	366.0	369.0	1.125	1.12	0.735	0.735	0.39	0.385
+783	pp050	F	58	cLBP	Slow		right_ankle	591.0	593.0	1.115	1.12	0.715	0.71	0.4	0.41
+784	pp050	F	58	cLBP	Slow		left_shank	27.0	30.0	1.11	1.1	0.735	0.75	0.375	0.35
+785	pp050	F	58	cLBP	Slow		left_shank	249.0	250.0	1.15	1.15	0.77	0.77	0.38	0.38
+786	pp050	F	58	cLBP	Slow		left_shank	479.0	480.0	1.085	1.09	0.74	0.76	0.345	0.33
+787	pp050	F	58	cLBP	Slow		left_shank	696.0	698.0	1.22	1.2	0.805	0.795	0.415	0.405
+788	pp050	F	58	cLBP	Slow		right_shank	136.0	139.0	1.15	1.15	0.735	0.735	0.415	0.415
+789	pp050	F	58	cLBP	Slow		right_shank	366.0	369.0	1.125	1.13	0.735	0.74	0.39	0.39
+790	pp050	F	58	cLBP	Slow		right_shank	591.0	595.0	1.115	1.11	0.715	0.725	0.4	0.385
+791	pp132	M	22	YA	Slow		left_ankle	232.0	230.0	2.165	2.16	1.46	1.475	0.705	0.685
+792	pp132	M	22	YA	Slow		left_ankle	665.0	662.0	2.08	2.095	1.4	1.42	0.68	0.675
+793	pp132	M	22	YA	Slow		left_ankle	1081.0	1081.0	2.075	2.065	1.43	1.435	0.645	0.63
+794	pp132	M	22	YA	Slow		left_ankle	1496.0	1494.0	2.105	2.105	1.45	1.465	0.655	0.64
+795	pp132	M	22	YA	Fast		left_ankle	38.0	36.0	0.79	0.8	0.45	0.45	0.34	0.35
+796	pp132	M	22	YA	Fast		left_ankle	196.0	196.0	0.735	0.745	0.435	0.435	0.3	0.31
+797	pp132	M	22	YA	Fast		right_ankle	117.0	117.0	0.77	0.775	0.445	0.45	0.325	0.325
+798	pp132	M	22	YA	Fast		right_ankle	271.0	272.0	0.745	0.745	0.405	0.41	0.34	0.335
+799	pp132	M	22	YA	Preferred		left_ankle	163.0	163.0	1.25	1.245	0.81	0.815	0.44	0.43
+800	pp132	M	22	YA	Preferred		left_ankle	413.0	412.0	1.225	1.24	0.8	0.805	0.425	0.435
+801	pp132	M	22	YA	Preferred		left_ankle	658.0	660.0	1.235	1.23	0.815	0.81	0.42	0.42
+802	pp132	M	22	YA	Preferred		right_ankle	30.0	28.0	1.29	1.3	0.865	0.875	0.425	0.425
+803	pp132	M	22	YA	Preferred		right_ankle	288.0	288.0	1.235	1.235	0.81	0.815	0.425	0.42
+804	pp132	M	22	YA	Preferred		right_ankle	535.0	535.0	1.215	1.23	0.82	0.82	0.395	0.41
+805	pp132	M	22	YA	Preferred		right_ankle	778.0	781.0	1.255	1.24	0.84	0.83	0.415	0.41
+806	pp052	M	35	YA	Fast		left_ankle	110.0	109.0	0.785	0.78	0.435	0.445	0.35	0.335
+807	pp052	M	35	YA	Fast		right_ankle	33.0	33.0	0.765	0.765	0.425	0.43	0.34	0.335
+808	pp052	M	35	YA	Fast		right_ankle	186.0	186.0	0.83	0.83	0.45	0.465	0.38	0.365
+809	pp052	M	35	YA	Preferred		left_ankle	149.0	149.0	1.13	1.135	0.75	0.74	0.38	0.395
+810	pp052	M	35	YA	Preferred		left_ankle	375.0	376.0	1.15	1.145	0.755	0.725	0.395	0.42
+811	pp052	M	35	YA	Preferred		left_ankle	605.0	605.0	1.205	1.175	0.76	0.745	0.445	0.43
+812	pp052	M	35	YA	Preferred		left_shank	149.0	150.0	1.13	1.075	0.75	0.755	0.38	0.32
+813	pp052	M	35	YA	Preferred		left_shank	375.0	365.0	1.15	1.21	0.755	0.8	0.395	0.41
+814	pp052	M	35	YA	Preferred		left_shank	605.0	607.0	1.205	1.125	0.76	0.745	0.445	0.38
+815	pp052	M	35	YA	Preferred		right_shank	34.0	35.0	1.16	1.165	0.745	0.725	0.415	0.44
+816	pp052	M	35	YA	Preferred		right_shank	266.0	268.0	1.13	1.13	0.715	0.695	0.415	0.435
+817	pp052	M	35	YA	Preferred		right_shank	492.0	494.0	1.145	1.14	0.74	0.72	0.405	0.42
+818	pp052	M	35	YA	Slow		left_ankle	23.0	18.0	1.545	1.545	1.005	1.03	0.54	0.515
+819	pp052	M	35	YA	Slow		left_ankle	332.0	327.0	1.45	1.465	0.99	1.01	0.46	0.455
+820	pp052	M	35	YA	Slow		left_ankle	622.0	620.0	1.515	1.515	1.01	1.015	0.505	0.5
+821	pp052	M	35	YA	Slow		left_ankle	925.0	923.0	1.515	1.505	1.015	1.025	0.5	0.48
+822	pp052	M	35	YA	Slow		right_ankle	176.0	171.0	1.545	1.545	1.04	1.055	0.505	0.49
+823	pp052	M	35	YA	Slow		right_ankle	485.0	480.0	1.45	1.46	0.935	0.955	0.515	0.505
+824	pp052	M	35	YA	Slow		right_ankle	775.0	772.0	1.495	1.495	1.03	1.03	0.465	0.465
+825	pp052	M	35	YA	Slow		left_shank	23.0	17.0	1.545	1.55	1.005	1.03	0.54	0.52
+826	pp052	M	35	YA	Slow		left_shank	332.0	327.0	1.45	1.47	0.99	1.01	0.46	0.46
+827	pp052	M	35	YA	Slow		left_shank	622.0	621.0	1.515	1.535	1.01	1.01	0.505	0.525
+828	pp052	M	35	YA	Slow		left_shank	925.0	928.0	1.515	1.44	1.015	1.0	0.5	0.44
+829	pp052	M	35	YA	Slow		right_shank	176.0	174.0	1.545	1.535	1.04	1.045	0.505	0.49
+830	pp052	M	35	YA	Slow		right_shank	485.0	481.0	1.45	1.46	0.935	0.96	0.515	0.5
+831	pp052	M	35	YA	Slow		right_shank	775.0	773.0	1.495	1.5	1.03	1.025	0.465	0.475
+832	pp053	F	66	PD	Fast	on	left_ankle	118.0	122.0	1.155	1.12	0.775	0.795	0.38	0.325
+833	pp053	F	66	PD	Fast	on	left_ankle	349.0	346.0	1.135	1.14	0.765	0.815	0.37	0.325
+834	pp053	F	66	PD	Fast	on	left_ankle	576.0	574.0	1.125	1.12	0.76	0.815	0.365	0.305
+835	pp053	F	66	PD	Fast	on	left_ankle	801.0	798.0	1.18	1.17	0.775	0.805	0.405	0.365
+836	pp053	F	66	PD	Fast	on	left_ankle	1037.0	1032.0	1.1	1.12	0.75	0.79	0.35	0.33
+837	pp053	F	66	PD	Fast	on	left_ankle	1257.0	1256.0	1.19	1.17	0.81	0.855	0.38	0.315
+838	pp053	F	66	PD	Fast	on	left_ankle	1495.0	1490.0	1.195	1.15	0.805	0.84	0.39	0.31
+839	pp053	F	66	PD	Preferred	on	right_shank	146.0	144.0	1.015	1.095	0.725	0.755	0.29	0.34
+840	pp053	F	66	PD	Preferred	on	right_shank	349.0	363.0	1.21	1.18	0.875	0.815	0.335	0.365
+841	pp053	F	66	PD	Preferred	on	right_shank	591.0	599.0	1.13	1.14	0.82	0.795	0.31	0.345
+842	pp053	F	66	PD	Preferred	on	right_shank	817.0	827.0	1.1	1.095	0.83	0.795	0.27	0.3
+843	pp053	F	66	PD	Preferred	on	right_shank	1037.0	1046.0	1.105	1.1	0.775	0.74	0.33	0.36
+844	pp053	F	66	PD	Preferred	on	right_shank	1258.0	1266.0	1.16	1.17	0.815	0.82	0.345	0.35
+845	pp053	F	66	PD	Preferred	on	right_shank	1490.0	1500.0	1.225	1.195	0.83	0.815	0.395	0.38
+846	pp053	F	66	PD	Slow	on	left_ankle	142.0	142.0	1.075	1.085	0.755	0.765	0.32	0.32
+847	pp053	F	66	PD	Slow	on	left_ankle	357.0	359.0	1.05	1.045	0.725	0.71	0.325	0.335
+848	pp053	F	66	PD	Slow	on	left_ankle	567.0	568.0	1.125	1.12	0.75	0.755	0.375	0.365
+849	pp053	F	66	PD	Slow	on	left_ankle	792.0	792.0	1.1	1.11	0.73	0.74	0.37	0.37
+850	pp053	F	66	PD	Slow	on	left_ankle	1012.0	1014.0	1.16	1.14	0.785	0.79	0.375	0.35
+851	pp053	F	66	PD	Slow	on	left_ankle	1244.0	1242.0	1.15	1.18	0.82	0.845	0.33	0.335
+852	pp053	F	66	PD	Slow	on	right_shank	25.0	32.0	1.135	1.11	0.79	0.745	0.345	0.365
+853	pp053	F	66	PD	Slow	on	right_shank	252.0	254.0	1.05	1.08	0.735	0.725	0.315	0.355
+854	pp053	F	66	PD	Slow	on	right_shank	462.0	470.0	1.075	1.06	0.745	0.71	0.33	0.35
+855	pp053	F	66	PD	Slow	on	right_shank	677.0	682.0	1.095	1.105	0.745	0.755	0.35	0.35
+856	pp053	F	66	PD	Slow	on	right_shank	896.0	903.0	1.11	1.14	0.765	0.775	0.345	0.365
+857	pp053	F	66	PD	Slow	on	right_shank	1118.0	1131.0	1.17	1.175	0.845	0.8	0.325	0.375
+858	pp053	F	66	PD	Slow	on	right_shank	1352.0	1366.0	1.175	1.175	0.85	0.83	0.325	0.345
+859	pp059	F	66	PD	Fast	off	left_ankle	14.0	16.0	1.185	1.2	0.81	0.755	0.375	0.445
+860	pp059	F	66	PD	Fast	off	left_ankle	251.0	256.0	1.075	1.07	0.74	0.71	0.335	0.36
+861	pp059	F	66	PD	Fast	off	left_ankle	466.0	470.0	1.08	1.07	0.71	0.69	0.37	0.38
+862	pp059	F	66	PD	Fast	off	left_ankle	682.0	684.0	1.12	1.135	0.725	0.7	0.395	0.435
+863	pp059	F	66	PD	Fast	off	right_ankle	139.0	141.0	1.125	1.14	0.755	0.735	0.37	0.405
+864	pp059	F	66	PD	Fast	off	right_ankle	364.0	369.0	1.06	1.05	0.695	0.66	0.365	0.39
+865	pp059	F	66	PD	Fast	off	right_ankle	576.0	579.0	1.085	1.09	0.7	0.675	0.385	0.415
+866	pp059	F	66	PD	Fast	off	right_ankle	793.0	797.0	1.17	1.15	0.77	0.73	0.4	0.42
+867	pp059	F	66	PD	Fast	off	left_shank	14.0	12.0	1.185	1.2	0.81	0.8	0.375	0.4
+868	pp059	F	66	PD	Fast	off	left_shank	251.0	252.0	1.075	1.075	0.74	0.72	0.335	0.355
+869	pp059	F	66	PD	Fast	off	left_shank	466.0	467.0	1.08	1.065	0.71	0.705	0.37	0.36
+870	pp059	F	66	PD	Fast	off	left_shank	682.0	680.0	1.12	1.14	0.725	0.72	0.395	0.42
+871	pp059	F	66	PD	Fast	off	right_shank	139.0	141.0	1.125	1.135	0.755	0.74	0.37	0.395
+872	pp059	F	66	PD	Fast	off	right_shank	364.0	368.0	1.06	1.05	0.695	0.67	0.365	0.38
+873	pp059	F	66	PD	Fast	off	right_shank	576.0	578.0	1.085	1.09	0.7	0.685	0.385	0.405
+874	pp059	F	66	PD	Fast	off	right_shank	793.0	796.0	1.17	1.16	0.77	0.74	0.4	0.42
+875	pp059	F	66	PD	Preferred	off	right_ankle	15.0	24.0	1.215	1.21	0.85	0.795	0.365	0.415
+876	pp059	F	66	PD	Preferred	off	right_ankle	258.0	266.0	1.19	1.18	0.805	0.76	0.385	0.42
+877	pp059	F	66	PD	Preferred	off	right_ankle	496.0	502.0	1.2	1.195	0.775	0.72	0.425	0.475
+878	pp059	F	66	PD	Preferred	off	right_ankle	736.0	741.0	1.145	1.155	0.79	0.765	0.355	0.39
+879	pp059	F	66	PD	Preferred	off	right_ankle	965.0	972.0	1.235	1.205	0.845	0.79	0.39	0.415
+880	pp059	F	66	PD	Preferred	off	right_shank	15.0	19.0	1.215	1.225	0.85	0.82	0.365	0.405
+881	pp059	F	66	PD	Preferred	off	right_shank	258.0	264.0	1.19	1.18	0.805	0.77	0.385	0.41
+882	pp059	F	66	PD	Preferred	off	right_shank	496.0	500.0	1.2	1.195	0.775	0.745	0.425	0.45
+883	pp059	F	66	PD	Preferred	off	right_shank	736.0	739.0	1.145	1.155	0.79	0.775	0.355	0.38
+884	pp059	F	66	PD	Preferred	off	right_shank	965.0	970.0	1.235	1.21	0.845	0.805	0.39	0.405
+885	pp059	F	66	PD	Slow	off	left_ankle	170.0	176.0	1.23	1.23	0.85	0.815	0.38	0.415
+886	pp059	F	66	PD	Slow	off	left_ankle	416.0	422.0	1.25	1.26	0.87	0.84	0.38	0.42
+887	pp059	F	66	PD	Slow	off	left_ankle	666.0	674.0	1.25	1.23	0.89	0.85	0.36	0.38
+888	pp059	F	66	PD	Slow	off	left_ankle	916.0	920.0	1.205	1.205	0.855	0.83	0.35	0.375
+889	pp059	F	66	PD	Slow	off	left_ankle	1157.0	1161.0	1.275	1.21	0.88	0.85	0.395	0.36
+890	pp057	M	22	YA	Fast		left_ankle	134.0	131.0	0.93	0.935	0.54	0.55	0.39	0.385
+891	pp057	M	22	YA	Fast		left_ankle	320.0	318.0	0.945	0.955	0.53	0.55	0.415	0.405
+892	pp057	M	22	YA	Fast		right_ankle	36.0	34.0	0.965	0.965	0.55	0.55	0.415	0.415
+893	pp057	M	22	YA	Fast		right_ankle	229.0	227.0	0.925	0.94	0.52	0.515	0.405	0.425
+894	pp057	M	22	YA	Fast		left_shank	134.0	132.0	0.93	0.935	0.54	0.56	0.39	0.375
+895	pp057	M	22	YA	Fast		left_shank	320.0	319.0	0.945	0.945	0.53	0.56	0.415	0.385
+896	pp057	M	22	YA	Fast		right_shank	36.0	30.0	0.965	0.98	0.55	0.59	0.415	0.39
+897	pp057	M	22	YA	Fast		right_shank	229.0	226.0	0.925	0.915	0.52	0.555	0.405	0.36
+898	pp057	M	22	YA	Preferred		left_ankle	38.0	37.0	1.12	1.12	0.665	0.685	0.455	0.435
+899	pp057	M	22	YA	Preferred		left_ankle	262.0	261.0	1.105	1.105	0.655	0.705	0.45	0.4
+900	pp057	M	22	YA	Preferred		left_ankle	483.0	482.0	1.08	1.085	0.665	0.715	0.415	0.37
+901	pp057	M	22	YA	Preferred		left_shank	38.0	36.0	1.12	1.125	0.665	0.7	0.455	0.425
+902	pp057	M	22	YA	Preferred		left_shank	262.0	261.0	1.105	1.115	0.655	0.685	0.45	0.43
+903	pp057	M	22	YA	Preferred		left_shank	483.0	484.0	1.08	1.075	0.665	0.67	0.415	0.405
+904	pp057	M	22	YA	Preferred		right_shank	150.0	148.0	1.125	1.12	0.675	0.685	0.45	0.435
+905	pp057	M	22	YA	Preferred		right_shank	375.0	372.0	1.09	1.11	0.655	0.675	0.435	0.435
+906	pp057	M	22	YA	Slow		left_ankle	10.0	10.0	1.47	1.47	0.94	0.94	0.53	0.53
+907	pp057	M	22	YA	Slow		left_ankle	304.0	304.0	1.505	1.505	0.95	0.95	0.555	0.555
+908	pp057	M	22	YA	Slow		left_ankle	605.0	605.0	1.41	1.42	0.89	0.885	0.52	0.535
+909	pp057	M	22	YA	Slow		left_ankle	887.0	889.0	1.46	1.45	0.92	0.905	0.54	0.545
+910	pp057	M	22	YA	Slow		right_ankle	162.0	161.0	1.485	1.475	0.91	0.92	0.575	0.555
+911	pp057	M	22	YA	Slow		right_ankle	459.0	456.0	1.445	1.455	0.92	0.965	0.525	0.49
+912	pp057	M	22	YA	Slow		right_ankle	748.0	747.0	1.435	1.425	0.9	0.915	0.535	0.51
+913	pp057	M	22	YA	Slow		left_shank	10.0	12.0	1.47	1.46	0.94	0.94	0.53	0.52
+914	pp057	M	22	YA	Slow		left_shank	304.0	304.0	1.505	1.51	0.95	0.955	0.555	0.555
+915	pp057	M	22	YA	Slow		left_shank	605.0	606.0	1.41	1.42	0.89	0.895	0.52	0.525
+916	pp057	M	22	YA	Slow		left_shank	887.0	890.0	1.46	1.45	0.92	0.915	0.54	0.535
+917	pp057	M	22	YA	Slow		right_shank	162.0	162.0	1.485	1.48	0.91	0.92	0.575	0.56
+918	pp057	M	22	YA	Slow		right_shank	459.0	458.0	1.445	1.45	0.92	0.92	0.525	0.53
+919	pp057	M	22	YA	Slow		right_shank	748.0	748.0	1.435	1.43	0.9	0.91	0.535	0.52
+920	pp058	M	24	MS	Fast	schub	right_ankle	146.0	145.0	1.24	1.25	0.82	0.82	0.42	0.43
+921	pp058	M	24	MS	Fast	schub	right_ankle	394.0	395.0	1.155	1.165	0.78	0.775	0.375	0.39
+922	pp058	M	24	MS	Fast	schub	right_ankle	625.0	628.0	1.19	1.165	0.785	0.76	0.405	0.405
+923	pp058	M	24	MS	Slow		right_ankle	323.0	321.0	2.37	2.38	1.92	1.945	0.45	0.435
+924	pp058	M	24	MS	Slow		right_ankle	797.0	797.0	2.45	2.46	1.965	1.98	0.485	0.48
+925	pp058	M	24	MS	Slow		right_ankle	1287.0	1289.0	2.31	2.305	1.85	1.855	0.46	0.45
+926	pp058	M	24	MS	Slow		right_ankle	1749.0	1750.0	2.19	2.205	1.84	1.85	0.35	0.355
+927	pp058	M	24	MS	Slow		right_ankle	2187.0	2191.0	2.01	1.98	1.51	1.5	0.5	0.48
+928	pp058	M	24	MS	Slow		right_shank	323.0	319.0	2.37	2.38	1.92	1.95	0.45	0.43
+929	pp058	M	24	MS	Slow		right_shank	797.0	795.0	2.45	2.42	1.965	1.98	0.485	0.44
+930	pp058	M	24	MS	Slow		right_shank	1287.0	1279.0	2.31	2.34	1.85	1.91	0.46	0.43
+931	pp058	M	24	MS	Slow		right_shank	1749.0	1747.0	2.19	2.205	1.84	1.87	0.35	0.335
+932	pp058	M	24	MS	Slow		right_shank	2187.0	2188.0	2.01	2.0	1.51	1.515	0.5	0.485
+933	pp058	M	24	MS	Slow	schub	right_ankle	5.0	6.0	2.06	1.975	1.43	1.435	0.63	0.54
+934	pp058	M	24	MS	Slow	schub	right_ankle	417.0	401.0	1.645	1.685	1.335	1.415	0.31	0.27
+935	pp058	M	24	MS	Slow	schub	right_ankle	746.0	738.0	1.625	1.715	1.24	1.28	0.385	0.435
+936	pp058	M	24	MS	Slow	schub	right_ankle	1071.0	1081.0	1.67	1.61	1.345	1.29	0.325	0.32
+937	pp058	M	24	MS	Slow	schub	right_ankle	1405.0	1403.0	1.685	1.67	1.21	1.22	0.475	0.45
+938	pp058	M	24	MS	Slow	schub	right_ankle	1742.0	1737.0	1.49	1.505	1.095	1.14	0.395	0.365
+939	pp058	M	24	MS	Slow	schub	right_ankle	2040.0	2038.0	1.63	1.62	1.18	1.2	0.45	0.42
+940	pp058	M	24	MS	Slow	schub	right_ankle	2366.0	2362.0	1.65	1.67	1.27	1.285	0.38	0.385
+941	pp058	M	24	MS	Slow	schub	right_ankle	2696.0	2696.0	1.735	1.735	1.415	1.42	0.32	0.315
+942	pp058	M	24	MS	Slow	schub	right_ankle	3043.0	3043.0	1.67	1.65	1.2	1.205	0.47	0.445
+943	pp063	M	26	YA	Fast		left_ankle	92.0	90.0	0.835	0.835	0.48	0.485	0.355	0.35
+944	pp063	M	26	YA	Fast		left_ankle	259.0	257.0	0.825	0.82	0.48	0.485	0.345	0.335
+945	pp063	M	26	YA	Fast		right_ankle	9.0	2.0	0.825	0.87	0.485	0.505	0.34	0.365
+946	pp063	M	26	YA	Fast		right_ankle	174.0	176.0	0.83	0.815	0.495	0.47	0.335	0.345
+947	pp063	M	26	YA	Fast		right_ankle	340.0	339.0	0.82	0.825	0.49	0.5	0.33	0.325
+948	pp063	M	26	YA	Fast		right_shank	9.0	9.0	0.825	0.83	0.485	0.5	0.34	0.33
+949	pp063	M	26	YA	Fast		right_shank	174.0	175.0	0.83	0.85	0.495	0.5	0.335	0.35
+950	pp063	M	26	YA	Fast		right_shank	340.0	345.0	0.82	0.81	0.49	0.475	0.33	0.335
+951	pp063	M	26	YA	Preferred		left_ankle	41.0	42.0	0.955	0.945	0.57	0.555	0.385	0.39
+952	pp063	M	26	YA	Preferred		left_ankle	232.0	231.0	0.94	0.95	0.565	0.56	0.375	0.39
+953	pp063	M	26	YA	Preferred		right_ankle	138.0	137.0	0.945	0.95	0.565	0.565	0.38	0.385
+954	pp063	M	26	YA	Preferred		right_ankle	327.0	327.0	0.955	0.97	0.575	0.575	0.38	0.395
+955	pp063	M	26	YA	Preferred		left_shank	41.0	42.0	0.955	0.95	0.57	0.56	0.385	0.39
+956	pp063	M	26	YA	Preferred		left_shank	232.0	232.0	0.94	0.935	0.565	0.56	0.375	0.375
+957	pp063	M	26	YA	Preferred		right_shank	138.0	139.0	0.945	0.945	0.565	0.555	0.38	0.39
+958	pp063	M	26	YA	Preferred		right_shank	327.0	328.0	0.955	0.95	0.575	0.57	0.38	0.38
+959	pp063	M	26	YA	Slow		left_ankle	172.0	175.0	1.01	0.995	0.635	0.6	0.375	0.395
+960	pp063	M	26	YA	Slow		left_ankle	374.0	374.0	1.005	1.015	0.625	0.61	0.38	0.405
+961	pp063	M	26	YA	Slow		right_ankle	69.0	68.0	1.025	1.03	0.655	0.67	0.37	0.36
+962	pp063	M	26	YA	Slow		right_ankle	274.0	274.0	1.005	1.005	0.62	0.62	0.385	0.385
+963	pp063	M	26	YA	Slow		right_ankle	475.0	475.0	1.03	1.035	0.635	0.645	0.395	0.39
+964	pp063	M	26	YA	Slow		left_shank	172.0	172.0	1.01	1.0	0.635	0.625	0.375	0.375
+965	pp063	M	26	YA	Slow		left_shank	374.0	372.0	1.005	1.015	0.625	0.63	0.38	0.385
+966	pp063	M	26	YA	Slow		right_shank	69.0	67.0	1.025	1.03	0.655	0.66	0.37	0.37
+967	pp063	M	26	YA	Slow		right_shank	274.0	273.0	1.005	1.005	0.62	0.615	0.385	0.39
+968	pp063	M	26	YA	Slow		right_shank	475.0	474.0	1.03	1.03	0.635	0.635	0.395	0.395
+969	pp065	M	54	PD	Fast		left_ankle	40.0	39.0	0.97	0.965	0.555	0.575	0.415	0.39
+970	pp065	M	54	PD	Fast		left_ankle	234.0	232.0	0.95	0.955	0.555	0.58	0.395	0.375
+971	pp065	M	54	PD	Fast		right_ankle	136.0	135.0	0.96	0.96	0.535	0.595	0.425	0.365
+972	pp065	M	54	PD	Fast		right_ankle	328.0	327.0	0.98	0.98	0.545	0.6	0.435	0.38
+973	pp065	M	54	PD	Fast		left_shank	40.0	43.0	0.97	0.97	0.555	0.545	0.415	0.425
+974	pp065	M	54	PD	Fast		left_shank	234.0	237.0	0.95	0.955	0.555	0.545	0.395	0.41
+975	pp065	M	54	PD	Fast		right_shank	136.0	138.0	0.96	0.975	0.535	0.56	0.425	0.415
+976	pp065	M	54	PD	Fast		right_shank	328.0	333.0	0.98	0.96	0.545	0.56	0.435	0.4
+977	pp065	M	54	PD	Preferred		left_ankle	157.0	155.0	1.01	1.005	0.615	0.625	0.395	0.38
+978	pp065	M	54	PD	Preferred		left_ankle	359.0	356.0	0.99	0.995	0.605	0.625	0.385	0.37
+979	pp065	M	54	PD	Preferred		left_ankle	557.0	555.0	1.005	1.01	0.625	0.635	0.38	0.375
+980	pp065	M	54	PD	Preferred		left_shank	157.0	163.0	1.01	0.99	0.615	0.585	0.395	0.405
+981	pp065	M	54	PD	Preferred		left_shank	359.0	361.0	0.99	1.005	0.605	0.595	0.385	0.41
+982	pp065	M	54	PD	Preferred		left_shank	557.0	562.0	1.005	1.015	0.625	0.61	0.38	0.405
+983	pp065	M	54	PD	Slow		left_ankle	42.0	40.0	1.13	1.135	0.71	0.725	0.42	0.41
+984	pp065	M	54	PD	Slow		left_ankle	268.0	267.0	1.13	1.105	0.695	0.715	0.435	0.39
+985	pp065	M	54	PD	Slow		left_ankle	494.0	488.0	1.09	1.115	0.685	0.72	0.405	0.395
+986	pp065	M	54	PD	Slow		right_ankle	148.0	153.0	1.135	1.13	0.685	0.72	0.45	0.41
+987	pp065	M	54	PD	Slow		right_ankle	375.0	379.0	1.09	1.1	0.715	0.71	0.375	0.39
+988	pp065	M	54	PD	Slow		right_ankle	593.0	599.0	1.18	1.145	0.695	0.73	0.485	0.415
+989	pp065	M	54	PD	Slow		left_shank	42.0	43.0	1.13	1.14	0.71	0.705	0.42	0.435
+990	pp065	M	54	PD	Slow		left_shank	268.0	271.0	1.13	1.11	0.695	0.67	0.435	0.44
+991	pp065	M	54	PD	Slow		left_shank	494.0	493.0	1.09	1.125	0.685	0.685	0.405	0.44
+992	pp065	M	54	PD	Slow		right_shank	148.0	156.0	1.135	1.1	0.685	0.685	0.45	0.415
+993	pp065	M	54	PD	Slow		right_shank	375.0	376.0	1.09	1.13	0.715	0.7	0.375	0.43
+994	pp065	M	54	PD	Slow		right_shank	593.0	602.0	1.18	1.125	0.695	0.69	0.485	0.435
+995	pp102	F	63	PD	Slow	on	left_ankle	182.0	194.0	1.88	1.84	1.425	1.365	0.455	0.475
+996	pp102	F	63	PD	Slow	on	left_ankle	558.0	562.0	1.305	1.29	0.825	0.805	0.48	0.485
+997	pp102	F	63	PD	Slow	on	left_ankle	819.0	820.0	1.335	1.32	0.805	0.8	0.53	0.52
+998	pp102	F	63	PD	Slow	off	left_ankle	149.0	150.0	1.21	1.25	0.81	0.8	0.4	0.45
+999	pp102	F	63	PD	Slow	off	left_ankle	391.0	400.0	1.27	1.255	0.8	0.755	0.47	0.5
+1000	pp102	F	63	PD	Slow	off	left_ankle	645.0	651.0	1.265	1.255	0.87	0.84	0.395	0.415
+1001	pp102	F	63	PD	Slow	off	right_ankle	27.0	24.0	1.24	1.26	0.8	0.815	0.44	0.445
+1002	pp102	F	63	PD	Slow	off	right_ankle	275.0	276.0	1.22	1.225	0.8	0.795	0.42	0.43
+1003	pp102	F	63	PD	Slow	off	right_ankle	519.0	521.0	1.27	1.28	0.855	0.845	0.415	0.435
+1004	pp102	F	63	PD	Slow	off	right_ankle	773.0	777.0	1.37	1.345	0.91	0.89	0.46	0.455
+1005	pp102	F	63	PD	Slow	off	left_shank	149.0	154.0	1.21	1.225	0.81	0.77	0.4	0.455
+1006	pp102	F	63	PD	Slow	off	left_shank	391.0	399.0	1.27	1.255	0.8	0.76	0.47	0.495
+1007	pp102	F	63	PD	Slow	off	left_shank	645.0	650.0	1.265	1.285	0.87	0.83	0.395	0.455
+1008	pp102	F	63	PD	Fast	off	left_ankle	36.0	38.0	0.89	0.895	0.555	0.54	0.335	0.355
+1009	pp102	F	63	PD	Fast	off	left_ankle	214.0	217.0	0.895	0.88	0.55	0.53	0.345	0.35
+1010	pp102	F	63	PD	Fast	off	left_ankle	393.0	393.0	0.935	0.955	0.565	0.55	0.37	0.405
+1011	pp102	F	63	PD	Fast	off	right_ankle	128.0	124.0	0.88	0.895	0.545	0.57	0.335	0.325
+1012	pp102	F	63	PD	Fast	off	right_ankle	304.0	303.0	0.885	0.885	0.555	0.555	0.33	0.33
+1013	pp102	F	63	PD	Fast	off	left_shank	36.0	37.0	0.89	0.905	0.555	0.55	0.335	0.355
+1014	pp102	F	63	PD	Fast	off	left_shank	214.0	218.0	0.895	0.89	0.55	0.535	0.345	0.355
+1015	pp102	F	63	PD	Fast	off	left_shank	393.0	396.0	0.935	0.945	0.565	0.55	0.37	0.395
+1016	pp102	F	63	PD	Fast	off	right_shank	128.0	130.0	0.88	0.89	0.545	0.55	0.335	0.34
+1017	pp102	F	63	PD	Fast	off	right_shank	304.0	308.0	0.885	0.86	0.555	0.535	0.33	0.325
+1018	pp102	F	63	PD	Fast	on	left_ankle	124.0	125.0	0.955	0.95	0.565	0.555	0.39	0.395
+1019	pp102	F	63	PD	Fast	on	left_ankle	315.0	315.0	0.94	0.94	0.555	0.55	0.385	0.39
+1020	pp102	F	63	PD	Fast	on	left_shank	124.0	120.0	0.955	0.98	0.565	0.595	0.39	0.385
+1021	pp102	F	63	PD	Fast	on	left_shank	315.0	316.0	0.94	0.935	0.555	0.555	0.385	0.38
+1022	pp102	F	63	PD	Fast	on	right_shank	29.0	29.0	0.955	0.96	0.565	0.58	0.39	0.38
+1023	pp102	F	63	PD	Fast	on	right_shank	220.0	221.0	0.94	0.94	0.56	0.565	0.38	0.375
+1024	pp102	F	63	PD	Fast	on	right_shank	408.0	409.0	0.965	0.96	0.575	0.575	0.39	0.385
+1025	pp102	F	63	PD	Preferred	off	right_ankle	8.0	8.0	1.145	1.145	0.78	0.77	0.365	0.375
+1026	pp102	F	63	PD	Preferred	off	right_ankle	237.0	237.0	1.015	1.015	0.65	0.655	0.365	0.36
+1027	pp102	F	63	PD	Preferred	off	right_ankle	440.0	440.0	1.03	1.04	0.665	0.665	0.365	0.375
+1028	pp102	F	63	PD	Preferred	off	left_shank	130.0	136.0	1.04	1.035	0.675	0.65	0.365	0.385
+1029	pp102	F	63	PD	Preferred	off	left_shank	338.0	343.0	1.03	1.04	0.645	0.62	0.385	0.42
+1030	pp102	F	63	PD	Preferred	off	left_shank	544.0	551.0	1.04	1.06	0.665	0.62	0.375	0.44
+1031	pp102	F	63	PD	Preferred	on	right_ankle	32.0	31.0	1.085	1.105	0.68	0.685	0.405	0.42
+1032	pp102	F	63	PD	Preferred	on	right_ankle	249.0	252.0	1.04	1.03	0.645	0.615	0.395	0.415
+1033	pp102	F	63	PD	Preferred	on	right_ankle	457.0	458.0	1.085	1.09	0.665	0.645	0.42	0.445
+1034	pp102	F	63	PD	Preferred	on	left_shank	140.0	145.0	1.075	1.075	0.66	0.685	0.415	0.39
+1035	pp102	F	63	PD	Preferred	on	left_shank	355.0	360.0	1.055	1.02	0.635	0.605	0.42	0.415
+1036	pp102	F	63	PD	Preferred	on	left_shank	566.0	564.0	1.13	1.14	0.67	0.67	0.46	0.47
+1037	pp102	F	63	PD	Preferred	on	right_shank	32.0	37.0	1.085	1.07	0.68	0.665	0.405	0.405
+1038	pp102	F	63	PD	Preferred	on	right_shank	249.0	251.0	1.04	1.04	0.645	0.635	0.395	0.405
+1039	pp102	F	63	PD	Preferred	on	right_shank	457.0	459.0	1.085	1.07	0.665	0.655	0.42	0.415
+1040	pp140	M	79	PD	Slow	on	right_shank	7.0	15.0	1.715	1.68	1.285	1.245	0.43	0.435
+1041	pp140	M	79	PD	Slow	on	right_shank	350.0	351.0	1.56	1.575	1.09	1.08	0.47	0.495
+1042	pp140	M	79	PD	Slow	on	right_shank	662.0	666.0	1.49	1.495	1.075	1.055	0.415	0.44
+1043	pp140	M	79	PD	Slow	on	right_shank	960.0	965.0	1.46	1.475	1.03	0.995	0.43	0.48
+1044	pp140	M	79	PD	Slow	on	right_shank	1252.0	1260.0	1.52	1.52	1.145	1.105	0.375	0.415
+1045	pp140	M	79	PD	Slow	on	right_shank	1556.0	1564.0	1.615	1.625	1.175	1.13	0.44	0.495
+1046	pp140	M	79	PD	Slow	on	right_ankle	7.0	14.0	1.715	1.71	1.285	1.265	0.43	0.445
+1047	pp140	M	79	PD	Slow	on	right_ankle	350.0	356.0	1.56	1.555	1.09	1.045	0.47	0.51
+1048	pp140	M	79	PD	Slow	on	right_ankle	662.0	667.0	1.49	1.495	1.075	1.05	0.415	0.445
+1049	pp140	M	79	PD	Slow	on	right_ankle	960.0	966.0	1.46	1.47	1.03	0.99	0.43	0.48
+1050	pp140	M	79	PD	Slow	on	right_ankle	1252.0	1260.0	1.52	1.525	1.145	1.11	0.375	0.415
+1051	pp140	M	79	PD	Slow	on	right_ankle	1556.0	1565.0	1.615	1.61	1.175	1.145	0.44	0.465
+1052	pp140	M	79	PD	Fast	on	left_ankle	41.0	43.0	1.02	1.04	0.675	0.67	0.345	0.37
+1053	pp140	M	79	PD	Fast	on	left_ankle	245.0	251.0	1.03	1.02	0.685	0.665	0.345	0.355
+1054	pp140	M	79	PD	Fast	on	left_ankle	451.0	455.0	1.05	1.03	0.665	0.645	0.385	0.385
+1055	pp140	M	79	PD	Fast	on	right_ankle	146.0	147.0	1.035	1.02	0.595	0.645	0.44	0.375
+1056	pp140	M	79	PD	Fast	on	right_ankle	353.0	351.0	1.0	1.015	0.575	0.645	0.425	0.37
+1057	pp140	M	79	PD	Fast	on	right_ankle	553.0	554.0	1.1	1.135	0.715	0.725	0.385	0.41
+1058	pp140	M	79	PD	Fast	on	left_shank	41.0	43.0	1.02	1.035	0.675	0.675	0.345	0.36
+1059	pp140	M	79	PD	Fast	on	left_shank	245.0	250.0	1.03	1.025	0.685	0.665	0.345	0.36
+1060	pp140	M	79	PD	Fast	on	left_shank	451.0	455.0	1.05	1.035	0.665	0.645	0.385	0.39
+1061	pp140	M	79	PD	Fast	on	right_shank	146.0	150.0	1.035	1.005	0.595	0.625	0.44	0.38
+1062	pp140	M	79	PD	Fast	on	right_shank	353.0	351.0	1.0	1.025	0.575	0.645	0.425	0.38
+1063	pp140	M	79	PD	Fast	on	right_shank	553.0	556.0	1.1	1.135	0.715	0.69	0.385	0.445
+1064	pp072	M	27	YA	Slow		right_shank	269.0	269.0	1.96	1.965	1.32	1.345	0.64	0.62
+1065	pp072	M	27	YA	Slow		right_shank	661.0	662.0	1.95	1.95	1.295	1.33	0.655	0.62
+1066	pp072	M	27	YA	Slow		right_shank	1051.0	1052.0	1.88	1.89	1.25	1.285	0.63	0.605
+1067	pp072	M	27	YA	Slow		right_shank	1427.0	1430.0	1.81	1.815	1.195	1.22	0.615	0.595
+1068	pp072	M	27	YA	Slow		right_shank	1789.0	1793.0	1.945	1.935	1.275	1.3	0.67	0.635
+1069	pp072	M	27	YA	Slow		left_ankle	69.0	71.0	1.975	1.985	1.335	1.335	0.64	0.65
+1070	pp072	M	27	YA	Slow		left_ankle	464.0	468.0	1.975	1.98	1.32	1.305	0.655	0.675
+1071	pp072	M	27	YA	Slow		left_ankle	859.0	864.0	1.91	1.91	1.255	1.24	0.655	0.67
+1072	pp072	M	27	YA	Slow		left_ankle	1241.0	1246.0	1.825	1.82	1.235	1.225	0.59	0.595
+1073	pp072	M	27	YA	Slow		left_ankle	1606.0	1610.0	1.895	1.9	1.255	1.24	0.64	0.66
+1074	pp072	M	27	YA	Slow		right_ankle	269.0	269.0	1.96	1.95	1.32	1.335	0.64	0.615
+1075	pp072	M	27	YA	Slow		right_ankle	661.0	659.0	1.95	1.935	1.295	1.315	0.655	0.62
+1076	pp072	M	27	YA	Slow		right_ankle	1051.0	1046.0	1.88	1.88	1.25	1.285	0.63	0.595
+1077	pp072	M	27	YA	Slow		right_ankle	1427.0	1422.0	1.81	1.85	1.195	1.235	0.615	0.615
+1078	pp072	M	27	YA	Slow		right_ankle	1789.0	1792.0	1.945	1.925	1.275	1.275	0.67	0.65
+1079	pp072	M	27	YA	Fast		left_shank	132.0	132.0	0.99	0.985	0.595	0.605	0.395	0.38
+1080	pp072	M	27	YA	Fast		left_shank	330.0	329.0	0.97	0.97	0.585	0.575	0.385	0.395
+1081	pp072	M	27	YA	Fast		right_shank	233.0	231.0	0.975	0.985	0.57	0.585	0.405	0.4
+1082	pp072	M	27	YA	Fast		right_shank	428.0	428.0	0.98	0.975	0.585	0.59	0.395	0.385
+1083	pp072	M	27	YA	Preferred		left_ankle	190.0	191.0	1.195	1.205	0.75	0.74	0.445	0.465
+1084	pp072	M	27	YA	Preferred		left_ankle	429.0	432.0	1.155	1.15	0.715	0.705	0.44	0.445
+1085	pp072	M	27	YA	Preferred		left_ankle	660.0	662.0	1.18	1.165	0.73	0.71	0.45	0.455
+1086	pp072	M	27	YA	Preferred		right_ankle	62.0	59.0	1.26	1.265	0.805	0.82	0.455	0.445
+1087	pp072	M	27	YA	Preferred		right_ankle	314.0	312.0	1.17	1.175	0.705	0.72	0.465	0.455
+1088	pp072	M	27	YA	Preferred		right_ankle	548.0	547.0	1.13	1.125	0.7	0.675	0.43	0.45
+1089	pp072	M	27	YA	Preferred		left_shank	190.0	193.0	1.195	1.175	0.75	0.77	0.445	0.405
+1090	pp072	M	27	YA	Preferred		left_shank	429.0	428.0	1.155	1.16	0.715	0.74	0.44	0.42
+1091	pp072	M	27	YA	Preferred		left_shank	660.0	660.0	1.18	1.175	0.73	0.75	0.45	0.425
+1092	pp078	M	26	MS	Fast		left_ankle	147.0	144.0	1.035	1.035	0.63	0.655	0.405	0.38
+1093	pp078	M	26	MS	Fast		left_ankle	354.0	351.0	1.01	1.02	0.615	0.63	0.395	0.39
+1094	pp078	M	26	MS	Fast		right_ankle	41.0	37.0	1.075	1.08	0.63	0.67	0.445	0.41
+1095	pp078	M	26	MS	Fast		right_ankle	256.0	253.0	1.005	1.005	0.605	0.63	0.4	0.375
+1096	pp078	M	26	MS	Fast		right_ankle	457.0	454.0	1.04	1.04	0.615	0.645	0.425	0.395
+1097	pp078	M	26	MS	Fast		right_shank	41.0	39.0	1.075	1.07	0.63	0.66	0.445	0.41
+1098	pp078	M	26	MS	Fast		right_shank	256.0	253.0	1.005	1.01	0.605	0.625	0.4	0.385
+1099	pp078	M	26	MS	Fast		right_shank	457.0	455.0	1.04	1.04	0.615	0.64	0.425	0.4
+1100	pp078	M	26	MS	Preferred		left_ankle	299.0	297.0	1.455	1.46	0.96	0.97	0.495	0.49
+1101	pp078	M	26	MS	Preferred		left_ankle	590.0	589.0	1.465	1.44	0.97	0.98	0.495	0.46
+1102	pp078	M	26	MS	Preferred		left_ankle	883.0	877.0	1.515	1.535	1.04	1.075	0.475	0.46
+1103	pp078	M	26	MS	Preferred		left_ankle	1186.0	1184.0	1.45	1.445	0.995	1.01	0.455	0.435
+1104	pp078	M	26	MS	Preferred		left_ankle	1476.0	1473.0	1.55	1.55	1.07	1.09	0.48	0.46
+1105	pp078	M	26	MS	Preferred		right_ankle	156.0	153.0	1.435	1.43	0.955	0.98	0.48	0.45
+1106	pp078	M	26	MS	Preferred		right_ankle	443.0	439.0	1.44	1.445	0.93	0.965	0.51	0.48
+1107	pp078	M	26	MS	Preferred		right_ankle	731.0	728.0	1.56	1.56	1.03	1.04	0.53	0.52
+1108	pp078	M	26	MS	Preferred		right_ankle	1043.0	1040.0	1.44	1.46	0.99	1.02	0.45	0.44
+1109	pp078	M	26	MS	Preferred		right_ankle	1331.0	1332.0	1.495	1.475	0.995	1.005	0.5	0.47
+1110	pp078	M	26	MS	Preferred		right_shank	156.0	153.0	1.435	1.425	0.955	0.985	0.48	0.44
+1111	pp078	M	26	MS	Preferred		right_shank	443.0	438.0	1.44	1.44	0.93	0.965	0.51	0.475
+1112	pp078	M	26	MS	Preferred		right_shank	731.0	726.0	1.56	1.555	1.03	1.065	0.53	0.49
+1113	pp078	M	26	MS	Preferred		right_shank	1043.0	1037.0	1.44	1.43	0.99	1.025	0.45	0.405
+1114	pp078	M	26	MS	Preferred		right_shank	1331.0	1323.0	1.495	1.51	0.995	1.05	0.5	0.46
+1115	pp078	M	26	MS	Slow		right_shank	74.0	67.0	2.29	2.3	1.675	1.735	0.615	0.565
+1116	pp078	M	26	MS	Slow		right_shank	532.0	527.0	2.25	2.24	1.57	1.615	0.68	0.625
+1117	pp078	M	26	MS	Slow		right_shank	982.0	975.0	2.365	2.36	1.74	1.785	0.625	0.575
+1118	pp078	M	26	MS	Slow		right_shank	1455.0	1447.0	2.385	2.405	1.745	1.825	0.64	0.58
+1119	pp078	M	26	MS	Slow		right_shank	1932.0	1928.0	2.385	2.38	1.77	1.805	0.615	0.575
+1120	pp078	M	26	MS	Slow		right_shank	2409.0	2404.0	2.37	2.37	1.785	1.835	0.585	0.535
+1121	pp078	M	26	MS	Slow		right_shank	2883.0	2878.0	2.335	2.32	1.79	1.825	0.545	0.495
+1122	pp078	M	26	MS	Slow		right_shank	3350.0	3342.0	2.45	2.48	1.94	1.995	0.51	0.485
+1123	pp103	M	79	other	Fast		left_ankle	127.0	134.0	1.05	1.06	0.71	0.685	0.34	0.375
+1124	pp103	M	79	other	Fast		left_ankle	337.0	346.0	1.005	0.97	0.65	0.635	0.355	0.335
+1125	pp103	M	79	other	Fast		left_ankle	538.0	540.0	1.015	0.995	0.665	0.675	0.35	0.32
+1126	pp103	M	79	other	Fast		right_ankle	21.0	25.0	1.08	1.055	0.695	0.69	0.385	0.365
+1127	pp103	M	79	other	Fast		right_ankle	237.0	236.0	1.02	1.025	0.645	0.665	0.375	0.36
+1128	pp103	M	79	other	Fast		right_ankle	441.0	441.0	1.025	1.03	0.625	0.64	0.4	0.39
+1129	pp103	M	79	other	Fast		right_shank	21.0	27.0	1.08	1.07	0.695	0.67	0.385	0.4
+1130	pp103	M	79	other	Fast		right_shank	237.0	241.0	1.02	1.025	0.645	0.63	0.375	0.395
+1131	pp103	M	79	other	Fast		right_shank	441.0	446.0	1.025	1.01	0.625	0.6	0.4	0.41
+1132	pp103	M	79	other	Preferred		left_ankle	26.0	37.0	1.04	1.04	0.695	0.65	0.345	0.39
+1133	pp103	M	79	other	Preferred		left_ankle	234.0	245.0	1.12	1.115	0.815	0.745	0.305	0.37
+1134	pp103	M	79	other	Preferred		left_ankle	458.0	468.0	1.115	1.085	0.77	0.735	0.345	0.35
+1135	pp103	M	79	other	Preferred		left_ankle	681.0	685.0	1.14	1.16	0.78	0.765	0.36	0.395
+1136	pp103	M	79	other	Preferred		left_shank	26.0	38.0	1.04	1.02	0.695	0.655	0.345	0.365
+1137	pp103	M	79	other	Preferred		left_shank	234.0	242.0	1.12	1.105	0.815	0.765	0.305	0.34
+1138	pp103	M	79	other	Preferred		left_shank	458.0	463.0	1.115	1.13	0.77	0.755	0.345	0.375
+1139	pp103	M	79	other	Preferred		left_shank	681.0	689.0	1.14	1.12	0.78	0.755	0.36	0.365
+1140	pp103	M	79	other	Preferred		right_shank	132.0	137.0	1.08	1.1	0.72	0.7	0.36	0.4
+1141	pp103	M	79	other	Preferred		right_shank	348.0	357.0	1.125	1.1	0.745	0.715	0.38	0.385
+1142	pp103	M	79	other	Preferred		right_shank	573.0	577.0	1.12	1.125	0.74	0.735	0.38	0.39
+1143	pp103	M	79	other	Slow		left_shank	132.0	144.0	1.095	1.09	0.745	0.705	0.35	0.385
+1144	pp103	M	79	other	Slow		left_shank	351.0	362.0	1.085	1.065	0.77	0.73	0.315	0.335
+1145	pp103	M	79	other	Slow		left_shank	568.0	575.0	1.165	1.155	0.825	0.805	0.34	0.35
+1146	pp103	M	79	other	Slow		left_shank	801.0	806.0	1.135	1.145	0.82	0.805	0.315	0.34
+1147	pp103	M	79	other	Slow		left_shank	1028.0	1035.0	1.1	1.085	0.74	0.735	0.36	0.35
+1148	pp103	M	79	other	Slow		left_shank	1248.0	1252.0	1.115	1.125	0.8	0.785	0.315	0.34
+1149	pp103	M	79	other	Slow		left_shank	1471.0	1477.0	1.17	1.165	0.815	0.815	0.355	0.35
+1150	pp103	M	79	other	Slow		right_shank	31.0	34.0	1.045	1.045	0.705	0.7	0.34	0.345
+1151	pp103	M	79	other	Slow		right_shank	240.0	243.0	1.1	1.12	0.765	0.76	0.335	0.36
+1152	pp103	M	79	other	Slow		right_shank	460.0	467.0	1.145	1.13	0.785	0.76	0.36	0.37
+1153	pp103	M	79	other	Slow		right_shank	689.0	693.0	1.135	1.14	0.8	0.79	0.335	0.35
+1154	pp103	M	79	other	Slow		right_shank	916.0	921.0	1.095	1.12	0.765	0.755	0.33	0.365
+1155	pp103	M	79	other	Slow		right_shank	1135.0	1145.0	1.12	1.095	0.77	0.73	0.35	0.365
+1156	pp103	M	79	other	Slow		right_shank	1359.0	1364.0	1.13	1.15	0.78	0.765	0.35	0.385
+1157	pp149	M	18	stroke	Slow		left_ankle	53.0	53.0	1.67	1.67	1.155	1.165	0.515	0.505
+1158	pp149	M	18	stroke	Slow		left_ankle	387.0	387.0	1.58	1.57	1.07	1.075	0.51	0.495
+1159	pp149	M	18	stroke	Slow		left_ankle	703.0	701.0	1.54	1.56	1.065	1.08	0.475	0.48
+1160	pp149	M	18	stroke	Slow		left_ankle	1011.0	1013.0	1.715	1.7	1.2	1.195	0.515	0.505
+1161	pp149	M	18	stroke	Slow		left_ankle	1354.0	1353.0	1.76	1.775	1.28	1.295	0.48	0.48
+1162	pp149	M	18	stroke	Slow		left_shank	53.0	50.0	1.67	1.66	1.155	1.2	0.515	0.46
+1163	pp149	M	18	stroke	Slow		left_shank	387.0	382.0	1.58	1.59	1.07	1.12	0.51	0.47
+1164	pp149	M	18	stroke	Slow		left_shank	703.0	700.0	1.54	1.555	1.065	1.1	0.475	0.455
+1165	pp149	M	18	stroke	Slow		left_shank	1011.0	1011.0	1.715	1.69	1.2	1.22	0.515	0.47
+1166	pp149	M	18	stroke	Slow		left_shank	1354.0	1349.0	1.76	1.78	1.28	1.325	0.48	0.455
+1167	pp149	M	18	stroke	Fast		left_ankle	56.0	56.0	1.09	1.075	0.67	0.735	0.42	0.34
+1168	pp149	M	18	stroke	Fast		left_ankle	274.0	271.0	1.065	1.07	0.65	0.665	0.415	0.405
+1169	pp149	M	18	stroke	Fast		left_ankle	487.0	485.0	1.11	1.105	0.68	0.68	0.43	0.425
+1170	pp149	M	18	stroke	Fast		right_ankle	166.0	165.0	1.08	1.09	0.66	0.66	0.42	0.43
+1171	pp149	M	18	stroke	Fast		right_ankle	382.0	383.0	1.07	1.06	0.65	0.64	0.42	0.42
+1172	pp149	M	18	stroke	Fast		left_shank	56.0	55.0	1.09	1.08	0.67	0.685	0.42	0.395
+1173	pp149	M	18	stroke	Fast		left_shank	274.0	271.0	1.065	1.07	0.65	0.695	0.415	0.375
+1174	pp149	M	18	stroke	Fast		left_shank	487.0	485.0	1.11	1.1	0.68	0.71	0.43	0.39
+1175	pp149	M	18	stroke	Fast		right_shank	166.0	164.0	1.08	1.085	0.66	0.675	0.42	0.41
+1176	pp149	M	18	stroke	Fast		right_shank	382.0	381.0	1.07	1.06	0.65	0.66	0.42	0.4
+1177	pp149	M	18	stroke	Preferred		left_ankle	57.0	57.0	1.39	1.385	0.91	0.905	0.48	0.48
+1178	pp149	M	18	stroke	Preferred		left_ankle	335.0	334.0	1.4	1.39	0.925	0.93	0.475	0.46
+1179	pp149	M	18	stroke	Preferred		left_ankle	615.0	612.0	1.405	1.415	0.95	0.965	0.455	0.45
+1180	pp149	M	18	stroke	Preferred		left_ankle	896.0	895.0	1.43	1.425	0.92	0.92	0.51	0.505
+1181	pp149	M	18	stroke	Preferred		right_ankle	199.0	197.0	1.395	1.425	0.895	0.91	0.5	0.515
+1182	pp149	M	18	stroke	Preferred		right_ankle	478.0	482.0	1.42	1.405	0.905	0.89	0.515	0.515
+1183	pp149	M	18	stroke	Preferred		right_ankle	762.0	763.0	1.36	1.365	0.91	0.915	0.45	0.45
+1184	pp149	M	18	stroke	Preferred		left_shank	57.0	55.0	1.39	1.385	0.91	0.94	0.48	0.445
+1185	pp149	M	18	stroke	Preferred		left_shank	335.0	332.0	1.4	1.42	0.925	0.96	0.475	0.46
+1186	pp149	M	18	stroke	Preferred		left_shank	615.0	616.0	1.405	1.395	0.95	0.965	0.455	0.43
+1187	pp149	M	18	stroke	Preferred		left_shank	896.0	895.0	1.43	1.425	0.92	0.945	0.51	0.48
+1188	pp149	M	18	stroke	Preferred		right_shank	199.0	200.0	1.395	1.38	0.895	0.91	0.5	0.47
+1189	pp149	M	18	stroke	Preferred		right_shank	478.0	476.0	1.42	1.42	0.905	0.935	0.515	0.485
+1190	pp149	M	18	stroke	Preferred		right_shank	762.0	760.0	1.36	1.38	0.91	0.93	0.45	0.45
+1191	pp121	F	65	OA	Slow		left_ankle	209.0	207.0	1.685	1.71	1.215	1.24	0.47	0.47
+1192	pp121	F	65	OA	Slow		left_ankle	546.0	549.0	1.71	1.705	1.255	1.245	0.455	0.46
+1193	pp121	F	65	OA	Slow		left_ankle	888.0	890.0	1.71	1.725	1.28	1.275	0.43	0.45
+1194	pp121	F	65	OA	Slow		left_ankle	1230.0	1235.0	1.745	1.725	1.28	1.26	0.465	0.465
+1195	pp121	F	65	OA	Slow		left_ankle	1579.0	1580.0	1.83	1.805	1.325	1.33	0.505	0.475
+1196	pp121	F	65	OA	Slow		right_ankle	33.0	34.0	1.675	1.66	1.245	1.25	0.43	0.41
+1197	pp121	F	65	OA	Slow		right_ankle	368.0	366.0	1.75	1.745	1.255	1.275	0.495	0.47
+1198	pp121	F	65	OA	Slow		right_ankle	718.0	715.0	1.71	1.73	1.225	1.245	0.485	0.485
+1199	pp121	F	65	OA	Slow		right_ankle	1060.0	1061.0	1.7	1.685	1.215	1.22	0.485	0.465
+1200	pp121	F	65	OA	Slow		right_ankle	1400.0	1398.0	1.755	1.745	1.275	1.29	0.48	0.455
+1201	pp121	F	65	OA	Fast		left_ankle	94.0	89.0	0.7	0.715	0.39	0.42	0.31	0.295
+1202	pp121	F	65	OA	Fast		left_ankle	234.0	232.0	0.735	0.73	0.435	0.445	0.3	0.285
+1203	pp121	F	65	OA	Fast		left_ankle	381.0	378.0	0.68	0.76	0.435	0.445	0.245	0.315
+1204	pp121	F	65	OA	Fast		right_ankle	25.0	16.0	0.69	0.725	0.37	0.42	0.32	0.305
+1205	pp121	F	65	OA	Fast		right_ankle	163.0	161.0	0.74	0.745	0.385	0.445	0.355	0.3
+1206	pp121	F	65	OA	Fast		right_ankle	311.0	310.0	0.715	0.71	0.36	0.415	0.355	0.295
+1207	pp113	F	69	PD	Fast	off	left_ankle	41.0	42.0	0.85	0.865	0.525	0.54	0.325	0.325
+1208	pp113	F	69	PD	Fast	off	left_ankle	211.0	215.0	0.815	0.805	0.485	0.475	0.33	0.33
+1209	pp113	F	69	PD	Fast	off	left_ankle	374.0	376.0	0.855	0.855	0.515	0.525	0.34	0.33
+1210	pp113	F	69	PD	Fast	off	right_ankle	123.0	127.0	0.835	0.815	0.51	0.51	0.325	0.305
+1211	pp113	F	69	PD	Fast	off	right_ankle	290.0	290.0	0.82	0.845	0.495	0.5	0.325	0.345
+1212	pp113	F	69	PD	Fast	off	right_ankle	454.0	459.0	0.95	0.93	0.56	0.545	0.39	0.385
+1213	pp113	F	69	PD	Fast	off	left_shank	41.0	44.0	0.85	0.82	0.525	0.52	0.325	0.3
+1214	pp113	F	69	PD	Fast	off	left_shank	211.0	208.0	0.815	0.82	0.485	0.505	0.33	0.315
+1215	pp113	F	69	PD	Fast	off	left_shank	374.0	372.0	0.855	0.865	0.515	0.53	0.34	0.335
+1216	pp113	F	69	PD	Fast	off	right_shank	123.0	128.0	0.835	0.815	0.51	0.48	0.325	0.335
+1217	pp113	F	69	PD	Fast	off	right_shank	290.0	291.0	0.82	0.815	0.495	0.505	0.325	0.31
+1218	pp113	F	69	PD	Fast	off	right_shank	454.0	454.0	0.95	0.955	0.56	0.565	0.39	0.39
+1219	pp113	F	69	PD	Preferred	off	left_ankle	130.0	135.0	1.065	1.06	0.665	0.655	0.4	0.405
+1220	pp113	F	69	PD	Preferred	off	left_ankle	343.0	347.0	1.07	1.075	0.7	0.69	0.37	0.385
+1221	pp113	F	69	PD	Preferred	off	left_ankle	557.0	562.0	1.105	1.095	0.71	0.69	0.395	0.405
+1222	pp113	F	69	PD	Preferred	off	left_ankle	778.0	781.0	1.16	1.135	0.745	0.715	0.415	0.42
+1223	pp113	F	69	PD	Preferred	off	right_ankle	19.0	20.0	1.09	1.09	0.71	0.69	0.38	0.4
+1224	pp113	F	69	PD	Preferred	off	right_ankle	237.0	238.0	1.075	1.09	0.665	0.67	0.41	0.42
+1225	pp113	F	69	PD	Preferred	off	right_ankle	452.0	456.0	1.085	1.075	0.69	0.68	0.395	0.395
+1226	pp113	F	69	PD	Preferred	off	right_ankle	669.0	671.0	1.12	1.115	0.705	0.705	0.415	0.41
+1227	pp113	F	69	PD	Preferred	off	left_shank	130.0	133.0	1.065	1.06	0.665	0.665	0.4	0.395
+1228	pp113	F	69	PD	Preferred	off	left_shank	343.0	345.0	1.07	1.05	0.7	0.7	0.37	0.35
+1229	pp113	F	69	PD	Preferred	off	left_shank	557.0	555.0	1.105	1.14	0.71	0.72	0.395	0.42
+1230	pp113	F	69	PD	Preferred	off	left_shank	778.0	783.0	1.16	1.1	0.745	0.72	0.415	0.38
+1231	pp113	F	69	PD	Preferred	off	right_shank	19.0	22.0	1.09	1.095	0.71	0.705	0.38	0.39
+1232	pp113	F	69	PD	Preferred	off	right_shank	237.0	241.0	1.075	1.09	0.665	0.655	0.41	0.435
+1233	pp113	F	69	PD	Preferred	off	right_shank	452.0	459.0	1.085	1.075	0.69	0.665	0.395	0.41
+1234	pp113	F	69	PD	Preferred	off	right_shank	669.0	674.0	1.12	1.12	0.705	0.695	0.415	0.425
+1235	pp113	F	69	PD	Slow	off	left_ankle	40.0	44.0	1.3	1.29	0.87	0.83	0.43	0.46
+1236	pp113	F	69	PD	Slow	off	left_ankle	300.0	302.0	1.32	1.345	0.875	0.855	0.445	0.49
+1237	pp113	F	69	PD	Slow	off	left_ankle	564.0	571.0	1.265	1.24	0.86	0.82	0.405	0.42
+1238	pp113	F	69	PD	Slow	off	left_ankle	817.0	819.0	1.405	1.4	0.9	0.88	0.505	0.52
+1239	pp113	F	69	PD	Slow	off	left_ankle	1098.0	1099.0	1.46	1.47	0.995	0.97	0.465	0.5
+1240	pp113	F	69	PD	Slow	off	left_shank	40.0	50.0	1.3	1.29	0.87	0.825	0.43	0.465
+1241	pp113	F	69	PD	Slow	off	left_shank	300.0	308.0	1.32	1.315	0.875	0.835	0.445	0.48
+1242	pp113	F	69	PD	Slow	off	left_shank	564.0	571.0	1.265	1.265	0.86	0.825	0.405	0.44
+1243	pp113	F	69	PD	Slow	off	left_shank	817.0	824.0	1.405	1.37	0.9	0.87	0.505	0.5
+1244	pp113	F	69	PD	Slow	off	left_shank	1098.0	1098.0	1.46	1.48	0.995	1.01	0.465	0.47
+1245	pp126	F	41	MS	Fast		left_ankle	182.0	177.0	1.215	1.245	0.81	0.835	0.405	0.41
+1246	pp126	F	41	MS	Fast		left_ankle	425.0	426.0	1.145	1.145	0.725	0.725	0.42	0.42
+1247	pp126	F	41	MS	Fast		left_ankle	654.0	655.0	1.115	1.105	0.7	0.7	0.415	0.405
+1248	pp126	F	41	MS	Fast		left_shank	182.0	180.0	1.215	1.22	0.81	0.83	0.405	0.39
+1249	pp126	F	41	MS	Fast		left_shank	425.0	424.0	1.145	1.165	0.725	0.725	0.42	0.44
+1250	pp126	F	41	MS	Fast		left_shank	654.0	657.0	1.115	1.085	0.7	0.69	0.415	0.395
+1251	pp126	F	41	MS	Preferred		left_shank	48.0	48.0	1.54	1.54	1.025	1.055	0.515	0.485
+1252	pp126	F	41	MS	Preferred		left_shank	356.0	356.0	1.395	1.395	0.895	0.905	0.5	0.49
+1253	pp126	F	41	MS	Preferred		left_shank	635.0	635.0	1.335	1.305	0.845	0.86	0.49	0.445
+1254	pp126	F	41	MS	Preferred		left_shank	902.0	896.0	1.35	1.36	0.925	0.96	0.425	0.4
+1255	pp126	F	41	MS	Slow		left_ankle	47.0	47.0	2.1	2.085	1.41	1.44	0.69	0.645
+1256	pp126	F	41	MS	Slow		left_ankle	467.0	464.0	2.01	2.005	1.425	1.49	0.585	0.515
+1257	pp126	F	41	MS	Slow		left_ankle	869.0	865.0	1.84	1.85	1.27	1.29	0.57	0.56
+1258	pp126	F	41	MS	Slow		left_ankle	1237.0	1235.0	1.845	1.89	1.25	1.32	0.595	0.57
+1259	pp126	F	41	MS	Slow		left_ankle	1606.0	1613.0	1.585	1.585	1.1	1.075	0.485	0.51
+1260	pp126	F	41	MS	Slow		left_ankle	1923.0	1930.0	1.765	1.705	1.225	1.2	0.54	0.505
+1261	pp165	F	66	OA	Fast		left_ankle	42.0	39.0	0.95	0.955	0.545	0.58	0.405	0.375
+1262	pp165	F	66	OA	Fast		left_ankle	232.0	230.0	0.93	0.93	0.53	0.555	0.4	0.375
+1263	pp165	F	66	OA	Fast		left_ankle	418.0	416.0	0.93	0.93	0.535	0.545	0.395	0.385
+1264	pp165	F	66	OA	Fast		left_shank	42.0	38.0	0.95	0.96	0.545	0.575	0.405	0.385
+1265	pp165	F	66	OA	Fast		left_shank	232.0	230.0	0.93	0.93	0.53	0.575	0.4	0.355
+1266	pp165	F	66	OA	Fast		left_shank	418.0	416.0	0.93	0.93	0.535	0.555	0.395	0.375
+1267	pp165	F	66	OA	Fast		right_shank	136.0	134.0	0.935	0.94	0.55	0.585	0.385	0.355
+1268	pp165	F	66	OA	Fast		right_shank	323.0	322.0	0.925	0.925	0.555	0.58	0.37	0.345
+1269	pp165	F	66	OA	Preferred		left_ankle	156.0	153.0	1.045	1.06	0.64	0.655	0.405	0.405
+1270	pp165	F	66	OA	Preferred		left_ankle	365.0	365.0	1.05	1.05	0.645	0.645	0.405	0.405
+1271	pp165	F	66	OA	Preferred		right_ankle	43.0	46.0	1.105	1.09	0.675	0.67	0.43	0.42
+1272	pp165	F	66	OA	Preferred		right_ankle	264.0	264.0	1.025	1.025	0.635	0.64	0.39	0.385
+1273	pp165	F	66	OA	Preferred		right_ankle	469.0	469.0	1.045	1.04	0.65	0.66	0.395	0.38
+1274	pp165	F	66	OA	Preferred		left_shank	156.0	154.0	1.045	1.05	0.64	0.66	0.405	0.39
+1275	pp165	F	66	OA	Preferred		left_shank	365.0	364.0	1.05	1.05	0.645	0.65	0.405	0.4
+1276	pp165	F	66	OA	Preferred		right_shank	43.0	45.0	1.105	1.085	0.675	0.685	0.43	0.4
+1277	pp165	F	66	OA	Preferred		right_shank	264.0	262.0	1.025	1.04	0.635	0.655	0.39	0.385
+1278	pp165	F	66	OA	Preferred		right_shank	469.0	470.0	1.045	1.04	0.65	0.655	0.395	0.385
+1279	pp136	M	82	stroke	Fast		left_ankle	120.0	119.0	0.84	0.855	0.515	0.505	0.325	0.35
+1280	pp136	M	82	stroke	Fast		left_ankle	288.0	290.0	0.815	0.81	0.5	0.475	0.315	0.335
+1281	pp136	M	82	stroke	Fast		left_ankle	451.0	452.0	0.8	0.81	0.515	0.495	0.285	0.315
+1282	pp136	M	82	stroke	Fast		left_ankle	611.0	614.0	0.86	0.835	0.54	0.51	0.32	0.325
+1283	pp136	M	82	stroke	Fast		left_shank	120.0	120.0	0.84	0.845	0.515	0.51	0.325	0.335
+1284	pp136	M	82	stroke	Fast		left_shank	288.0	289.0	0.815	0.82	0.5	0.49	0.315	0.33
+1285	pp136	M	82	stroke	Fast		left_shank	451.0	453.0	0.8	0.8	0.515	0.49	0.285	0.31
+1286	pp136	M	82	stroke	Fast		left_shank	611.0	613.0	0.86	0.85	0.54	0.5	0.32	0.35
+1287	pp136	M	82	stroke	Fast		right_shank	30.0	28.0	0.865	0.86	0.555	0.55	0.31	0.31
+1288	pp136	M	82	stroke	Fast		right_shank	203.0	200.0	0.795	0.825	0.535	0.535	0.26	0.29
+1289	pp136	M	82	stroke	Fast		right_shank	362.0	365.0	0.845	0.81	0.545	0.505	0.3	0.305
+1290	pp136	M	82	stroke	Fast		right_shank	531.0	527.0	0.81	0.825	0.53	0.53	0.28	0.295
+1291	pp136	M	82	stroke	Fast		right_shank	693.0	692.0	0.89	0.89	0.575	0.555	0.315	0.335
+1292	pp136	M	82	stroke	Preferred		left_ankle	24.0	23.0	1.065	1.08	0.72	0.71	0.345	0.37
+1293	pp136	M	82	stroke	Preferred		left_ankle	237.0	239.0	1.01	1.0	0.66	0.625	0.35	0.375
+1294	pp136	M	82	stroke	Preferred		left_ankle	439.0	439.0	0.925	0.93	0.585	0.58	0.34	0.35
+1295	pp136	M	82	stroke	Preferred		left_ankle	624.0	625.0	0.985	0.99	0.635	0.615	0.35	0.375
+1296	pp136	M	82	stroke	Preferred		left_ankle	821.0	823.0	1.0	0.975	0.62	0.6	0.38	0.375
+1297	pp136	M	82	stroke	Preferred		left_ankle	1021.0	1018.0	1.15	1.16	0.705	0.705	0.445	0.455
+1298	pp136	M	82	stroke	Preferred		right_shank	136.0	130.0	1.0	1.02	0.675	0.69	0.325	0.33
+1299	pp136	M	82	stroke	Preferred		right_shank	336.0	334.0	0.96	0.96	0.67	0.66	0.29	0.3
+1300	pp136	M	82	stroke	Preferred		right_shank	528.0	526.0	0.96	0.94	0.65	0.645	0.31	0.295
+1301	pp136	M	82	stroke	Preferred		right_shank	720.0	714.0	0.95	0.985	0.655	0.675	0.295	0.31
+1302	pp136	M	82	stroke	Preferred		right_shank	910.0	911.0	1.08	1.065	0.71	0.68	0.37	0.385
+1303	pp136	M	82	stroke	Slow		left_ankle	161.0	162.0	1.09	1.085	0.73	0.71	0.36	0.375
+1304	pp136	M	82	stroke	Slow		left_ankle	379.0	379.0	1.1	1.09	0.7	0.68	0.4	0.41
+1305	pp136	M	82	stroke	Slow		left_ankle	599.0	597.0	1.06	1.05	0.665	0.66	0.395	0.39
+1306	pp136	M	82	stroke	Slow		left_ankle	811.0	807.0	1.16	1.16	0.745	0.74	0.415	0.42
+1307	pp136	M	82	stroke	Slow		left_ankle	1043.0	1039.0	1.01	1.04	0.685	0.69	0.325	0.35
+1308	pp136	M	82	stroke	Slow		left_ankle	1245.0	1247.0	1.06	1.055	0.7	0.67	0.36	0.385
+1309	pp136	M	82	stroke	Slow		left_ankle	1457.0	1458.0	1.085	1.085	0.735	0.71	0.35	0.375
+1310	pp136	M	82	stroke	Slow		left_ankle	1674.0	1675.0	1.07	1.055	0.69	0.665	0.38	0.39
+1311	pp136	M	82	stroke	Slow		right_ankle	44.0	37.0	1.085	1.145	0.785	0.82	0.3	0.325
+1312	pp136	M	82	stroke	Slow		right_ankle	261.0	266.0	1.1	1.065	0.795	0.76	0.305	0.305
+1313	pp136	M	82	stroke	Slow		right_ankle	481.0	479.0	1.08	1.08	0.745	0.745	0.335	0.335
+1314	pp136	M	82	stroke	Slow		right_ankle	697.0	695.0	1.13	1.135	0.74	0.74	0.39	0.395
+1315	pp136	M	82	stroke	Slow		right_ankle	923.0	922.0	1.08	1.075	0.755	0.755	0.325	0.32
+1316	pp136	M	82	stroke	Slow		right_ankle	1139.0	1137.0	1.04	1.025	0.735	0.725	0.305	0.3
+1317	pp136	M	82	stroke	Slow		right_ankle	1347.0	1342.0	1.13	1.095	0.74	0.755	0.39	0.34
+1318	pp136	M	82	stroke	Slow		right_ankle	1573.0	1561.0	1.035	1.04	0.68	0.75	0.355	0.29
+1319	pp154	F	79	OA	Fast		left_ankle	107.0	108.0	0.835	0.84	0.505	0.495	0.33	0.345
+1320	pp154	F	79	OA	Fast		left_ankle	274.0	276.0	0.87	0.865	0.54	0.53	0.33	0.335
+1321	pp154	F	79	OA	Fast		left_ankle	448.0	449.0	0.79	0.8	0.48	0.47	0.31	0.33
+1322	pp154	F	79	OA	Fast		right_ankle	23.0	22.0	0.82	0.83	0.525	0.535	0.295	0.295
+1323	pp154	F	79	OA	Fast		right_ankle	187.0	188.0	0.875	0.865	0.535	0.525	0.34	0.34
+1324	pp154	F	79	OA	Fast		right_ankle	362.0	361.0	0.805	0.82	0.525	0.525	0.28	0.295
+1325	pp154	F	79	OA	Fast		right_ankle	523.0	525.0	0.855	0.845	0.515	0.5	0.34	0.345
+1326	pp154	F	79	OA	Fast		left_shank	107.0	110.0	0.835	0.815	0.505	0.49	0.33	0.325
+1327	pp154	F	79	OA	Fast		left_shank	274.0	273.0	0.87	0.885	0.54	0.545	0.33	0.34
+1328	pp154	F	79	OA	Fast		left_shank	448.0	450.0	0.79	0.795	0.48	0.47	0.31	0.325
+1329	pp154	F	79	OA	Fast		right_shank	23.0	22.0	0.82	0.835	0.525	0.535	0.295	0.3
+1330	pp154	F	79	OA	Fast		right_shank	187.0	189.0	0.875	0.86	0.535	0.52	0.34	0.34
+1331	pp154	F	79	OA	Fast		right_shank	362.0	361.0	0.805	0.825	0.525	0.53	0.28	0.295
+1332	pp154	F	79	OA	Fast		right_shank	523.0	526.0	0.855	0.835	0.515	0.5	0.34	0.335
+1333	pp154	F	79	OA	Preferred		right_ankle	135.0	134.0	0.96	0.96	0.615	0.62	0.345	0.34
+1334	pp154	F	79	OA	Preferred		right_ankle	327.0	326.0	0.95	0.955	0.605	0.615	0.345	0.34
+1335	pp154	F	79	OA	Preferred		right_ankle	517.0	517.0	0.95	0.95	0.605	0.605	0.345	0.345
+1336	pp154	F	79	OA	Preferred		left_shank	35.0	36.0	0.985	0.99	0.635	0.63	0.35	0.36
+1337	pp154	F	79	OA	Preferred		left_shank	232.0	234.0	0.95	0.955	0.6	0.595	0.35	0.36
+1338	pp154	F	79	OA	Preferred		left_shank	422.0	425.0	0.94	0.925	0.605	0.59	0.335	0.335
+1339	pp154	F	79	OA	Preferred		left_shank	610.0	610.0	1.0	1.005	0.615	0.62	0.385	0.385
+1340	pp154	F	79	OA	Preferred		right_shank	135.0	134.0	0.96	0.96	0.615	0.64	0.345	0.32
+1341	pp154	F	79	OA	Preferred		right_shank	327.0	326.0	0.95	0.955	0.605	0.605	0.345	0.35
+1342	pp154	F	79	OA	Preferred		right_shank	517.0	517.0	0.95	0.95	0.605	0.605	0.345	0.345
+1343	pp154	F	79	OA	Slow		left_shank	19.0	18.0	1.525	1.525	1.075	1.115	0.45	0.41
+1344	pp154	F	79	OA	Slow		left_shank	324.0	323.0	1.525	1.525	1.035	1.045	0.49	0.48
+1345	pp154	F	79	OA	Slow		left_shank	629.0	628.0	1.455	1.475	0.95	0.97	0.505	0.505
+1346	pp154	F	79	OA	Slow		left_shank	920.0	923.0	1.465	1.445	0.995	0.995	0.47	0.45
+1347	pp154	F	79	OA	Slow		left_shank	1213.0	1212.0	1.485	1.5	0.995	1.01	0.49	0.49
+1348	pp154	F	79	OA	Slow		right_shank	181.0	181.0	1.49	1.49	1.025	1.03	0.465	0.46
+1349	pp154	F	79	OA	Slow		right_shank	479.0	479.0	1.47	1.465	1.035	1.045	0.435	0.42
+1350	pp154	F	79	OA	Slow		right_shank	773.0	772.0	1.465	1.47	1.035	1.04	0.43	0.43
+1351	pp154	F	79	OA	Slow		right_shank	1066.0	1066.0	1.46	1.455	1.005	1.005	0.455	0.45
+1352	pp156	F	49	MS	Fast		left_ankle	139.0	139.0	0.95	0.93	0.625	0.61	0.325	0.32
+1353	pp156	F	49	MS	Fast		left_ankle	329.0	325.0	0.925	0.94	0.61	0.62	0.315	0.32
+1354	pp156	F	49	MS	Fast		left_ankle	514.0	513.0	0.93	0.89	0.59	0.58	0.34	0.31
+1355	pp156	F	49	MS	Fast		left_ankle	700.0	691.0	0.91	0.93	0.57	0.6	0.34	0.33
+1356	pp156	F	49	MS	Fast		left_ankle	882.0	877.0	1.015	1.025	0.65	0.66	0.365	0.365
+1357	pp156	F	49	MS	Preferred		right_ankle	39.0	38.0	1.08	1.09	0.71	0.71	0.37	0.38
+1358	pp156	F	49	MS	Preferred		right_ankle	255.0	256.0	1.05	1.04	0.665	0.66	0.385	0.38
+1359	pp156	F	49	MS	Preferred		right_ankle	465.0	464.0	1.03	1.04	0.66	0.66	0.37	0.38
+1360	pp156	F	49	MS	Preferred		right_ankle	671.0	672.0	1.09	1.085	0.72	0.71	0.37	0.375
+1361	pp156	F	49	MS	Preferred		right_ankle	889.0	889.0	1.05	1.045	0.695	0.69	0.355	0.355
+1362	pp156	F	49	MS	Preferred		right_ankle	1099.0	1098.0	1.14	1.145	0.745	0.745	0.395	0.4
+1363	pp155	F	35	MS	Preferred		left_ankle	161.0	159.0	1.025	1.025	0.64	0.645	0.385	0.38
+1364	pp155	F	35	MS	Preferred		left_ankle	366.0	364.0	1.0	1.02	0.63	0.64	0.37	0.38
+1365	pp155	F	35	MS	Preferred		left_ankle	566.0	568.0	1.13	1.075	0.675	0.665	0.455	0.41
+1366	pp155	F	35	MS	Slow		left_ankle	63.0	61.0	1.805	1.825	1.3	1.31	0.505	0.515
+1367	pp155	F	35	MS	Slow		left_ankle	424.0	426.0	1.955	1.935	1.39	1.375	0.565	0.56
+1368	pp155	F	35	MS	Slow		left_ankle	815.0	813.0	2.015	2.01	1.345	1.36	0.67	0.65
+1369	pp155	F	35	MS	Slow		left_ankle	1218.0	1215.0	1.705	1.725	1.195	1.205	0.51	0.52
+1370	pp155	F	35	MS	Slow		left_ankle	1559.0	1560.0	1.865	1.835	1.325	1.32	0.54	0.515
+1371	pp155	F	35	MS	Slow		left_shank	63.0	61.0	1.805	1.82	1.3	1.325	0.505	0.495
+1372	pp155	F	35	MS	Slow		left_shank	424.0	425.0	1.955	1.95	1.39	1.395	0.565	0.555
+1373	pp155	F	35	MS	Slow		left_shank	815.0	815.0	2.015	2.02	1.345	1.355	0.67	0.665
+1374	pp155	F	35	MS	Slow		left_shank	1218.0	1219.0	1.705	1.72	1.195	1.2	0.51	0.52
+1375	pp155	F	35	MS	Slow		left_shank	1559.0	1563.0	1.865	1.83	1.325	1.315	0.54	0.515
+1376	pp155	F	35	MS	Slow		right_shank	244.0	243.0	1.915	1.915	1.385	1.395	0.53	0.52
+1377	pp155	F	35	MS	Slow		right_shank	627.0	626.0	1.95	1.95	1.42	1.435	0.53	0.515
+1378	pp155	F	35	MS	Slow		right_shank	1017.0	1016.0	1.9	1.895	1.395	1.405	0.505	0.49
+1379	pp155	F	35	MS	Slow		right_shank	1397.0	1395.0	1.76	1.76	1.185	1.205	0.575	0.555
+1380	pp167	F	22	MS	Fast		left_shank	123.0	122.0	0.845	0.845	0.515	0.525	0.33	0.32
+1381	pp167	F	22	MS	Fast		left_shank	292.0	291.0	0.8	0.805	0.47	0.48	0.33	0.325
+1382	pp167	F	22	MS	Fast		right_shank	19.0	12.0	0.95	0.975	0.595	0.645	0.355	0.33
+1383	pp167	F	22	MS	Fast		right_shank	209.0	207.0	0.82	0.82	0.485	0.52	0.335	0.3
+1384	pp167	F	22	MS	Fast		right_shank	373.0	371.0	0.8	0.805	0.46	0.49	0.34	0.315
+1385	pp167	F	22	MS	Preferred		left_ankle	123.0	124.0	1.06	1.055	0.675	0.66	0.385	0.395
+1386	pp167	F	22	MS	Preferred		left_ankle	335.0	335.0	1.035	1.03	0.65	0.645	0.385	0.385
+1387	pp167	F	22	MS	Preferred		left_ankle	542.0	541.0	1.05	1.055	0.66	0.655	0.39	0.4
+1388	pp167	F	22	MS	Preferred		right_ankle	4.0	8.0	1.14	1.1	0.74	0.715	0.4	0.385
+1389	pp167	F	22	MS	Preferred		right_ankle	232.0	228.0	1.035	1.045	0.655	0.685	0.38	0.36
+1390	pp167	F	22	MS	Preferred		right_ankle	439.0	437.0	1.035	1.035	0.655	0.67	0.38	0.365
+1391	pp167	F	22	MS	Preferred		left_shank	123.0	120.0	1.06	1.065	0.675	0.69	0.385	0.375
+1392	pp167	F	22	MS	Preferred		left_shank	335.0	333.0	1.035	1.035	0.65	0.655	0.385	0.38
+1393	pp167	F	22	MS	Preferred		left_shank	542.0	540.0	1.05	1.04	0.66	0.66	0.39	0.38
+1394	pp167	F	22	MS	Slow		left_ankle	130.0	130.0	1.245	1.24	0.795	0.79	0.45	0.45
+1395	pp167	F	22	MS	Slow		left_ankle	379.0	378.0	1.225	1.235	0.805	0.815	0.42	0.42
+1396	pp167	F	22	MS	Slow		left_ankle	624.0	625.0	1.215	1.22	0.795	0.79	0.42	0.43
+1397	pp167	F	22	MS	Slow		left_ankle	867.0	869.0	1.21	1.21	0.805	0.795	0.405	0.415
+1398	pp167	F	22	MS	Slow		right_ankle	256.0	255.0	1.255	1.225	0.8	0.81	0.455	0.415
+1399	pp167	F	22	MS	Slow		right_ankle	507.0	500.0	1.17	1.215	0.77	0.82	0.4	0.395
+1400	pp167	F	22	MS	Slow		right_ankle	741.0	743.0	1.25	1.235	0.82	0.825	0.43	0.41
+1401	pp167	F	22	MS	Slow		right_ankle	991.0	990.0	1.25	1.235	0.79	0.8	0.46	0.435
+1402	pp167	F	22	MS	Slow		left_shank	130.0	129.0	1.245	1.245	0.795	0.795	0.45	0.45
+1403	pp167	F	22	MS	Slow		left_shank	379.0	378.0	1.225	1.23	0.805	0.815	0.42	0.415
+1404	pp167	F	22	MS	Slow		left_shank	624.0	624.0	1.215	1.22	0.795	0.785	0.42	0.435
+1405	pp167	F	22	MS	Slow		left_shank	867.0	868.0	1.21	1.22	0.805	0.805	0.405	0.415
