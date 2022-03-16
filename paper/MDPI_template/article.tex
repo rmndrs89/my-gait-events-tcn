@@ -78,7 +78,7 @@
 %\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
 
 % Authors, for the paper (add full first names)
-\Author{Robbin Romijnders$^{1}$\orcidA{}, Elke Warmerdam$^{2}$, Clint Hansen$^{1}$*, Gerhard Schmidt$^{3}$ and Walter Maetzler$^{1,}$}
+\Author{Robbin Romijnders$^{1}$*\orcidA{}, Elke Warmerdam$^{2}$, Clint Hansen$^{1}$*, Gerhard Schmidt$^{3}$ and Walter Maetzler$^{1}$}
 
 %\longauthorlist{yes}
 
@@ -360,6 +360,37 @@ Time errors for ICs and FCs are visually depicted using boxplots for each tracke
 \end{table}
 
 \subsection{Gait parameters}
+For those trials for which all gait events were correctly detected (and no spurious events were detected, i.e., no false positives), stride time, stance time and swing time were calculated. The mean difference and the limits of agreement between the NN-derived gait parameters and the marker-based annotations were calculated.
+
+For all stride-specific gait parameters, and for all tracked points, the mean difference compared to the marker-based reference values was close to zero, i.e., the maxmum mean difference was 0.003 s. Furthermore, for all gait parameters and for all tracked points the limits of agreement, based on a 95\% confidence interval were distributed around zero with the overall span between -0.049 s and 0.051 s.
+\begin{table}[H] 
+	\caption{Time agreement between the stride-specific parameters. \label{tab:stride_parameters}}
+	\newcolumntype{C}{>{\centering\arraybackslash}X}
+	\begin{tabularx}{\textwidth}{rrCC}
+		\toprule
+		\textbf{Tracked point} & \textbf{Parameters} & \textbf{Mean difference} & \textbf{Limits of Agreement}\\
+		 & & ms & (ms, ms)\\
+		\midrule
+		left ankle & stride time & 0.001 & (-0.035, 0.036)\\
+		 & stance time & 0.002 & (-0.039, 0.042)\\
+		 & swing time & -0.001 & (-0.045, 0.043)\\
+		\midrule
+		right ankle & stride time & 0.000 & (-0.039, 0.040)\\
+		 & stance time & -0.002 & (-0.048, 0.044)\\
+		 & swing time & 0.003 & (-0.046, 0.051)\\
+		\midrule
+		left shank & stride time & 0.001 & (-0.039, 0.041)\\
+		& stance time & 0.002 & (-0.043, 0.046)\\
+		& swing time & -0.001 & (-0.049, 0.047)\\
+		\midrule
+		right shank & stride time & -0.000 & (-0.031, 0.031)\\
+		& stance time & 0.002 & (-0.046, 0.049)\\
+		& swing time & -0.002 & (-0.049, 0.046)\\
+		\bottomrule
+	\end{tabularx}
+	\noindent{}
+\end{table}
+
 \begin{figure}[H]
 	\begin{adjustwidth}{-\extralength}{0cm}
 		\centering
@@ -369,150 +400,20 @@ Time errors for ICs and FCs are visually depicted using boxplots for each tracke
 \end{figure}  
 
 
-This section may be divided by subheadings. It should provide a concise and precise description of the experimental results, their interpretation as well as the experimental conclusions that can be drawn.
-\subsection{Subsection}
-\subsubsection{Subsubsection}
-
-Bulleted lists look like this:
-\begin{itemize}
-\item	First bullet;
-\item	Second bullet;
-\item	Third bullet.
-\end{itemize}
-
-Numbered lists can be added as follows:
-\begin{enumerate}
-\item	First item; 
-\item	Second item;
-\item	Third item.
-\end{enumerate}
-
-The text continues here. 
-
-\subsection{Figures, Tables and Schemes}
-
-All figures and tables should be cited in the main text as Figure~\ref{fig1}, Table~\ref{tab1}, Table~\ref{tab2}, etc.
-
-\begin{figure}[H]
-\includegraphics[width=10.5 cm]{Definitions/logo-mdpi}
-\caption{This is a figure. Schemes follow the same formatting. If there are multiple panels, they should be listed as: (\textbf{a}) Description of what is contained in the first panel. (\textbf{b}) Description of what is contained in the second panel. Figures should be placed in the main text near to the first time they are cited. A caption on a single line should be centered.\label{fig1}}
-\end{figure}   
-\unskip
-
-\begin{table}[H] 
-\caption{This is a table caption. Tables should be placed in the main text near to the first time they are~cited.\label{tab1}}
-\newcolumntype{C}{>{\centering\arraybackslash}X}
-\begin{tabularx}{\textwidth}{CCC}
-\toprule
-\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}\\
-\midrule
-Entry 1		& Data			& Data\\
-Entry 2		& Data			& Data\\
-\bottomrule
-\end{tabularx}
-\end{table}
-\unskip
-
-\begin{table}[H]
-\caption{This is a wide table.\label{tab2}}
-	\begin{adjustwidth}{-\extralength}{0cm}
-		\newcolumntype{C}{>{\centering\arraybackslash}X}
-		\begin{tabularx}{\fulllength}{CCCC}
-			\toprule
-			\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}     & \textbf{Title 4}\\
-			\midrule
-			Entry 1		& Data			& Data			& Data\\
-			Entry 2		& Data			& Data			& Data \textsuperscript{1}\\
-			\bottomrule
-		\end{tabularx}
-	\end{adjustwidth}
-	\noindent{\footnotesize{\textsuperscript{1} This is a table footnote.}}
-\end{table}
-
-%\begin{listing}[H]
-%\caption{Title of the listing}
-%\rule{\columnwidth}{1pt}
-%\raggedright Text of the listing. In font size footnotesize, small, or normalsize. Preferred format: left aligned and single spaced. Preferred border format: top border line and bottom border line.
-%\rule{\columnwidth}{1pt}
-%\end{listing}
-
-Text.
-
-Text.
-
-\subsection{Formatting of Mathematical Components}
-
-This is the example 1 of equation:
-\begin{linenomath}
-\begin{equation}
-a = 1,
-\end{equation}
-\end{linenomath}
-the text following an equation need not be a new paragraph. Please punctuate equations as regular text.
-%% If the documentclass option "submit" is chosen, please insert a blank line before and after any math environment (equation and eqnarray environments). This ensures correct linenumbering. The blank line should be removed when the documentclass option is changed to "accept" because the text following an equation should not be a new paragraph.
-
-This is the example 2 of equation:
-\begin{adjustwidth}{-\extralength}{0cm}
-\begin{equation}
-a = b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z
-\end{equation}
-\end{adjustwidth}
-
-% Example of a page in landscape format (with table and table footnote).
-%\startlandscape
-%\begin{table}[H] %% Table in wide page
-%\caption{This is a very wide table.\label{tab3}}
-%	\begin{tabularx}{\textwidth}{CCCC}
-%		\toprule
-%		\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}	& \textbf{Title 4}\\
-%		\midrule
-%		Entry 1		& Data			& Data			& This cell has some longer content that runs over two lines.\\
-%		Entry 2		& Data			& Data			& Data\textsuperscript{1}\\
-%		\bottomrule
-%	\end{tabularx}
-%	\begin{adjustwidth}{+\extralength}{0cm}
-%		\noindent\footnotesize{\textsuperscript{1} This is a table footnote.}
-%	\end{adjustwidth}
-%\end{table}
-%\finishlandscape
-
-% Example of a figure that spans the whole page width. The same concept works for tables, too.
-\begin{figure}[H]
-\begin{adjustwidth}{-\extralength}{0cm}
-\centering
-\includegraphics[width=13.5cm]{Definitions/logo-mdpi}
-\end{adjustwidth}
-\caption{This is a wide figure.\label{fig2}}
-\end{figure}  
-
-Please punctuate equations as regular text. Theorem-type environments (including propositions, lemmas, corollaries etc.) can be formatted as follows:
-%% Example of a theorem:
-\begin{Theorem}
-Example text of a theorem.
-\end{Theorem}
-
-The text continues here. Proofs must be formatted as follows:
-
-%% Example of a proof:
-\begin{proof}[Proof of Theorem 1]
-Text of the proof. Note that the phrase ``of Theorem 1'' is optional if it is clear which theorem is being referred to.
-\end{proof}
-The text continues here.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
+The current study aimed to validate a deep learning approach for detecting gait events from a single IMU worn on the lower leg. Data from left and right ankle- and shank-worn IMUs were used for training a neural network to detect gait events from walking trials performed by healthy younger and older adults, participants diagnosed with Parkinson's Disease, multiple sclerosis, or chronic low back pain, participants who had a recent symptomatic stroke, and participants diagnosed with other neurological diseases. Participants walked a 5 meter distance at three different self-selected walking speeds. The gait event timings that were predicted by the neural network were compared to a common reference method, i.e., stereophotogrammetry, and clinically relevant stride-specific gait parameters were extracted. 
 
-Authors should discuss the results and how they can be interpreted from the perspective of previous studies and of the working hypotheses. The findings and their implications should be discussed in the broadest context possible. Future research directions may also be highlighted.
+A first measure for the model performance was given by the recall (how many annotated events were detected) and precision (how many detected events were annotated). For both initial contacts and final contacts, a high recall ($\ge 95\%$) and high precision ($\ge 98\%$) were observed, meaning that most events can be detected and most detected events were actually true events. There was little difference in recall and precision between tracked points (Table~\ref{tab:overall_detection_performance}) confirming that the deep learning approach is relatively invariant to exact sensor localization. These values for recall and precision were slightly lower than our previously reported $100 \%$ \cite{Romijnders2021} that used a heuristics-based approach \cite{Salarian2004}, but in the current study more trials were included and from a more heterogeneous study population.
+
+Next, the time error, that is the difference between the annotated event and the detected event, was of interest. For both initial contacts and final contacts, and for all tracked points, the observed time error was small, and the middle $50\%$ of the time errors were within a range of $\left[-0.015,0.010\right]$ s (Table~\ref{tab:time_errors}, Figure~\ref{fig:time_error_box_plots}). These data showed that the deep learning-based is approach is precise in detecting initial and final contacts. Time errors were slightly smaller than our previously reported results \cite{Romijnders2021} that used a heuristics-based approach \cite{Salarian2004}. The heuristics-based approach determined ICs and FCs as local minima in the medio-lateral angular velocity \cite{Salarian2004} and it could be that these minima do not exactly coincide with the referent event timing as determined from the stereophotogrammetry. 
+
+From the correctly detected gait events, stride-specific gait parameters were derived. These are probably of greatest clinical relevance, as changes in stride-specific gait parameters have been linked directly with disease onset and progression \cite{DelDin2019,Koenig2017,Bertoli2018,SchroederVon1995,Mohan2021,Griskevicius2016,Flachenecker2019}. Therefore, stride time, stance time, and swing time were calculated, and the differences between the deep learning-based approach and the marker-based reference method were quantified (Table~\ref{tab:stride_parameters}, Figure~\ref{fig:gait_parameters_bland_altman_plots}). The limits of agreement for a $95\%$ confidence interval were calculated, and for all metrics the zero mean difference was enclosed in the limit of agreement.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 
 This section is not mandatory, but can be added to the manuscript if the discussion is unusually long or complex.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Patents}
-
-This section is not mandatory, but may be added if there are patents resulting from the work reported in this manuscript.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{6pt} 
