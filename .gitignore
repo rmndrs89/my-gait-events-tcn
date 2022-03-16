@@ -2,4 +2,3 @@ venv/
 __pycache__/
 utils/__pycache__/
 models/__pycache__/
-paper/MDPI_template/
