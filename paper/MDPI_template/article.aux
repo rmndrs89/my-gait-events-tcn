@@ -1,5 +1,4 @@
 \relax 
-\providecommand\hyper@newdestlabel[2]{}
 \bibstyle{Definitions/mdpi}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
@@ -27,7 +26,7 @@
 \citation{Perry2010,Whittle2012}
 \citation{Rueterbories2010,Bruening2014}
 \citation{Bruening2014}
-\citation{Chiari2005}
+\citation{Chiari2005,Topley2020}
 \citation{Iosa2016,Jarchi2018}
 \citation{Hillel2019,Warmerdam2020,Atrsaei2021}
 \citation{DelDin2016,Shah2020}
@@ -51,16 +50,22 @@
 \@writefile{toc}{\contentsline {section}{\numberline {2}Materials and Methods}{2}{section.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Data Collection}{2}{subsection.2.1}\protected@file@percent }
 \citation{Warmerdam2021}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Demographics data of the study participants. Age, height, and weight are presented as mean (standard deviation).\relax }}{3}{table.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:demographics_data}{{1}{3}{Demographics data of the study participants. Age, height, and weight are presented as mean (standard deviation).\relax }{table.caption.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Schematic depiction$^{1}$ of the current study. Study participants wore IMUs on the ankle and shanks, and reflective markers were adhered on the heel and toe of usual footwear (shown on the left). Marker data were used to obtain reference values for the timings of initial and final contacts (top), where accelerometer and gyroscope data from each tracked point were inputted to a neural network that predicted timings of the same initial and final contacts (bottom). \newline  \noindent {\footnotesize  {\textsuperscript  {1} Picture from: \url  {https://www.vecteezy.com/free-vector/man-walking }.}} \relax }}{3}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:methods_marker_vs_imu}{{1}{3}{Schematic depiction$^{1}$ of the current study. Study participants wore IMUs on the ankle and shanks, and reflective markers were adhered on the heel and toe of usual footwear (shown on the left). Marker data were used to obtain reference values for the timings of initial and final contacts (top), where accelerometer and gyroscope data from each tracked point were inputted to a neural network that predicted timings of the same initial and final contacts (bottom). \newline \noindent {\footnotesize {\textsuperscript {1} Picture from: \url {https://www.vecteezy.com/free-vector/man-walking }.}} \relax }{figure.caption.2}{}}
 \citation{Federolf2013,Gloersen2016}
 \citation{Kormylo1974,Racz2021}
 \citation{Pijnappels2001,OConnor2007}
 \citation{Carcreff2018,Romijnders2021}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Demographics data of the study participants. Age, height, and weight are presented as mean (standard deviation).\relax }}{3}{table.caption.1}\protected@file@percent }
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{tab:demographics_data}{{1}{3}{Demographics data of the study participants. Age, height, and weight are presented as mean (standard deviation).\relax }{table.caption.1}{}}
-\newlabel{subsec:data_preprocessing}{{2.2}{3}{Data Pre-processing \label {subsec:data_preprocessing}}{subsection.2.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Data Pre-processing }{3}{subsection.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Reference Values}{3}{subsubsection.2.2.1}\protected@file@percent }
+\newlabel{subsec:data_preprocessing}{{2.2}{4}{Data Pre-processing \label {subsec:data_preprocessing}}{subsection.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Data Pre-processing }{4}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Marker Data}{4}{subsubsection.2.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}IMU Data}{4}{subsubsection.2.2.2}\protected@file@percent }
+\newlabel{eqn:train_data_single_instance}{{1}{4}{IMU Data}{equation.2.1}{}}
+\newlabel{eqn:train_labels_single_instace}{{2}{4}{IMU Data}{equation.2.2}{}}
+\citation{Filtjens2020}
 \citation{Bai2018,Remy2020,Filtjens2020}
 \citation{YuKoltun2016,Bai2018}
 \citation{Ioffe2015}
@@ -70,60 +75,47 @@
 \citation{Kingma2014,Schmidt2021}
 \citation{OMalley2019}
 \citation{Bergstra2012}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}IMU Data}{4}{subsubsection.2.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Model}{4}{subsection.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Notation}{4}{subsubsection.2.3.1}\protected@file@percent }
-\newlabel{eqn:train_data_single_instance}{{1}{4}{Notation}{equation.2.1}{}}
-\newlabel{eqn:train_labels_single_instace}{{2}{4}{Notation}{equation.2.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Model Architecture}{4}{subsubsection.2.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Hyperparameter Optimization}{4}{subsubsection.2.3.3}\protected@file@percent }
-\citation{OpenIntro2019}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Model hyperparameters that were optimized for, and the corresponding sets of possible values.\relax }}{5}{table.caption.2}\protected@file@percent }
-\newlabel{tab:hyperparameter_optimization}{{2}{5}{Model hyperparameters that were optimized for, and the corresponding sets of possible values.\relax }{table.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Model}{5}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Model Architecture}{5}{subsubsection.2.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Hyperparameter Optimization}{5}{subsubsection.2.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Model hyperparameters that were optimized for, and the corresponding sets of possible values.\relax }}{5}{table.caption.3}\protected@file@percent }
+\newlabel{tab:hyperparameter_optimization}{{2}{5}{Model hyperparameters that were optimized for, and the corresponding sets of possible values.\relax }{table.caption.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Analysis}{5}{subsection.2.4}\protected@file@percent }
 \newlabel{subsubsec:overall_detection_performance}{{2.4.1}{5}{Overall detection performance \label {subsubsec:overall_detection_performance}}{subsubsection.2.4.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Overall detection performance }{5}{subsubsection.2.4.1}\protected@file@percent }
 \newlabel{eqn:recall}{{3}{5}{Overall detection performance \label {subsubsec:overall_detection_performance}}{equation.2.3}{}}
 \newlabel{eqn:precision}{{3}{5}{Overall detection performance \label {subsubsec:overall_detection_performance}}{equation.2.3}{}}
-\newlabel{eqn:f1_score}{{3}{5}{Overall detection performance \label {subsubsec:overall_detection_performance}}{equation.2.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Time agreement}{5}{subsubsection.2.4.2}\protected@file@percent }
-\newlabel{eqn:time_agreement}{{3}{5}{Time agreement}{equation.2.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Gait parameters}{5}{subsubsection.2.4.3}\protected@file@percent }
-\newlabel{eqn:stride_time}{{4}{5}{Gait parameters}{equation.2.4}{}}
-\newlabel{eqn:stance_time}{{5}{5}{Gait parameters}{equation.2.5}{}}
-\newlabel{eqn:swing_time}{{6}{5}{Gait parameters}{equation.2.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{5}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Overall detection performance}{5}{subsection.3.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Overall detection performance for initial contacts and final contacts as quantified by recall, precision and F$_{1}$ score.\relax }}{6}{table.caption.3}\protected@file@percent }
-\newlabel{tab:overall_detection_performance}{{3}{6}{Overall detection performance for initial contacts and final contacts as quantified by recall, precision and F$_{1}$ score.\relax }{table.caption.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Time error}{6}{subsection.3.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Time errors for initial (left) and final (right) contacts detection, for each of the different tracked points.\relax }}{6}{figure.caption.4}\protected@file@percent }
-\newlabel{fig:time_error_box_plots}{{1}{6}{Time errors for initial (left) and final (right) contacts detection, for each of the different tracked points.\relax }{figure.caption.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Time errors for the correctly detected gait events. \relax }}{6}{table.caption.5}\protected@file@percent }
-\newlabel{tab:time_errors}{{4}{6}{Time errors for the correctly detected gait events. \relax }{table.caption.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Gait parameters}{6}{subsection.3.3}\protected@file@percent }
+\citation{OpenIntro2019}
+\newlabel{eqn:f1_score}{{3}{6}{Overall detection performance \label {subsubsec:overall_detection_performance}}{equation.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Time Error}{6}{subsubsection.2.4.2}\protected@file@percent }
+\newlabel{eqn:time_agreement}{{3}{6}{Time Error}{equation.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Stride Parameters}{6}{subsubsection.2.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{6}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Overall detection performance}{6}{subsection.3.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Overall detection performance for initial contacts and final contacts as quantified by recall, precision and F$_{1}$ score.\relax }}{6}{table.caption.4}\protected@file@percent }
+\newlabel{tab:overall_detection_performance}{{3}{6}{Overall detection performance for initial contacts and final contacts as quantified by recall, precision and F$_{1}$ score.\relax }{table.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Time Error}{7}{subsection.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Time errors for initial (left) and final (right) contacts detection, for each of the different tracked points.\relax }}{7}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:time_error_box_plots}{{2}{7}{Time errors for initial (left) and final (right) contacts detection, for each of the different tracked points.\relax }{figure.caption.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Time errors for the correctly detected gait events. \relax }}{7}{table.caption.6}\protected@file@percent }
+\newlabel{tab:time_errors}{{4}{7}{Time errors for the correctly detected gait events. \relax }{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Gait parameters}{7}{subsection.3.3}\protected@file@percent }
 \citation{Romijnders2021}
 \citation{Salarian2004}
 \citation{Romijnders2021}
 \citation{Salarian2004}
 \citation{Salarian2004}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Time agreement between the stride-specific parameters. \relax }}{7}{table.caption.6}\protected@file@percent }
-\newlabel{tab:stride_parameters}{{5}{7}{Time agreement between the stride-specific parameters. \relax }{table.caption.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The agreement of extracted gait parameters between the sensor-based and marker-based methods.\relax }}{7}{figure.caption.7}\protected@file@percent }
-\newlabel{fig:gait_parameters_bland_altman_plots}{{2}{7}{The agreement of extracted gait parameters between the sensor-based and marker-based methods.\relax }{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{7}{section.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Time agreement between the stride-specific parameters. \relax }}{8}{table.caption.7}\protected@file@percent }
+\newlabel{tab:stride_parameters}{{5}{8}{Time agreement between the stride-specific parameters. \relax }{table.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The agreement of extracted gait parameters between the sensor-based and marker-based methods.\relax }}{8}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:gait_parameters_bland_altman_plots}{{3}{8}{The agreement of extracted gait parameters between the sensor-based and marker-based methods.\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{8}{section.4}\protected@file@percent }
 \citation{DelDin2019,Koenig2017,Bertoli2018,SchroederVon1995,Mohan2021,Griskevicius2016,Flachenecker2019}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{8}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{9}{section.5}\protected@file@percent }
 \bibcite{Snijders2007}{{1}{2007}{{Snijders}}{{}}}
 \bibcite{Hodgins2008}{{2}{2008}{{Hodgins}}{{}}}
 \bibcite{DelDin2019}{{3}{2019}{{DelDin}}{{}}}
 \bibcite{Koenig2017}{{4}{2017(@}{{Koenig}}{{}}}
-\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix\nobreakspace  {}A}{9}{section.A.}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Appendix\nobreakspace  {}A.1}{9}{subsection.A.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {A1}{\ignorespaces This is a table caption.\relax }}{9}{table.caption.8}\protected@file@percent }
-\newlabel{tab5}{{A1}{9}{This is a table caption.\relax }{table.caption.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {B}Appendix\nobreakspace  {}B}{9}{section.B.}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{References}{9}{section.B.}\protected@file@percent }
 \bibcite{Bertoli2018}{{5}{2018}{{Bertoli}}{{}}}
 \bibcite{SchroederVon1995}{{6}{1995}{{SchroederVon}}{{}}}
 \bibcite{Mohan2021}{{7}{2021}{{Mohan}}{{}}}
@@ -135,69 +127,64 @@
 \bibcite{Rueterbories2010}{{13}{2010}{{Rueterbories}}{{}}}
 \bibcite{Bruening2014}{{14}{2014}{{Bruening}}{{}}}
 \bibcite{Chiari2005}{{15}{2005}{{Chiari}}{{}}}
-\bibcite{Iosa2016}{{16}{2016}{{Iosa}}{{}}}
-\bibcite{Jarchi2018}{{17}{2018}{{Jarchi}}{{}}}
-\bibcite{Hillel2019}{{18}{2019}{{Hillel}}{{}}}
-\bibcite{Warmerdam2020}{{19}{2020}{{Warmerdam}}{{}}}
-\bibcite{Atrsaei2021}{{20}{2021}{{Atrsaei}}{{}}}
-\bibcite{DelDin2016}{{21}{2016}{{DelDin}}{{}}}
-\bibcite{Shah2020}{{22}{2020}{{Shah}}{{}}}
-\bibcite{Fasano2020}{{23}{2020}{{Fasano}}{{}}}
-\bibcite{Corra2021}{{24}{2021}{{Corra}}{{}}}
-\bibcite{BenMansour2015}{{25}{2015}{{BenMansour}}{{}}}
-\bibcite{Storm2016}{{26}{2016}{{Storm}}{{}}}
-\bibcite{Panebianco2018}{{27}{2018}{{Panebianco}}{{}}}
-\bibcite{Niswander2021}{{28}{2021}{{Niswander}}{{}}}
-\bibcite{Salarian2004}{{29}{2004}{{Salarian}}{{}}}
-\bibcite{Catalfamo2010}{{30}{2010}{{Catalfamo}}{{}}}
-\bibcite{Sabatini2005}{{31}{2005}{{Sabatini}}{{}}}
-\bibcite{Maqbool2016}{{32}{2016}{{Maqbool}}{{}}}
-\bibcite{Romijnders2021}{{33}{2021}{{Romijnders}}{{}}}
-\bibcite{Jasiewicz2006}{{34}{2006}{{Jasiewicz}}{{}}}
-\bibcite{Trojaniello2014}{{35}{2014}{{Trojaniello}}{{}}}
-\bibcite{Ferraris1995}{{36}{1995}{{Ferraris}}{{}}}
-\bibcite{Greene2010}{{37}{2010}{{Greene}}{{}}}
-\bibcite{LeCun2015}{{38}{2015}{{LeCun}}{{}}}
-\bibcite{TerHaarRomeny2019}{{39}{2019}{{TerHaarRomeny}}{{}}}
-\bibcite{Kidzinski2019}{{40}{2019}{{Kidzinski}}{{}}}
-\bibcite{Lempereur2020}{{41}{2020}{{Lempereur}}{{}}}
-\bibcite{Filtjens2020}{{42}{2020}{{Filtjens}}{{}}}
-\bibcite{Gadaleta2019}{{43}{2019}{{Gadaleta}}{{}}}
-\bibcite{Warmerdam2021}{{44}{2021}{{Warmerdam}}{{}}}
-\bibcite{Gibb1988}{{45}{1988}{{Gibb}}{{}}}
-\bibcite{Thompson2018}{{46}{2018}{{Thompson}}{{}}}
-\bibcite{Nasreddine2005}{{47}{2005}{{Nasreddine}}{{}}}
-\bibcite{Federolf2013}{{48}{2013}{{Federolf}}{{}}}
-\bibcite{Gloersen2016}{{49}{2016}{{Gloersen}}{{}}}
-\bibcite{Kormylo1974}{{50}{1974}{{Kormylo}}{{}}}
-\bibcite{Racz2021}{{51}{2021}{{Racz}}{{}}}
-\bibcite{Pijnappels2001}{{52}{2001}{{Pijnappels}}{{}}}
-\bibcite{OConnor2007}{{53}{2007}{{OConnor}}{{}}}
-\bibcite{Carcreff2018}{{54}{2018}{{Carcreff}}{{}}}
-\bibcite{YuKoltun2016}{{55}{2016}{{YuKoltun}}{{}}}
-\bibcite{Bai2018}{{56}{2018}{{Bai}}{{}}}
-\bibcite{Remy2020}{{57}{2020}{{Remy}}{{}}}
-\bibcite{LeCun1989}{{58}{1989}{{LeCun}}{{}}}
-\bibcite{Ioffe2015}{{59}{2015}{{Ioffe}}{{}}}
-\bibcite{Srivastava2014}{{60}{2014}{{Srivastava}}{{}}}
-\bibcite{VanDenOord2016}{{61}{2016}{{VanDenOord}}{{}}}
-\bibcite{OMalley2019}{{62}{2019}{{OMalley}}{{}}}
-\bibcite{Kingma2014}{{63}{2014}{{Kingma}}{{}}}
-\bibcite{Schmidt2021}{{64}{2021}{{Schmidt}}{{}}}
-\bibcite{Bergstra2012}{{65}{2012}{{Bergstra}}{{}}}
-\bibcite{Mishra2019}{{66}{2019}{{Mishra}}{{}}}
-\bibcite{Wilcoxon1945}{{67}{1945}{{Wilcoxon}}{{}}}
-\bibcite{McDonald2014}{{68}{2014}{{McDonald}}{{}}}
-\bibcite{OpenIntro2019}{{69}{2019}{{OpenIntro}}{{}}}
-\bibcite{ref-journal}{{70}{year}{{Author1}}{{}}}
-\bibcite{ref-book1}{{71}{year}{{Author2}}{{}}}
-\bibcite{ref-book2}{{72}{year}{{Author3}}{{}}}
-\bibcite{ref-unpublish}{{73}{year}{{Author4}}{{}}}
-\bibcite{ref-communication}{{74}{year}{{Author5}}{{}}}
-\bibcite{ref-proceeding}{{75}{year}{{Author6}}{{}}}
-\bibcite{ref-thesis}{{76}{year}{{Author7}}{{}}}
-\bibcite{ref-url}{{77}{year}{{Author8}}{{}}}
+\bibcite{Topley2020}{{16}{2020}{{Topley}}{{}}}
+\bibcite{Iosa2016}{{17}{2016}{{Iosa}}{{}}}
+\bibcite{Jarchi2018}{{18}{2018}{{Jarchi}}{{}}}
+\bibcite{Hillel2019}{{19}{2019}{{Hillel}}{{}}}
+\bibcite{Warmerdam2020}{{20}{2020}{{Warmerdam}}{{}}}
+\bibcite{Atrsaei2021}{{21}{2021}{{Atrsaei}}{{}}}
+\bibcite{DelDin2016}{{22}{2016}{{DelDin}}{{}}}
+\bibcite{Shah2020}{{23}{2020}{{Shah}}{{}}}
+\bibcite{Fasano2020}{{24}{2020}{{Fasano}}{{}}}
+\@writefile{toc}{\contentsline {section}{References}{10}{section.5}\protected@file@percent }
+\bibcite{Corra2021}{{25}{2021}{{Corra}}{{}}}
+\bibcite{BenMansour2015}{{26}{2015}{{BenMansour}}{{}}}
+\bibcite{Storm2016}{{27}{2016}{{Storm}}{{}}}
+\bibcite{Panebianco2018}{{28}{2018}{{Panebianco}}{{}}}
+\bibcite{Niswander2021}{{29}{2021}{{Niswander}}{{}}}
+\bibcite{Salarian2004}{{30}{2004}{{Salarian}}{{}}}
+\bibcite{Catalfamo2010}{{31}{2010}{{Catalfamo}}{{}}}
+\bibcite{Sabatini2005}{{32}{2005}{{Sabatini}}{{}}}
+\bibcite{Maqbool2016}{{33}{2016}{{Maqbool}}{{}}}
+\bibcite{Romijnders2021}{{34}{2021}{{Romijnders}}{{}}}
+\bibcite{Jasiewicz2006}{{35}{2006}{{Jasiewicz}}{{}}}
+\bibcite{Trojaniello2014}{{36}{2014}{{Trojaniello}}{{}}}
+\bibcite{Ferraris1995}{{37}{1995}{{Ferraris}}{{}}}
+\bibcite{Greene2010}{{38}{2010}{{Greene}}{{}}}
+\bibcite{LeCun2015}{{39}{2015}{{LeCun}}{{}}}
+\bibcite{TerHaarRomeny2019}{{40}{2019}{{TerHaarRomeny}}{{}}}
+\bibcite{Kidzinski2019}{{41}{2019}{{Kidzinski}}{{}}}
+\bibcite{Lempereur2020}{{42}{2020}{{Lempereur}}{{}}}
+\bibcite{Filtjens2020}{{43}{2020}{{Filtjens}}{{}}}
+\bibcite{Gadaleta2019}{{44}{2019}{{Gadaleta}}{{}}}
+\bibcite{Warmerdam2021}{{45}{2021}{{Warmerdam}}{{}}}
+\bibcite{Gibb1988}{{46}{1988}{{Gibb}}{{}}}
+\bibcite{Thompson2018}{{47}{2018}{{Thompson}}{{}}}
+\bibcite{Nasreddine2005}{{48}{2005}{{Nasreddine}}{{}}}
+\bibcite{Federolf2013}{{49}{2013}{{Federolf}}{{}}}
+\bibcite{Gloersen2016}{{50}{2016}{{Gloersen}}{{}}}
+\bibcite{Kormylo1974}{{51}{1974}{{Kormylo}}{{}}}
+\bibcite{Racz2021}{{52}{2021}{{Racz}}{{}}}
+\bibcite{Pijnappels2001}{{53}{2001}{{Pijnappels}}{{}}}
+\bibcite{OConnor2007}{{54}{2007}{{OConnor}}{{}}}
+\bibcite{Carcreff2018}{{55}{2018}{{Carcreff}}{{}}}
+\bibcite{YuKoltun2016}{{56}{2016}{{YuKoltun}}{{}}}
+\bibcite{Bai2018}{{57}{2018}{{Bai}}{{}}}
+\bibcite{Remy2020}{{58}{2020}{{Remy}}{{}}}
+\bibcite{LeCun1989}{{59}{1989}{{LeCun}}{{}}}
+\bibcite{Ioffe2015}{{60}{2015}{{Ioffe}}{{}}}
+\bibcite{Srivastava2014}{{61}{2014}{{Srivastava}}{{}}}
+\bibcite{VanDenOord2016}{{62}{2016}{{VanDenOord}}{{}}}
+\bibcite{OMalley2019}{{63}{2019}{{OMalley}}{{}}}
+\bibcite{Kingma2014}{{64}{2014}{{Kingma}}{{}}}
+\bibcite{Schmidt2021}{{65}{2021}{{Schmidt}}{{}}}
+\bibcite{Bergstra2012}{{66}{2012}{{Bergstra}}{{}}}
+\bibcite{Mishra2019}{{67}{2019}{{Mishra}}{{}}}
+\bibcite{Wilcoxon1945}{{68}{1945}{{Wilcoxon}}{{}}}
+\bibcite{McDonald2014}{{69}{2014}{{McDonald}}{{}}}
+\bibcite{OpenIntro2019}{{70}{2019}{{OpenIntro}}{{}}}
 \newlabel{LastPage}{{}{12}{}{page.12}{}}
 \xdef\lastpage@lastpage{12}
 \xdef\lastpage@lastpageHy{12}
 \expandafter\ifx\csname c@page@totc\endcsname\relax\newcounter{page@totc}\fi\setcounter{page@totc}{13}
+\gdef \@abspage@last{12}
