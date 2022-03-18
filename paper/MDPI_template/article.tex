@@ -132,7 +132,7 @@ $^{3}$ \quad Institute of Electrical Engineering and Information Technology, Fac
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Introduction}
+\section{Introduction \label{sec:Introduction}}
 Gait deficits are common in older adults and possibly reflect the presence of an underlying neurodegenerative disease \cite{Snijders2007,Hodgins2008}. For example, conversion to Parkinson's Disease \cite{DelDin2019} or from mild cognitive impairment to Alzheimer's Disease \cite{Koenig2017,Bertoli2018} are linked with changes in spatiotemporal gait parameters. Similarly, temporal gait parameters are different for stroke patients \cite{SchroederVon1995,Mohan2021} and patients with multiple sclerosis \cite{Griskevicius2016,Flachenecker2019} when compared to healthy controls. To objectively quantify gait deficits, stride-specific parameters such as stride time or stride length are often used \cite{Hannink2016}, where the beginning and end of a stride are determined from two successive initial contacts (ICs) of the same foot \cite{Perry2010,Whittle2012}. The IC is when the foot contacts the ground and together with the instant at which the foot leaves the ground (final contact, FC), each stride can be divided in a stance and swing phase \cite{Rueterbories2010,Bruening2014}.  The events of IC and FC, also referred to as \emph{gait events}, are commonly determined using force or pressure measuring devices \cite{Bruening2014}, or passive, retro-reflective marker-based optoelectronic motion capture systems (henceforth referred to as the \emph{marker-based} system or method) \cite{Chiari2005,Topley2020}. These systems are relatively expensive, and restricted to usage in expertise laboratories \cite{Iosa2016,Jarchi2018}. As there is increasing evidence that gait measured in the lab does not reflect daily-life gait \cite{Hillel2019,Warmerdam2020,Atrsaei2021}, there is more and more interest in measurement systems that allow for continuous gait analysis in ambulatory settings. Therefore, the use of inertial measurement units (IMUs) is especially attractive, as these can be used to measure gait in ecologically valid environments, such as the home environment, thereby painting a more complete picture of health status \cite{DelDin2016,Shah2020} and providing clinical information that is complementary to standardized lab-based assessments \cite{Warmerdam2020,Fasano2020,Atrsaei2021,Corra2021}.
 
 Previous research suggests that gait event detection is more accurate using an IMU worn on a lower limb (e.g., shank or foot) compared to an IMU worn on the low back \cite{BenMansour2015,Storm2016,Panebianco2018}. Now, in order to get from abstract IMU sensor readings to clinically relevant gait parameters (e.g., from accelerations and angular velocities to stride times) \cite{Hannink2016}, different algorithmic approaches have been developed in the last twenty years of clinical gait research. A recent study has evaluated a cross-section of these algorithms for different sensor locations on the lower leg and foot \cite{Niswander2021}. The algorithms were categorized according to which signals were analyzed, for example the angular velocity about the medio-lateral axis, or the accelerations along vertical and antero-posterior axis. This means the sensor readings need to be linked with the anatomical axes, that is, one needs to know which sensor axis aligns with for example the medio-lateral axis. In most approaches, it is simply assumed that due to sensor attachment the sensor axis aligns roughly with the anatomical axis of interest (\cite{Salarian2004,Sabatini2005,Jasiewicz2006,Catalfamo2010,Trojaniello2014,Maqbool2016,Romijnders2021}) or an additional calibration procedure (e.g., \cite{Ferraris1995}) is required (\cite{Greene2010,Niswander2021}). In ambulatory assessments however, study participants often attach the sensor themselves, and therefore the sensor location and alignment cannot be controlled for. Furthermore, it is unlikely that each time the sensor is (re-)attached study participants, especially those with gait deficits, perform a calibration procedure that usually consists of holding a pre-defined pose and performing some known movement sequences (TODO: reference?! Kong? Seel?). 
@@ -141,8 +141,8 @@ Taken together, this drives the need for an approach that is invariant to sensor
 
 In this study, we further these works by validating this deep learning approach for detecting gait events in a heterogeneous cohort of healthy and neurologically diseased adults considering a single IMU setup, worn on the lower leg.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Materials and Methods}
-\subsection{Data Collection}
+\section{Materials and Methods \label{sec:Materials_and_Methods}}
+\subsection{Data Collection \label{subsec:Data_Collection}}
 Gait analyses were performed in the Universit\"{a}tsklinikum Schleswig-Holstein (UKSH) campus Kiel, Germany. The study \cite{Warmerdam2021} was approved by the ethical committee of the medical faculty at the UKSH (no: D438/18). In total, data from 160 participants were included for the current analysis, including data from young adults (YA; age: 18 - 60 years), older adults (OA; age: $>$60 years), people with Parkinson's Disease (PD; according to the UK Brain Bank criteria \cite{Gibb1988}), people with a recent ($<$4 weeks) symptomatic stroke (stroke), people with multiple sclerosis (MS; according to the McDonalds criteria \cite{Thompson2018}), people with chronic low back pain (cLBP), and people with other diagnoses that were assumed not to affect mobility (Table \ref{tab:demographics_data}). Inclusion criteria were an age of 18 years or older, and the ability to walk independently without a walking aid. Participants were excluded from the study with a Montreal Cognitive Assessment \cite{Nasreddine2005} score $<$15 and other movement disorders that affected mobility, as noticed by the clinical assessor.
 
 \begin{table}[H] 
@@ -188,58 +188,73 @@ Gait analyses were performed in the Universit\"{a}tsklinikum Schleswig-Holstein 
 
 Participants performed three walking trials consisting of walking 5 meter at either (1) preferred speed ("\emph{Please walk at your normal walking speed.}"), (2) slow speed ("\emph{Please walk half of your normal walking speed.}"), or (3) fast speed ("\emph{Please walk as fast as possible, without running or falling.}"). The 5 meter distance was marked with two cones on both ends, and participants were asked to start walking approximately two steps before the cones on one end, and stop walking approximately two steps after passing the cones on the other end.
 
-For the current analysis data from four IMUs (Noraxon USA Inc., myoMOTION, Scottsdale, AZ, USA) were considered, namely those that were attached laterally above the left and right ankle joint and those attached proximally at the left and right shank. IMUs were secured to participants using elastic bands with a special hold for the IMU. Furthermore, reflective markers were attached on top of the usual foot wear at the heel and toe of both feet (Figure~\ref{fig:methods_marker_vs_imu}). Marker data were recorded using a twelve-camera optoelectronic motion capture system (Qualisys AB, G\"{o}teborg, Sweden) at a sampling frequency of 200 Hz. IMU data were recorded at the same sampling frequency, and both systems were synchronized using a TTL signal \cite{Warmerdam2021}. For some recordings, the sampling frequency of the IMUs was erroneously set at 100 Hz, and therefore data from these trials were upsampled before further analysis.
+For the current analysis data from four IMUs (Noraxon USA Inc., myoMOTION, Scottsdale, AZ, USA) were considered, namely those that were attached laterally above the left and right ankle joint and those attached proximally at the left and right shank. IMUs were secured to participants using elastic bands with a special hold for the IMU. Furthermore, reflective markers were attached on top of the usual foot wear at the heel and toe of both feet (Figure~\ref{fig:methods_marker_vs_imu}). Marker data were recorded using a twelve-camera optoelectronic motion capture system (Qualisys AB, G\"{o}teborg, Sweden) at a sampling frequency of 200 Hz. IMU data were recorded at the same sampling frequency, and both systems were synchronized using a TTL signal \cite{Warmerdam2021}. For some recordings, the sampling frequency of the IMUs was mistakenly set at 100 Hz, and therefore data from these trials were upsampled before further analysis.
 
-\subsection{Data Pre-processing \label{subsec:data_preprocessing}}
-\subsubsection{Marker Data}
+\subsection{Data Pre-processing \label{subsec:Data_Pre-processing}}
+\subsubsection{Marker Data \label{subsubsec:Marker_Data}}
 The reflective marker data were first used to determine start and end of each trial. The start of the trial was defined as the time for which the first toe marker (left or right) crossed the \emph{virtual} starting line. The end was defined as the time for which the last heel marker crossed the end line. For both marker and IMU systems, data were then cropped from start to the end of the trial.
 
 Any remaining gaps in the marker data were filled by interpolation making use of inter-correlations between markers \cite{Federolf2013,Gloersen2016}. The data were then low-pass filtered using a double pass 6th order Butterworth filter with a cut-off frequency of 20 Hz \cite{Kormylo1974,Racz2021}. The filtered data were differentiated to get velocity signals, and timings of ICs and FCs were determined from local maxima and minima in the heel and toe vertical velocity signals \cite{Pijnappels2001,OConnor2007}. Like in \cite{Carcreff2018,Romijnders2021}, all identified ICs and FCs were manually checked, and corrected if necessary, using Qualisys Track Manager 2018.1 software (Qualisys AB, Göteborg, Sweden). The resulting annotated ICs and FCs were considered the \emph{true} events (also \emph{labels} or \emph{targets}), and were used as reference timings to derive stride-specific gait parameters.
 
-\subsubsection{IMU Data}
-The idea behind the deep learning approach was that a \emph{model} was trained to predict the likelihood of an IC and FC, given accelerometer and gyroscope data from a single IMU. In other words, the model was iteratively trained to learn a mapping $h_{\mathbf{W}}(\mathbf{X}): \mathbf{X} \rightarrow \mathbf{y}$, where $h_{\mathbf{W}}$ was also referred to as the \emph{hypothesis} parameterized by the weights, collectively denoted by $\mathbf{W}$, $\mathbf{X}$ was the matrix of IMU data, and $\mathbf{y}$ was the vector of annotated events.
-
-Here, the matrix $\mathbf{X}$ consisted of the IMU data, arranged as:
+\subsubsection{IMU Data \label{subsubsec:IMU_Data}}
+The idea behind the deep learning approach was that a \emph{model} was trained to predict the likelihood of an IC and FC, given accelerometer and gyroscope data from a single IMU. The data from a single sensor channel, e.g., the acceleration in forward direction, or the angular velocity about the vertical direction, was denoted by $\mathbf{x}_{d} = \begin{bmatrix}
+x_{d}[1] & x_{d}[2] & \cdots & x_{d}[N]
+\end{bmatrix}^{\mathrm{T}}$, with $d$ referring to the $d$th sensor channel (i.e., $d = 1, \cdots, D$) and $n$ referring to the $n$th sample or time step (i.e., $n = 1, \cdots, N$). Data from all $D$ sensor channels together was then denoted by:
 \begin{equation}
 	\mathbf{X} = \begin{bmatrix}
 		\rule[0ex]{0.5pt}{2.5ex} & \rule[0ex]{0.5pt}{2.5ex} &  & \rule[0ex]{0.5pt}{2.5ex}\\
 		\mathbf{x}_{1} & \mathbf{x}_{2} & \cdots & \mathbf{x}_{D}\\
 		\rule[0ex]{0.5pt}{2.5ex} & \rule[0ex]{0.5pt}{2.5ex} &  & \rule[0ex]{0.5pt}{2.5ex}
-	\end{bmatrix} = \begin{bmatrix}
+		\end{bmatrix} = \begin{bmatrix}
 		x_{1}[1] & x_{2}[1] & & x_{D}[1]\\
 		x_{1}[2] & x_{2}[2] & & x_{D}[2]\\
 		\vdots & \vdots & \cdots & \vdots\\
 		x_{1}[N] & x_{2}[1] & & x_{D}[N]\end{bmatrix}, \quad \mathbf{X} \in \mathbb{R}^{N \times D}
 	\label{eqn:train_data_single_instance}
 \end{equation}
-where $\mathbf{x}_{d} = \begin{bmatrix}x_{d}[1] & x_{d}[2] & \cdots & x_{d}[n] & \cdots & x_{d}[N]\end{bmatrix}^{\mathrm{T}}$, with $d = 1, \cdots, D$ referred to the $d$-th channel, and $n = 1, \cdots, N$ referred to the $n$-th sample (or discrete time step).
 
-Accordingly, the vector $\mathbf{y}$ consisted of the annotated events, arranged as:
+Likewise, the \emph{labels} were denoted by:
 \begin{equation}
 	\mathbf{y}_{\mathrm{IC}} = \begin{bmatrix}
-		y_{1}[1]\\
-		y_{1}[2]\\
+		y_{\mathrm{IC}}[1]\\
+		y_{\mathrm{IC}}[2]\\
 		\vdots\\
-		y_{1}[N]
-	\end{bmatrix}, \quad \mathbf{y}_{\mathrm{FC}} = \begin{bmatrix}
-		y_{2}[1]\\
-		y_{2}[2]\\
+		y_{\mathrm{IC}}[N]
+		\end{bmatrix}, \quad \mathbf{y}_{\mathrm{FC}} = \begin{bmatrix}
+		y_{\mathrm{FC}}[1]\\
+		y_{\mathrm{FC}}[2]\\
 		\vdots\\
-		y_{2}[N]
-	\end{bmatrix}, \quad y_{i}[n] \in [0, 1]
-	\label{eqn:train_labels_single_instace}
+		y_{\mathrm{FC}}[N]
+		\end{bmatrix}, \quad y_{\mathrm{IC}/\mathrm{FC}}[n] \in [0, 1]
+	\label{eqn:train_labels_single_instance}
 \end{equation}
 
-The data were split in three independent data sets, namely a training set, a validation set, and a test set. Each set contained data from approximately one-third of the participants. Participants were randomly assigned to one of the sets, stratified by both group (i.e., diagnosis) and gender (Table~\ref{tab:demographics_data}).
+The model was then iteratively trained to learn a mapping $h_{\mathbf{\Theta}}(\mathbf{X}): \mathbf{X} \rightarrow \mathbf{y}$, where $h_{\mathbf{\Theta}}$ was also referred to as the \emph{hypothesis} which was parameterized by the weights and biases, collectively denoted by $\mathbf{\Theta}$.
+
+All participant data were split in three independent data sets, namely a training set, a validation set, and a test set. Each set contained data from approximately one-third of the participants. Participants were randomly assigned to one of the sets, stratified by both group (i.e., diagnosis) and gender (Table~\ref{tab:demographics_data}).
 
 Accelerometer and gyroscope data were normalized by subtracting the channel-wise mean, and dividing by the channel-wise standard deviation. Then, for the training and validation data set, the data were partitioned into equal length time windows \cite{Filtjens2020} of 400~samples, with an overlap of 50\% between successive windows (corresponding to 2 s windows, and 1 s overlap, respectively).
 
-\subsection{Model}
-\subsubsection{Model Architecture}
-The basic architecture for the deep learning model was a temporal convolutional network (TCN) \cite{Bai2018,Remy2020,Filtjens2020}. The TCN consisted of repeating blocks of dilated convolutions (CONV) \cite{YuKoltun2016,Bai2018} that were followed by batch normalization (BN) \cite{Ioffe2015}, rectified linear unit (ReLU) activation, and dropout (DropOut) \cite{Srivastava2014}. For each given dilation factor, the sequence of layers CONV-BN-ReLU-DropOut was repeated twice \cite{Remy2020}. Dilation factors were given as a sequence of increasing powers of 2, e.g., $\left\{1, 2, 4, 8\right\}$ \cite{VanDenOord2016,YuKoltun2016,Bai2018}. These repeating blocks were followed by a fully-connected (dense) layer with sigmoid activation, and outputs were predicted separately for ICs and FCs. The mean squared error (MSE) was used as loss function, and a gradient descent-based optimization algorithm with adaptive moment (Adam) optimizer was used to iteratively learn the weights \cite{Kingma2014,Schmidt2021}.
+\subsection{Model \label{subsec:Model}}
+\subsubsection{Model Architecture \label{subsubsec:Model_Architecture}}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13.5cm]{fig/methods_tcn_arch.pdf}
+	\caption{The generic model architecture of the deep learning model to predict initial contacts (ICs) and final contacts (FCs). The inputs are the accelerometer and gyroscope data from a single inertial measurement unit, and are fed to a temporal convolutional network (TCN) (left). The TCN consisted of repeating residual blocks (ResBlock) with exponentially increasing dilation factor (middle). Each ResBlock was built from two sequences of a convolutional layer (Conv), batch normalization layer (BatchNorm), a rectified linear unit activation layer (ReLU), and a dropout layer (DropOut) (right). \label{fig:methods_tcn_arch}}
+\end{figure} 
+The generic architecture for the deep learning model was based on a temporal convolutional network (TCN) \cite{Bai2018,Remy2020,Filtjens2020}. The TCN consisted of a sequence of residual blocks with exponentially increasing dilation factor \cite{YuKoltun2016,Bai2018}. Each residual block was built from two sequences of a dilated convolutional layer \cite{YuKoltun2016}, a batch normalization layer \cite{Ioffe2015}, a rectified linear unit (ReLU) activation layer, and dropout layer \cite{Srivastava2014} (Figure~\ref{fig:methods_tcn_arch}). The model was built in Python \cite{VanRossum2009} using the high-level TensorFlow API Keras \cite{Chollet2015,Remy2020}. 
+
+For the current analysis only convolutions of the "same" type were considered \cite{Remy2020}, i.e., the model was non-causal and zero-padded to account for edge effects, and the likelihood of an IC or FC was based on input data both before and after the current sample, $n$:
+\begin{equation}
+	\hat{y}_{i}[n] = f(\cdots,\mathbf{X}[n-1],\mathbf{X}[n],\mathbf{X}[n+1],\cdots), \quad i \in \left\{ \mathrm{IC}, \mathrm{FC}\right\}
+	\label{eqn:predictions}
+\end{equation}
+The number of samples that the predictions at time $n$ "sees", was referred to as the \emph{receptive field} \cite{Lea2017} and was a function of the kernel size and the dilation factors \cite{Remy2020}. Dilation factors were always given as a sequence of increasing powers of 2 \cite{VanDenOord2016,YuKoltun2016,Bai2018}. 
+
+The outputs of the TCN block were fed to two separate fully-connected (FCN, or dense) layers, that both were followed by a sigmoid activation layer. Outputs were then predicted separately for ICs and FCs. The mean squared error (MSE) was used as loss function, and a gradient descent-based optimization algorithm with adaptive moment (Adam) optimizer was used to iteratively learn the weights \cite{Kingma2014,Schmidt2021}.
 
 \subsubsection{Hyperparameter Optimization}
-In order to find the best model architecture, hyperparameter tuning was perfomed using KerasTuner \cite{OMalley2019}. Here, the number of filters, the kernel size, and the maximum dilation factor (Table \ref{tab:hyperparameter_optimization}) were optimized for using a random search strategy \cite{Bergstra2012}.
+In order to find the best model architecture, hyperparameter tuning was perfomed using KerasTuner \cite{OMalley2019}. Here, the number of filters, the kernel size, and the maximum dilation factor (Table \ref{tab:hyperparameter_optimization}) were optimized using a random search strategy \cite{Bergstra2012}.
 
 \begin{table}[H] 
 	\caption{Model hyperparameters that were optimized for, and the corresponding sets of possible values.\label{tab:hyperparameter_optimization}}
@@ -255,12 +270,14 @@ In order to find the best model architecture, hyperparameter tuning was perfomed
 	\end{tabularx}
 \end{table}
 
-The model architecture that resulted from the hyperparameter optimization was then trained on the combined set of training and validation data. The trained model was used to predict occurrence of gait events from the hold-out test set.
+The model architecture that resulted from the hyperparameter optimization was then trained on the combined set of training and validation data. The trained model was used to predict the likelihoods of ICs and FCs events on the hold-out test set.
 
 \subsection{Analysis}
 The predictions of the model on the test set data were compared with the labels from the test set. The model performance was evaluated for (1) overall detection performance, (2) time agreement between the predicted events and the (marker-based) annotated events, (3) agreement between subsequently derived gait parameters.
 \subsubsection{Overall detection performance \label{subsubsec:overall_detection_performance}}
-The overall detection performance quantified how many of the annotated evens were detected by the model (true positives, TP), how many of the annotated events were not detected (false negatives, FN), and how many event that were detected, were actually not annotated (false positives, FP). From these metrics, the recall (or sensitivity), precision and F$_{1}$ score were calculated as:
+The overall detection performance quantified how many of the annotated evens were detected by the model (true positives, TP), how many of the annotated events were not detected (false negatives, FN), and how many event that were detected, were actually not annotated (false positives, FP). An annotated event was considered to be detected if any detected event was within 0.075 s. A detected event were defined as peaks in the predicted likelihoods with a minimum height of 0.4, i.e. $40\%$ likely that it corresponded to an event. 
+
+From these metrics, the recall (or sensitivity), precision and F$_{1}$ score were calculated as:
 \begin{equation}
 	\textrm{recall} = \frac{\textrm{TP}}{\textrm{TP} + \textrm{FN}} \nonumber
 	\label{eqn:recall}
@@ -274,8 +291,8 @@ The overall detection performance quantified how many of the annotated evens wer
 	\label{eqn:f1_score}
 \end{equation}
 
-\subsubsection{Time Error}
-For all correctly detected gait events (TP, Section \ref{subsubsec:overall_detection_performance}), the time error between the annotated and detect gait event was defined as:
+\subsubsection{Time Agreement \label{subsubsec:Methods_Time_Agreement}}
+For all correctly detected gait events (TP, Section \ref{subsubsec:overall_detection_performance}), the time agreement between the annotated and detect gait event was given by the time error:
 \begin{equation}
 	\textrm{time error} = t_{\textrm{ref}} - t_{\textrm{pred}}
 	\label{eqn:time_agreement}
@@ -283,13 +300,13 @@ For all correctly detected gait events (TP, Section \ref{subsubsec:overall_detec
 with $t_{\mathrm{ref}}$ the gait event time from the marker-based annotations, and $t_{\mathrm{pred}}$ the gait event time from the model predictions. As a robust measure for the average time error and its spread, the median time error and the inter-quartile range (IQR) were reported \cite{OpenIntro2019}.
 
 \subsubsection{Stride Parameters}
-For those trials for which all gait events were detected, and no spurious events were detected, the stride time, stance time and swing were calculated. Stride was the time between two successive ICs of the same foot. Stance time was the time between FC and the preceding IC of the same foot. Swing time was the time between the IC following the last FC of the same foot.
+For those trials for which all gait events were detected, and no false positives were detected, the stride time, stance time and swing were calculated. Stride time was the time between two successive ICs of the same foot. Stance time was the time between a FC and the preceding IC of the same foot. Swing time was the time between the IC following the last FC of the same foot.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 
-\subsection{Overall detection performance}
-The performance of detecting initial contacts and final contacts was objectively quantified by the number of annotated events that were detected (true positives, TP), the number of annotated events that were not detected (false negatives, FN), and the number of detected events that were not annotated (false positives, FP). From these, recall, precision and F$_{1}$ score were calculated (Table \ref{tab:overall_detection_performance}).
+\subsection{Overall Detection Performance}
+The performance of detecting ICs and FCs was objectively quantified by the number of TPs, the number of FNs, and the number of FPs. From these, recall, precision and F$_{1}$ score were calculated (Table \ref{tab:overall_detection_performance}).
 \begin{table}[H]
 	\caption{Overall detection performance for initial contacts and final contacts as quantified by recall, precision and F$_{1}$ score.\label{tab:overall_detection_performance}}
 	\begin{adjustwidth}{-\extralength}{0cm}
@@ -312,14 +329,14 @@ The performance of detecting initial contacts and final contacts was objectively
 For both ICs and FCs, recall is high for each of the tracked points (i.e., $\ge 92\%$), and so is precision (i.e., $\ge 97\%$). Differences between the tracked points are small, i.e. the minimum recall is $92\%$ and the maximum recall is $97\%$, and the minimum precision is $97\%$ and the maximum precision is $99\%$.
 
 
-\subsection{Time Error}
+\subsection{Time Agreement}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=13.5 cm]{fig/box_plots_tracked_points_with_outliers.png}
 	\caption{Time errors for initial (left) and final (right) contacts detection, for each of the different tracked points.\label{fig:time_error_box_plots}}
 \end{figure}
 
-Time errors for ICs and FCs are visually depicted using boxplots for each tracked point. Data were not normally distributed, thus Wilcoxon signed-rank tests were used to evaluate whether the median time error was zero.
+Time agreement between the annotated and detected events was quantified for the TPs for each of the tracked points (Figure~\ref{fig:time_error_box_plots}). The median time error for each of the tracked points, and for both ICs and FCs was close to zero (Table~\ref{tab:time_errors}), and the largest deviation was -0.005 s, corresponding to one sample period. The IQR was at most 0.020 s, corresponding to 4 sample periods.
 \begin{table}[H] 
 	\caption{Time errors for the correctly detected gait events. \label{tab:time_errors}}
 	\newcolumntype{C}{>{\centering\arraybackslash}X}
@@ -338,10 +355,10 @@ Time errors for ICs and FCs are visually depicted using boxplots for each tracke
 	\noindent{\footnotesize{IQR: inter-quartile range.}}
 \end{table}
 
-\subsection{Gait parameters}
-For those trials for which all gait events were correctly detected (and no spurious events were detected, i.e., no false positives), stride time, stance time and swing time were calculated. The mean difference and the limits of agreement between the NN-derived gait parameters and the marker-based annotations were calculated.
+\subsection{Stride Parameters}
+For those trials for which all gait events were correctly detected (and no false positives were detected), stride time, stance time and swing time were calculated. The mean difference and the limits of agreement between the marker-based annotations and the model-based detections were calculated.
 
-For all stride-specific gait parameters, and for all tracked points, the mean difference compared to the marker-based reference values was close to zero, i.e., the maxmum mean difference was 0.003 s. Furthermore, for all gait parameters and for all tracked points the limits of agreement, based on a 95\% confidence interval were distributed around zero with the overall span between -0.049 s and 0.051 s.
+For all stride-specific gait parameters, and for all tracked points, the mean difference was close to zero, i.e., the maximum mean difference was 0.003 s, namely for the calculated swing time of the right ankle (Table~\ref{tab:stride_parameters}). Furthermore, for all gait parameters and for all tracked points the limits of agreement, based on a 95\% confidence interval were distributed around a zero mean difference with the overall limits of agreement at -0.049 s and 0.051 s (Figure~\ref{fig:gait_parameters_bland_altman_plots}).
 \begin{table}[H] 
 	\caption{Time agreement between the stride-specific parameters. \label{tab:stride_parameters}}
 	\newcolumntype{C}{>{\centering\arraybackslash}X}
@@ -379,17 +396,19 @@ For all stride-specific gait parameters, and for all tracked points, the mean di
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
-The current study aimed to validate a deep learning approach for detecting gait events from a single IMU worn on the lower leg. Data from left and right ankle- and shank-worn IMUs were used for training a neural network to detect gait events from walking trials performed by healthy younger and older adults, participants diagnosed with Parkinson's Disease, multiple sclerosis, or chronic low back pain, participants who had a recent symptomatic stroke, and participants diagnosed with other neurological diseases. Participants walked a 5 meter distance at three different self-selected walking speeds. The gait event timings that were predicted by the neural network were compared to a common reference method, i.e., stereophotogrammetry, and clinically relevant stride-specific gait parameters were extracted. 
+The current study aimed to validate a deep learning approach for detecting gait events from a single IMU worn on the lower leg. Data from a left and right ankle- and shank-worn IMU were used for training a deep learning model to detect gait events from walking trials performed by healthy younger and older adults, participants diagnosed with Parkinson's Disease, multiple sclerosis, or chronic low back pain, participants who had a recent symptomatic stroke, and participants diagnosed with other neurological diseases. Participants walked a 5 meter distance at three different self-selected walking speeds. The gait event timings that were predicted by the deep learning model were compared to a common reference method, i.e., optoelectronc motion capture, and clinically relevant stride-specific gait parameters were extracted. 
 
-A first measure for the model performance was given by the recall (how many annotated events were detected) and precision (how many detected events were annotated). For both initial contacts and final contacts, a high recall ($\ge 95\%$) and high precision ($\ge 98\%$) were observed, meaning that most events can be detected and most detected events were actually true events. There was little difference in recall and precision between tracked points (Table~\ref{tab:overall_detection_performance}) confirming that the deep learning approach is relatively invariant to exact sensor localization. These values for recall and precision were slightly lower than our previously reported $100 \%$ \cite{Romijnders2021} that used a heuristics-based approach \cite{Salarian2004}, but in the current study more trials were included and from a more heterogeneous study population.
+A first measure for the model performance was given by the recall, precision and F$_{1}$ score. For both ICs and FCs, a high recall ($\ge 95\%$) and high precision ($\ge 98\%$) were observed, meaning that most events can be detected and most detected events were actually true events. There was little difference in recall and precision between tracked points (Table~\ref{tab:overall_detection_performance}) confirming that the deep learning approach is relatively invariant to exact sensor location. These values for recall and precision were slightly lower than our previously reported values \cite{Romijnders2021} that used a heuristics-based approach \cite{Salarian2004}, but in the current study more trials were included and from a more heterogeneous study population. The F$_{1}$ score was comparable to the F$_{1}$ score obtained by \cite{Filtjens2020} who compared marker-based gait event detection to manual annotations, and was also comparable to the F$_{1}$ score reported by \cite{Ji2019} for gait event detection from a continuous wavelet-based approach.
 
-Next, the time error, that is the difference between the annotated event and the detected event, was of interest. For both initial contacts and final contacts, and for all tracked points, the observed time error was small, and the middle $50\%$ of the time errors were within a range of $\left[-0.015,0.010\right]$ s (Table~\ref{tab:time_errors}, Figure~\ref{fig:time_error_box_plots}). These data showed that the deep learning-based is approach is precise in detecting initial and final contacts. Time errors were slightly smaller than our previously reported results \cite{Romijnders2021} that used a heuristics-based approach \cite{Salarian2004}. The heuristics-based approach determined ICs and FCs as local minima in the medio-lateral angular velocity \cite{Salarian2004} and it could be that these minima do not exactly coincide with the referent event timing as determined from the stereophotogrammetry. 
+Next, the time agreement, expressed by the time error the annotated event and the detected event, was of interest. For both ICs and FCs, and for all tracked points, the observed time error was small, and the middle $50\%$ of the time errors were within a range of $\left[-0.015,0.010\right]$ s (Table~\ref{tab:time_errors}, Figure~\ref{fig:time_error_box_plots}). These data showed that the deep learning-based is approach is precise in detecting ICs and FCs. Time errors were slightly smaller than our previously reported results \cite{Romijnders2021} that used a heuristics-based approach \cite{Salarian2004}. The heuristics-based approach determined ICs and FCs as local minima in the medio-lateral angular velocity \cite{Salarian2004} and it could be that these minima do not exactly coincide with the referent event timing as determined from the optoelectronic motion capture systems. The median and IQR of the time errors were in the same range as previously found by \cite{Gadaleta2019} that used a similar model architecture. The time errors were lower than previously reported time errors from a continuous wavelet-based approach \cite{Ji2019}.
 
-From the correctly detected gait events, stride-specific gait parameters were derived. These are probably of greatest clinical relevance, as changes in stride-specific gait parameters have been linked directly with disease onset and progression \cite{DelDin2019,Koenig2017,Bertoli2018,SchroederVon1995,Mohan2021,Griskevicius2016,Flachenecker2019}. Therefore, stride time, stance time, and swing time were calculated, and the differences between the deep learning-based approach and the marker-based reference method were quantified (Table~\ref{tab:stride_parameters}, Figure~\ref{fig:gait_parameters_bland_altman_plots}). The limits of agreement for a $95\%$ confidence interval were calculated, and for all metrics the zero mean difference was enclosed in the limit of agreement.
+From the correctly detected gait events, stride-specific gait parameters were derived. These are probably of greatest clinical relevance, as changes in stride-specific gait parameters have been linked directly with disease onset and progression \cite{DelDin2019,Koenig2017,Bertoli2018,SchroederVon1995,Mohan2021,Griskevicius2016,Flachenecker2019}. Therefore, stride time, stance time, and swing time were calculated, and the differences between the deep learning-based approach and the marker-based reference method were quantified (Table~\ref{tab:stride_parameters}, Figure~\ref{fig:gait_parameters_bland_altman_plots}). The limits of agreement for a $95\%$ confidence interval were calculated, and for all metrics the zero mean difference was enclosed in the limit of agreement. These data provided evidence that the deep learning-based model was able to derive stride-specific gait parameters. The differences between the deep learning model-based stride parameters and the marker-based stride parameters were in a similar range as a recent study that compared IMU-derived stride parameters against stride parameters obtained with a pressure sensing walkway \cite{Gadaleta2019,Niswander2021}, and were also in the same range as a study that compared IMU-derived stride parameters with stride parameters obtained with an optoelectronic motion capture systems \cite{Carcreff2018}.
+
+The main limitations of the current study were that only walking trials involving straight-line walking were considered, and the walking distance was relatively short. The observed gait patterns from these walking trials may therefore not fully representative of gait patterns observed in daily-life \cite{Hillel2019,Warmerdam2020,Atrsaei2021}. However, as the deep learning-based approach does not rely on fixed thresholds or assumptions regarding to which sensor axis is used, it is theoretically transferable and scalable to other conditions if input data and corresponding labels can be provided. For example, in \cite{Gadaleta2019} a similar deep learning model was tested for a setup with three IMUs and for a setup with a single IMU, and observed differences in time errors compared to a pressure sensing walkway were negligible.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
-In this study we have validated a deep learning-based approach to detect gait events and subsequently extract clinically relevant stride parameters from a single inertial measurement unit. Performance analysis showed an excellent detection rate, and low time errors in both event detection and stride parameter calculation for different walking speeds and across both healthy and neurological cohorts. Our next step is to validate these methods under more challenging conditions, that involve real-life walking sequences.
+In this study we have validated a deep learning-based approach to detect gait events and subsequently extract clinically relevant stride parameters from a single inertial measurement unit worn either laterally above the ankle joint or proximally below the knee joint. Performance analysis showed an excellent detection rate, and low time errors in both event detection and stride parameter calculation for different walking speeds and across both healthy and neurological cohorts. Our next step is to validate these methods with real-life walking sequences.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{6pt} 
@@ -612,24 +631,28 @@ The following abbreviations are used in this manuscript:\\
 	\bibitem[Srivastava(2014)]{Srivastava2014}
 	Srivastava,~N.; Hinton,~G.; Krizhevsky,~A.; Sutskever,~I.; Salakhutdinov,~R. Dropout: a
 	simple way to prevent neural networks from overfitting. {\em J. Mach. Learn. Res.} {\bf 2014} {\em 15}, 1929--1958.
+	\bibitem[VanRossum(2009)]{VanRossum2009}
+	Van~Rossum,~G.; Drake,~F.L. \textit{Python 3 Reference Manual}; CreateSpace, Scotts Valley, CA, USA, 2009.
+	\bibitem[Chollet(2015)]{Chollet2015}
+	Chollet,~F. and others. Keras. {\bf 2015}. \url{https://keras.io}.
+	\bibitem[Lea(2017)]{Lea2017}
+	Lea,~C.; Flynn,~M.D.; Vidal,~R.; Reiter,~A.; Hager,~G.D. Temporal convolutional networks for action segmentation and detection. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, Honolulu, HI, USA, 22--25 Jul. 2017; pp. 156--165.
 	\bibitem[VanDenOord(2016)]{VanDenOord2016}
 	van~den~Oord,~A.; Dieleman,~S.; Zen,~H.; Simonyan,~K.; Vinyals,~O.; Graves,~A.; Kalchbrenner,~N.; Senior,~A.W.; Kavukcuoglu,~K. WaveNet: A generative	model for raw audio. {\em arXiv:1609.03499} {\bf 2016}.
-	\bibitem[OMalley(2019)]{OMalley2019}
-	O'Malley,~T.; Bursztein,~E.; Long,~J.; Chollet,~F.; Jin,~H.; Invernizzi,~L.; and others; KerasTuner. {\em GitHub repository} {\bf 2019}, {\em GitHub}, \url{https://github.com/keras-team/keras-tuner}.
 	\bibitem[Kingma(2014)]{Kingma2014}
 	Kingma,~D.P.; Ba,~J. Adam: A Method for Stochastic Optimization {\em arXiv:1412.6980v9} {\bf 2014}.
 	\bibitem[Schmidt(2021)]{Schmidt2021}
 	Schmidt,~R.M.; Schneider,~F.; Henning,~P. Descending through a crowded valley-benchmarking deep learning optimizers. In Proceedings of the 38th Int. Conf. on Machine Learning (ICML), {\em online}, 18--24 Jul. 2021, pp. 9367--9376.
+	\bibitem[OMalley(2019)]{OMalley2019}
+	O'Malley,~T.; Bursztein,~E.; Long,~J.; Chollet,~F.; Jin,~H.; Invernizzi,~L.; and others; KerasTuner. {\em GitHub repository} {\bf 2019}, {\em GitHub}, \url{https://github.com/keras-team/keras-tuner}.
 	\bibitem[Bergstra(2012)]{Bergstra2012}
 	Bergstra,~J.; Bengio,~Y. Random Search for Hyper-Parameter Optimization. {\em J. Mach. Learn. Res.} {\bf 2012}, {\em 13}(10), 281--305.
-	\bibitem[Mishra(2019)]{Mishra2019}
-	Mishra,~P.; Pandey,~C.M.; Singh,~U.; Gupta,~A.; Sahu,~C.; Keshri,~A. Descriptive Statistics and Normality Tests for Statistical Data. {\em Ann. Card. Anaesth.} {\bf 2019}, {\em 22}(1), 67--72. 	
-	\bibitem[Wilcoxon(1945)]{Wilcoxon1945}
-	Wilcoxon,~F. Individual Comparisons by Ranking Methods. {\em Biometrics Bull.} {\bf 1945}, {\em 1}, 80--83.
-	\bibitem[McDonald(2014)]{McDonald2014}
-	McDonald,~J.H. \textit{Handbook of Biological Statistics}, 3rd ed.; Sparky House Publishing: Sparky House Publishing, USA, 2014; pp. 186--189.
 	\bibitem[OpenIntro(2019)]{OpenIntro2019}
 	Diez,~D.; \c{C}etinkaya-Rundel,~M.; Barr,~C.D. \textit{OpenIntro Statistics}, 4th ed.; 2019. \url{https://www.openintro.org/book/os/}
+	\bibitem[Ji(2019)]{Ji2019}
+	Ji,~N.; Zhou,~H.; Guo,~K.; Samuel,~O.W.; Huang,~Z.; Xu,~L.; Li,~G. Appropriate Mother Wavelets for Continuous Gait Event Detection Based on Time-Frequency Analysis for Hemiplegic and Healthy Individuals. {\em Sensors} {\bf 2019}, {\em 19}(16):3462.	
+	\bibitem[Carcreff(2018)]{Carcreff2018}
+	Carcreff,~L.; Gerber,~C.N.; Paraschiv-Ionescu,~A.; De~Coulon,~G.; Newman,~C.J.; Armand,~S.; Aminian,~K. What is the Best Configuration of Wearable Sensors to Measure Spatiotemporal Gait Parameters in Children with Cerebral Palsy? {\em Sensors} {\bf 2018}, {\em 18}(2):394.
 \end{thebibliography}
 
 % If authors have biography, please use the format below
