@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.24)  18 MAR 2022 15:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.24)  4 APR 2022 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1300,6 +1300,38 @@ LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
 Package newfloat Info: `float' package detected.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ge' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ge' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 132.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 132.
+
 Package marginnote Info: Margin note 1.1 is on absolute page 1 on input line 13
 2.
 Package marginnote Info: right page because not two side mode on input line 132
@@ -1351,6 +1383,14 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 132.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 132.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 132.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 132.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 132.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 132.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
 32.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
@@ -1378,80 +1418,62 @@ Package array Warning: Column C is already defined on input line 150.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./fig/methods_overall_workflow.pdf): PD
 F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig/methods_overall_workflow.pdf, id=213, 963.6pt x 542.025pt>
+<fig/methods_overall_workflow.pdf, id=214, 963.6pt x 542.025pt>
 File: fig/methods_overall_workflow.pdf Graphic file (type pdf)
 <use fig/methods_overall_workflow.pdf>
 Package pdftex.def Info: fig/methods_overall_workflow.pdf  used on input line 1
 84.
 (pdftex.def)             Requested size: 384.1122pt x 216.0618pt.
 [3 <./fig/methods_overall_workflow.pdf>] [4]
-<fig/methods_tcn_arch.pdf, id=278, 722.7pt x 406.51875pt>
+<fig/methods_tcn_arch.pdf, id=279, 722.7pt x 406.51875pt>
 File: fig/methods_tcn_arch.pdf Graphic file (type pdf)
 <use fig/methods_tcn_arch.pdf>
-Package pdftex.def Info: fig/methods_tcn_arch.pdf  used on input line 242.
+Package pdftex.def Info: fig/methods_tcn_arch.pdf  used on input line 240.
 (pdftex.def)             Requested size: 384.1122pt x 216.0618pt.
  [5 <./fig/methods_tcn_arch.pdf>]
 
-Package array Warning: Column C is already defined on input line 261.
+Package array Warning: Column C is already defined on input line 259.
 
-[6pdfTeX warning (ext4): destination with the same identifier (name{equation.2.
-4}) has been already used, duplicate ignored
+[6]
 
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.304 
-      pdfTeX warning (ext4): destination with the same identifier (name{equatio
-n.2.4}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.304 
-      pdfTeX warning (ext4): destination with the same identifier (name{equatio
-n.2.4}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.304 
-      ]
-
-Package array Warning: Column C is already defined on input line 313.
+Package array Warning: Column C is already defined on input line 312.
 
 
-Overfull \hbox (12.01418pt too wide) in paragraph at lines 324--324
+Overfull \hbox (12.01418pt too wide) in paragraph at lines 323--323
  []|\T1/ppl/b/n/9 precision| 
  []
 
 
-Overfull \hbox (12.01418pt too wide) in paragraph at lines 324--324
+Overfull \hbox (12.01418pt too wide) in paragraph at lines 323--323
  []|\T1/ppl/b/n/9 precision| 
  []
 
-<fig/box_plots_tracked_points_with_outliers.png, id=340, 867.24pt x 289.08pt>
+<fig/box_plots_tracked_points_with_outliers.png, id=344, 867.24pt x 289.08pt>
 File: fig/box_plots_tracked_points_with_outliers.png Graphic file (type png)
 <use fig/box_plots_tracked_points_with_outliers.png>
 Package pdftex.def Info: fig/box_plots_tracked_points_with_outliers.png  used o
-n input line 335.
+n input line 334.
 (pdftex.def)             Requested size: 384.1122pt x 128.03809pt.
 
-Package array Warning: Column C is already defined on input line 342.
+Package array Warning: Column C is already defined on input line 341.
 
 [7 <./fig/box_plots_tracked_points_with_outliers.png>]
 
-Package array Warning: Column C is already defined on input line 364.
+Package array Warning: Column C is already defined on input line 363.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--388
+Underfull \hbox (badness 10000) in paragraph at lines 385--387
 
  []
 
-<fig/bland_altman_plots_stride_params.png, id=356, 1223.2902pt x 398.2077pt>
+<fig/bland_altman_plots_stride_params.png, id=360, 1223.2902pt x 398.2077pt>
 File: fig/bland_altman_plots_stride_params.png Graphic file (type png)
 <use fig/bland_altman_plots_stride_params.png>
 Package pdftex.def Info: fig/bland_altman_plots_stride_params.png  used on inpu
 t line 392.
-(pdftex.def)             Requested size: 384.1122pt x 125.03506pt.
+(pdftex.def)             Requested size: 469.47046pt x 152.8213pt.
 [8 <./fig/bland_altman_plots_stride_params.png>] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
+Underfull \hbox (badness 10000) in paragraph at lines 462--462
 
  []
 
@@ -1459,34 +1481,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--461
 {cite.Carcreff2018}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.654 	\bibitem[Carcreff(2018)]{Carcreff2018}
+l.655 	\bibitem[Carcreff(2018)]{Carcreff2018}
                                               
 AED: lastpage setting LastPage
 [13]
 
 Package natbib Warning: There were multiply defined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 681.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 681.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 682.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 682.
 (./article.aux
 
 Package natbib Warning: Citation(s) may have changed.
 (natbib)                Rerun to get citations correct.
 
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 681.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 681.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 682.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 682.
 Package rerunfilecheck Info: File `article.out' has not changed.
 (rerunfilecheck)             Checksum: 7155D6BB8161793D5A1C9F885E3FD198;2755.
  ) 
 Here is how much of TeX's memory you used:
- 31069 strings out of 481239
- 555604 string characters out of 5920377
- 867850 words of memory out of 5000000
- 45279 multiletter control sequences out of 15000+600000
- 613319 words of font info for 385 fonts, out of 8000000 for 9000
+ 31092 strings out of 481239
+ 555811 string characters out of 5920377
+ 874988 words of memory out of 5000000
+ 45280 multiletter control sequences out of 15000+600000
+ 614768 words of font info for 399 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,64p,2252b,679s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,13n,64p,2225b,679s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
@@ -1498,10 +1520,10 @@ b.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
 live/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/palatino/uplri8a.pfb>
-Output written on article.pdf (13 pages, 901164 bytes).
+Output written on article.pdf (13 pages, 908208 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 422 compressed objects within 5 object streams
- 117 named destinations out of 1000 (max. 500000)
+ 493 PDF objects out of 1000 (max. 8388607)
+ 427 compressed objects within 5 object streams
+ 120 named destinations out of 1000 (max. 500000)
  51403 words of extra memory for PDF output out of 51595 (max. 10000000)
 
