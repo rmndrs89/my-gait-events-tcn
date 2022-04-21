@@ -4,6 +4,8 @@ __pycache__/
 __obsolete__/
 analysis/.ipynb_checkpoints/
 models/__pycache__/
+paper/MDPI_template/Cover Letter.docx
+paper/MDPI_template/Cover Letter.pdf
 utils/__pycache__/
 demographics_table.tsv
 demographics_table.xlsx
