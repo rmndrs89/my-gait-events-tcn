@@ -81,48 +81,50 @@
 \citation{YuKoltun2016,Bai2018,VanDenOord2016}
 \citation{Gadaleta2019,Filtjens2020}
 \citation{Kingma2014,Schmidt2021}
-\citation{OMalley2019}
-\citation{Bergstra2012}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Model}{5}{subsection.2.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Model Architecture}{5}{subsubsection.2.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Hyperparameter Optimization}{5}{subsubsection.2.3.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Model hyperparameters that were optimized for, and the corresponding sets of possible values.\relax }}{5}{table.caption.3}\protected@file@percent }
-\newlabel{tab:hyperparameter_optimization}{{2}{5}{Model hyperparameters that were optimized for, and the corresponding sets of possible values.\relax }{table.caption.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Analysis}{5}{subsection.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The generic model architecture of the deep learning model to predict initial contacts (ICs) and final contacts (FCs). The inputs are the accelerometer and gyroscope data from a single inertial measurement unit, and are fed to a temporal convolutional network (TCN) (left). The TCN consisted of repeating residual blocks (ResBlocks) with exponentially increasing dilation factor (middle). Each ResBlock was built from two sequences of a convolutional layer (Conv), batch normalization layer (BatchNorm), a rectified linear unit activation layer (ReLU), and a dropout layer (DropOut) (right). \relax }}{5}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:tcn_model_arch}{{2}{5}{The generic model architecture of the deep learning model to predict initial contacts (ICs) and final contacts (FCs). The inputs are the accelerometer and gyroscope data from a single inertial measurement unit, and are fed to a temporal convolutional network (TCN) (left). The TCN consisted of repeating residual blocks (ResBlocks) with exponentially increasing dilation factor (middle). Each ResBlock was built from two sequences of a convolutional layer (Conv), batch normalization layer (BatchNorm), a rectified linear unit activation layer (ReLU), and a dropout layer (DropOut) (right). \relax }{figure.caption.3}{}}
+\citation{OMalley2019}
+\citation{Bergstra2012}
 \citation{OpenIntro2019}
-\newlabel{subsubsec:overall_detection_performance}{{2.4.1}{6}{Overall detection performance \label {subsubsec:overall_detection_performance}}{subsubsection.2.4.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Overall detection performance }{6}{subsubsection.2.4.1}\protected@file@percent }
-\newlabel{eqn:recall}{{4}{6}{Overall detection performance \label {subsubsec:overall_detection_performance}}{equation.2.4}{}}
-\newlabel{eqn:precision}{{5}{6}{Overall detection performance \label {subsubsec:overall_detection_performance}}{equation.2.5}{}}
-\newlabel{eqn:f1_score}{{6}{6}{Overall detection performance \label {subsubsec:overall_detection_performance}}{equation.2.6}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Time Error}{6}{subsubsection.2.4.2}\protected@file@percent }
-\newlabel{eqn:time_agreement}{{7}{6}{Time Error}{equation.2.7}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Stride Parameters}{6}{subsubsection.2.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{6}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Overall detection performance}{6}{subsection.3.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Overall detection performance for initial contacts and final contacts as quantified by recall, precision and F$_{1}$ score.\relax }}{6}{table.caption.4}\protected@file@percent }
-\newlabel{tab:overall_detection_performance}{{3}{6}{Overall detection performance for initial contacts and final contacts as quantified by recall, precision and F$_{1}$ score.\relax }{table.caption.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Hyperparameter Optimization}{6}{subsubsection.2.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Model hyperparameters that were optimized for, and the corresponding sets of possible values.\relax }}{6}{table.caption.4}\protected@file@percent }
+\newlabel{tab:hyperparameter_optimization}{{2}{6}{Model hyperparameters that were optimized for, and the corresponding sets of possible values.\relax }{table.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Analysis}{6}{subsection.2.4}\protected@file@percent }
+\newlabel{subsubsec:overall_detection_performance}{{2.4.1}{6}{Overall Detection Performance \label {subsubsec:overall_detection_performance}}{subsubsection.2.4.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Overall Detection Performance }{6}{subsubsection.2.4.1}\protected@file@percent }
+\newlabel{eqn:recall}{{4}{6}{Overall Detection Performance \label {subsubsec:overall_detection_performance}}{equation.2.4}{}}
+\newlabel{eqn:precision}{{5}{6}{Overall Detection Performance \label {subsubsec:overall_detection_performance}}{equation.2.5}{}}
+\newlabel{eqn:f1_score}{{6}{6}{Overall Detection Performance \label {subsubsec:overall_detection_performance}}{equation.2.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Time Agreement}{6}{subsubsection.2.4.2}\protected@file@percent }
+\newlabel{eqn:time_agreement}{{7}{6}{Time Agreement}{equation.2.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Stride-specific Gait Parameters}{6}{subsubsection.2.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{7}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Overall Detection Performance}{7}{subsection.3.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Overall detection performance for initial contacts and final contacts as quantified by recall, precision and F$_{1}$ score.\relax }}{7}{table.caption.5}\protected@file@percent }
+\newlabel{tab:overall_detection_performance}{{3}{7}{Overall detection performance for initial contacts and final contacts as quantified by recall, precision and F$_{1}$ score.\relax }{table.caption.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Time Agreement}{7}{subsection.3.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Time errors for initial (left) and final (right) contacts detection, for each of the different tracked points.\relax }}{7}{figure.caption.5}\protected@file@percent }
-\newlabel{fig:time_error_box_plots}{{2}{7}{Time errors for initial (left) and final (right) contacts detection, for each of the different tracked points.\relax }{figure.caption.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Time errors for the correctly detected gait events. Note that 0.005 s corresponds to 1 sample period, given the sampling frequency of 200 Hz. \relax }}{7}{table.caption.6}\protected@file@percent }
-\newlabel{tab:time_errors}{{4}{7}{Time errors for the correctly detected gait events. Note that 0.005 s corresponds to 1 sample period, given the sampling frequency of 200 Hz. \relax }{table.caption.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Stride-specific Gait Parameters}{7}{subsection.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Time errors for initial (left) and final (right) contacts detection, for each of the different tracked points.\relax }}{7}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:time_error_box_plots}{{3}{7}{Time errors for initial (left) and final (right) contacts detection, for each of the different tracked points.\relax }{figure.caption.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Time errors for the correctly detected gait events. Note that 0.005 s corresponds to 1 sample period, given the sampling frequency of 200 Hz. \relax }}{8}{table.caption.7}\protected@file@percent }
+\newlabel{tab:time_errors}{{4}{8}{Time errors for the correctly detected gait events. Note that 0.005 s corresponds to 1 sample period, given the sampling frequency of 200 Hz. \relax }{table.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Stride-specific Gait Parameters}{8}{subsection.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Time agreement between the stride-specific parameters. \relax }}{8}{table.caption.8}\protected@file@percent }
+\newlabel{tab:stride_parameters}{{5}{8}{Time agreement between the stride-specific parameters. \relax }{table.caption.8}{}}
 \citation{Romijnders2021}
 \citation{Salarian2004}
 \citation{Salarian2004}
 \citation{Gadaleta2019}
 \citation{Ji2019}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Time agreement between the stride-specific parameters. \relax }}{8}{table.caption.7}\protected@file@percent }
-\newlabel{tab:stride_parameters}{{5}{8}{Time agreement between the stride-specific parameters. \relax }{table.caption.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The agreement of extracted gait parameters between the sensor-based and marker-based methods.\relax }}{8}{figure.caption.8}\protected@file@percent }
-\newlabel{fig:gait_parameters_bland_altman_plots}{{3}{8}{The agreement of extracted gait parameters between the sensor-based and marker-based methods.\relax }{figure.caption.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{8}{section.4}\protected@file@percent }
 \citation{DelDin2019,Koenig2017,Bertoli2018,SchroederVon1995,Mohan2021,Griskevicius2016,Flachenecker2019}
 \citation{Niswander2021,Gadaleta2019}
 \citation{Carcreff2018}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The agreement of extracted gait parameters between the sensor-based and marker-based methods.\relax }}{9}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:gait_parameters_bland_altman_plots}{{4}{9}{The agreement of extracted gait parameters between the sensor-based and marker-based methods.\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{9}{section.4}\protected@file@percent }
 \citation{Hillel2019,Warmerdam2020,Atrsaei2021}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{9}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions}{10}{section.5}\protected@file@percent }
 \bibcite{Snijders2007}{{1}{2007}{{Snijders}}{{}}}
 \bibcite{Hodgins2008}{{2}{2008}{{Hodgins}}{{}}}
 \bibcite{DelDin2019}{{3}{2019}{{DelDin}}{{}}}
@@ -141,13 +143,13 @@
 \bibcite{Topley2020}{{16}{2020}{{Topley}}{{}}}
 \bibcite{Iosa2016}{{17}{2016}{{Iosa}}{{}}}
 \bibcite{Jarchi2018}{{18}{2018}{{Jarchi}}{{}}}
-\@writefile{toc}{\contentsline {section}{References}{10}{section.5}\protected@file@percent }
 \bibcite{Hillel2019}{{19}{2019}{{Hillel}}{{}}}
 \bibcite{Warmerdam2020}{{20}{2020}{{Warmerdam}}{{}}}
 \bibcite{Atrsaei2021}{{21}{2021}{{Atrsaei}}{{}}}
 \bibcite{DelDin2016}{{22}{2016}{{DelDin}}{{}}}
 \bibcite{Shah2020}{{23}{2020}{{Shah}}{{}}}
 \bibcite{Fasano2020}{{24}{2020}{{Fasano}}{{}}}
+\@writefile{toc}{\contentsline {section}{References}{11}{section.5}\protected@file@percent }
 \bibcite{Corra2021}{{25}{2021}{{Corra}}{{}}}
 \bibcite{BenMansour2015}{{26}{2015}{{BenMansour}}{{}}}
 \bibcite{Storm2016}{{27}{2016}{{Storm}}{{}}}
@@ -197,9 +199,6 @@
 \bibcite{Bergstra2012}{{71}{2012}{{Bergstra}}{{}}}
 \bibcite{OpenIntro2019}{{72}{2019}{{OpenIntro}}{{}}}
 \bibcite{Ji2019}{{73}{2019}{{Ji}}{{}}}
-\bibcite{Mishra2019}{{74}{2019}{{Mishra}}{{}}}
-\bibcite{Wilcoxon1945}{{75}{1945}{{Wilcoxon}}{{}}}
-\bibcite{McDonald2014}{{76}{2014}{{McDonald}}{{}}}
 \newlabel{LastPage}{{}{13}{}{page.13}{}}
 \xdef\lastpage@lastpage{13}
 \xdef\lastpage@lastpageHy{13}
