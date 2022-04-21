@@ -1,4 +1,9 @@
 venv/
 __pycache__/
-utils/__pycache__/
+.ipynb_checkpoints/
+__obsolete__/
+analysis/.ipynb_checkpoints/
 models/__pycache__/
+utils/__pycache__/
+demographics_table.tsv
+demographics_table.xlsx
