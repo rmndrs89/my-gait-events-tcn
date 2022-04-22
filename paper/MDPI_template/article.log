@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.29)  21 APR 2022 15:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.29)  22 APR 2022 09:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1553,10 +1553,10 @@ Package rerunfilecheck Info: File `article.out' has not changed.
 (rerunfilecheck)             Checksum: 28121A734164C3EB08BB7D3B45B03E73;2837.
  ) 
 Here is how much of TeX's memory you used:
- 32109 strings out of 478582
- 594319 string characters out of 2854159
- 925852 words of memory out of 3000000
- 49000 multiletter control sequences out of 15000+600000
+ 32106 strings out of 478582
+ 594279 string characters out of 2854159
+ 925917 words of memory out of 3000000
+ 48997 multiletter control sequences out of 15000+600000
  558468 words of font info for 522 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,13n,120p,2242b,678s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1570,7 +1570,7 @@ X/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/fonts
 /type1/public/cm-super/sfss0500.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/pa
 latino/uplb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
 <C:/Program Files/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on article.pdf (13 pages, 779465 bytes).
+Output written on article.pdf (13 pages, 779673 bytes).
 PDF statistics:
  596 PDF objects out of 1000 (max. 8388607)
  122 named destinations out of 1000 (max. 500000)
